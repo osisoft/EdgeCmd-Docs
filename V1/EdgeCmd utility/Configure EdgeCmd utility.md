@@ -48,9 +48,9 @@ LogLevel                    [Required] Desired log level settings. Options: Trac
 LogFileSizeLimitBytes       [Required] Maximum size in bytes of log files that the service will create for this component. Must be no less than 1000.
 LogFileCountLimit           [Required] Maximum number of log files that the service will create for this component. Must be a positive integer.
 
-Example: .\edgecmd.exe Configuration System Logging LogLevel=Warning
-Example: .\edgecmd.exe Configuration System Logging LogFileSizeLimitBytes=32768
-Example: .\edgecmd.exe Configuration System Logging LogFileCountLimit=5
+Example: ./edgecmd Configuration System Logging LogLevel=Warning
+Example: ./edgecmd Configuration System Logging LogFileSizeLimitBytes=32768
+Example: ./edgecmd Configuration System Logging LogFileCountLimit=5
 
 
 ---------------------------------------------------------------------------------------------------------
@@ -68,22 +68,22 @@ ValidateEndpointCertificate  [Optional] If true, endpoint certificate will be va
 Note: Only one Required group must be specified. Group 1 for PI Web API or Group 2 for OCS.
 Example:
 Add a new endpoint:
-  .\edgecmd.exe Configuration System HealthEndpoints Endpoint=endpointURL UserName=UserName Password=Password
+  ./edgecmd Configuration System HealthEndpoints Endpoint=endpointURL UserName=UserName Password=Password
 Update fields of an existing endpoint:
-  .\edgecmd.exe Configuration System HealthEndpoints Id=Endpoint1 Password=newPassword
+  ./edgecmd Configuration System HealthEndpoints Id=Endpoint1 Password=newPassword
 View existing endpoints:
-  .\edgecmd.exe Configuration System HealthEndpoints
+  ./edgecmd Configuration System HealthEndpoints
 File Import (replaces current endpoints):
-  .\edgecmd.exe Configuration System HealthEndpoints File=endpoints.json
+  ./edgecmd Configuration System HealthEndpoints File=endpoints.json
 Delete an endpoint:
-  .\edgecmd.exe Configuration System HealthEndpoints Id=Endpoint1 Delete
+  ./edgecmd Configuration System HealthEndpoints Id=Endpoint1 Delete
 
 ---------------------------------------------------------------------------------------------------------
 Component System command-line options => 'Diagnostics'
 ---------------------------------------------------------------------------------------------------------
 EnableDiagnostics                       [Required] Enable global diagnostics.
 
-Example: .\edgecmd.exe Configuration System Diagnostics EnableDiagnostics=True
+Example: ./edgecmd Configuration System Diagnostics EnableDiagnostics=True
 
 
 ---------------------------------------------------------------------------------------------------------
@@ -92,7 +92,7 @@ Component System command-line options => 'Components'
 ComponentId                        [Required] ID of the hosted component.
 ComponentType                      [Required] Type of the hosted component.
 
-Example: .\edgecmd.exe Configuration System Components ComponentId=Modus1 ComponentType=Modbus
+Example: ./edgecmd Configuration System Components ComponentId=Modus1 ComponentType=Modbus
 
 
 ---------------------------------------------------------------------------------------------------------
@@ -115,7 +115,7 @@ Component System command-line options => 'Diagnostics'
 ---------------------------------------------------------------------------------------------------------
 EnableDiagnostics                       [Required] Enable global diagnostics.
 
-Example: .\edgecmd.exe Configuration System Diagnostics EnableDiagnostics=True
+Example: ./edgecmd Configuration System Diagnostics EnableDiagnostics=True
 ```
 
 ## Adapter components
@@ -395,6 +395,6 @@ edgecmd Configuration System HealthEndpoints delete
 There are two administrative commands, which will either start or stop a component. Only adapter components can be started or stopped. 
 
 ```
-  .\edgecmd.exe Administration ComponentId Stop
-  .\edgecmd.exe Administration ComponentId Start
+  ./edgecmd Administration ComponentId Stop
+  ./edgecmd Administration ComponentId Start
 ```
