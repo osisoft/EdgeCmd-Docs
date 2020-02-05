@@ -4,6 +4,8 @@ uid: EdgecmdUtility
 
 # EdgeCmd utility
 
+This is a demo line for Ryan.
+
 With the EdgeCmd utility, you can configure and administer OSIsoft adapters on Linux and Windows just like with REST and command line arguments.
 
 **Note:** Configuration and administrative REST interfaces are generally exposed through the command line. Read/write capabilities to the OSIsoft adapter, OMF ingress, and SDS read/write capabilities are only available using the REST API.
