@@ -157,6 +157,9 @@ references:
 - uid: TechnicalSupportAndFeedback
   name: Technical support and feedback
   href: technical-support-and-feedback.html
+- uid: TroubleShootEdgeCmdUtility
+  name: Troubleshoot EdgeCmd utility
+  href: V1.1/Troubleshooting/troubleshoot-edgecmd-utility.html
 - uid: UninstallEdgeCmdUtility1-1
   name: Uninstall EdgeCmd utility
   href: V1.1/Installation/uninstall-edgecmd-utility.html
