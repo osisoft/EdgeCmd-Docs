@@ -690,15 +690,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Toc",
       "source_relative_path": "V1.1/toc.yml",
       "output": {
         ".html": {
           "relative_path": "V1.1/toc.html",
-          "hash": "qZUoRDmDLy3cxYkjpm9QYg=="
+          "hash": "ws3SfhFY+kP2l5zf74NZ0A=="
         }
       },
       "is_incremental": false,
