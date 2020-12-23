@@ -1,0 +1,2 @@
+- name: Retrieve EDS configuration
+  href: retrieve-eds-configuration.md

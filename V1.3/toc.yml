@@ -1,0 +1,21 @@
+- name: EdgeCmd utility
+  href: edgecmd-utility.md
+  homepage: edgecmd-utility.md
+- name: Installation
+  href: Installation/toc.yml
+  topicHref: Installation/installation.md
+- name: Configuration
+  href: Configuration/toc.yml
+  topicHref: Configuration/configuration.md
+- name: Administration
+  href: Administration/toc.yml
+  topicHref: Administration/administration.md
+- name: Troubleshoot EdgeCmd utility
+  href: Troubleshooting/troubleshoot-edgecmd-utility.md
+- name: Reference
+  href: Reference/toc.yml
+  topicHref: Reference/reference.md
+- name: Release notes
+  href: Release-notes/release-notes.md
+- name: Technical support and feedback
+  href: ../technical-support-and-feedback.md
