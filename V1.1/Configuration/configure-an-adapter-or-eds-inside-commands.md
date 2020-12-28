@@ -1,12 +1,12 @@
 ---
-uid: ConfigureAnAdapterInsideCommands1-1
+uid: ConfigureAnAdapterOrEDSInsideCommands1-1
 ---
 
-# Configure an adapter inside commands
+# Configure an adapter or EDS inside commands
 
-Use EdgeCmd utility to configure an adapter using only commands or by pointing to JSON files. For more information, see [Configure an adapter with JSON files](xref:ConfigureAnAdapterWithJsonFiles1-1).
+Use EdgeCmd utility to configure an adapter or EDS using only commands or by pointing to JSON files. For more information, see [Configure an adapter or EDS with JSON files](xref:ConfigureAnAdapterOrEDSWithJsonFiles1-1).
 
-**Note:** The examples in this topic are using the default port number `5590`. If you specified a different port number for your adapter, you need to add it in the command. For example:
+**Note:** The examples in this topic are using the default port number `5590`. If you specified a different port number for your adapter or EDS, you need to add it in the command. For example:
 
 ```cmd
 edgecmd -port 5591 <RestOfTheCommand>

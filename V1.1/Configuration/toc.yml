@@ -1,8 +1,8 @@
-- name: Configure an adapter inside commands
-  href: configure-an-adapter-inside-commands.md
-- name: Configure an adapter with JSON files
-  href: configure-an-adapter-with-json-files.md
-- name: Configure adapter component
-  href: configure-adapter-component.md
+- name: Configure an adapter or EDS inside commands
+  href: configure-an-adapter-or-eds-inside-commands.md
+- name: Configure an adapter or EDS with JSON files
+  href: configure-an-adapter-or-eds-with-json-files.md
+- name: Configure adapter or EDS component
+  href: configure-adapter-or-eds-component.md
 - name: Configure adapter data selection with CSV files
   href: configure-adapter-data-selection-with-csv-files.md
