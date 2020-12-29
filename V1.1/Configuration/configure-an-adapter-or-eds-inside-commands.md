@@ -1,8 +1,8 @@
 ---
-uid: ConfigureAnAdapterOrEDSInsideCommands1-1
+uid: ConfigureAnAdapterOrEDSWithCommands1-1
 ---
 
-# Configure an adapter or EDS inside commands
+# Configure an adapter or EDS with commands
 
 Use EdgeCmd utility to configure an adapter or EDS using only commands or by pointing to JSON files. For more information, see [Configure an adapter or EDS with JSON files](xref:ConfigureAnAdapterOrEDSWithJsonFiles1-1).
 

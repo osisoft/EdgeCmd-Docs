@@ -1,5 +1,5 @@
-- name: Configure an adapter or EDS inside commands
-  href: configure-an-adapter-or-eds-inside-commands.md
+- name: Configure an adapter or EDS with commands
+  href: configure-an-adapter-or-eds-with-commands.md
 - name: Configure an adapter or EDS with JSON files
   href: configure-an-adapter-or-eds-with-json-files.md
 - name: Configure adapter or EDS component
