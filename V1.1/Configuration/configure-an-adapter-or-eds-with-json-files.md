@@ -1,12 +1,12 @@
 ---
-uid: ConfigureAnAdapterWithJsonFiles1-1
+uid: ConfigureAnAdapterOrEDSWithJsonFiles1-1
 ---
 
-# Configure an adapter with JSON Files
+# Configure an adapter or EDS with JSON Files
 
-Use EdgeCmd utility to  import a JSON file that contains the adapter configuration into the adapter. A file import completely replaces the existing configurations; therefore, you cannot use it to change individual values in a facet without modifying others.
+Use EdgeCmd utility to  import a JSON file that contains the adapter or EDS configuration into the adapter or EDS. A file import completely replaces the existing configurations; therefore, you cannot use it to change individual values in a facet without modifying others.
 
-**Note:** The examples in this topic are using the default port number `5590`. If you specified a different port number for your adapter, you need to add it in the command. For example:
+**Note:** The examples in this topic are using the default port number `5590`. If you specified a different port number for your adapter or EDS, you need to add it in the command. For example:
 
 ```cmd
 edgecmd -port 5591 <RestOfTheCommand>

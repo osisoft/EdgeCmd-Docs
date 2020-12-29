@@ -4,9 +4,9 @@ uid: StartOrStopAComponent1-1
 
 # Start or stop a component
 
-Complete the following steps to either start or stop an adapter component.
+Complete the following steps to either start or stop an adapter or EDS component.
 
-**Note:** The examples in this topic are using the default port number `5590`. If you specified a different port number for your adapter, you need to add it in the command. For example:
+**Note:** The examples in this topic are using the default port number `5590`. If you specified a different port number for your adapter or EDS, you need to add it in the command. For example:
 
 ```cmd
 edgecmd -port 5591 <RestOfTheCommand>
