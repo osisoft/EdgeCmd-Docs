@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Reset application </title>
+    <title>Configure adapter or EDS component </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Reset application ">
+    <meta name="title" content="Configure adapter or EDS component ">
     <meta name="generator" content="docfx 2.56.6.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -75,21 +75,54 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="ResetApplication1-1">
-<h1 id="reset-application">Reset application</h1>
+            <article class="content wrap" id="_content" data-uid="ConfigureAdapterOrEDSComponent1-2">
+<h1 id="configure-adapter-or-eds-component">Configure adapter or EDS component</h1>
 
-<p>Use the EdgeCmd utility to reset the entire application and the storage in EDS.</p>
+<p>Use EdgeCmd utility to add and remove adapter or EDS components, and to configure facets of the components.</p>
 <p><strong>Note:</strong> The examples in this topic are using the default port number <code>5590</code>. If you specified a different port number for your adapter or EDS, you need to add it in the command. For example:</p>
 <pre><code class="lang-cmd">edgecmd -port 5591 &lt;RestOfTheCommand&gt;
-</code></pre><ol>
+</code></pre><p><strong>Note:</strong> If a command contains slashes, you must add escape characters as follows:<br> </p>
+<ul>
+<li><p>In <em>Windows</em>, add a second slash.<br> 
+   Example: <code>TestUser\OilCompany</code> becomes <code>TestUser\\OilCompany</code></p>
+</li>
+<li><p>In <em>Linux</em>, add three slashes.<br>
+   Example: <code>TestUser\OilCompany</code> becomes <code>TestUser\\\\OilCompany</code></p>
+</li>
+</ul>
+<h2 id="add-components">Add components</h2>
+<p>Complete the following steps to add a new component:</p>
+<ol>
 <li>Access EdgeCmd utility through the command line.</li>
-<li><p>Run the following command:</p>
-<pre><code class="lang-cmd">edgecmd reset application
+<li><p>Type the following in the command line, replacing <code>&lt;componentType&gt;</code> and <code>&lt;componentId&gt;</code> with the values for the component and press Enter.</p>
+<p> <strong>Note:</strong> The only valid component type is the adapter or EDS type. For example, if you are trying to register a new Modbus component, use <code>Modbus</code> and if you are trying to register an OPC UA component, use <code>OpcUa</code>. Refer to the specific adapter or EDS user guide for the component type.</p>
+<pre><code class="lang-cmd">edgecmd add Components [-type &lt;componentType&gt;] [-id &lt;componentId&gt;]
+</code></pre><p> <strong>Example</strong>: Modbus adapter component registration</p>
+<pre><code class="lang-cmd">edgecmd add Components -type Modbus -id Modbus1
 </code></pre></li>
-<li><p>Answer prompt to confirm the reset.</p>
-<p> <strong>Note:</strong> You can specify the <code>-y</code> parameter in the command to skip the confirmation prompt.</p>
+</ol>
+<h2 id="configure-a-facet-of-a-component">Configure a facet of a component</h2>
+<p>All adapters and EDS have different configurable facets. Complete the following steps to configure a facet:</p>
+<ol>
+<li>Access EdgeCmd utility through the command line.</li>
+<li><p>Type the following in the command line, replacing <code>&lt;facetName&gt;</code> and <code>&lt;componentId&gt;</code> with their respective values. Then press Enter.</p>
+<pre><code class="lang-cmd">edgecmd set &lt;facetName&gt; -cid &lt;componentId&gt; [-file &lt;filepath&gt;]
+</code></pre><p> <strong>Example</strong>: Configuration of the data source facet of a Modbus adapter</p>
+<pre><code class="lang-cmd">edgecmd set DataSource -cid Modbus1 -file C:\Users\TestUser\Modbus1\DataSource.json
+</code></pre><p> <strong>Note:</strong> For more information on adapter or EDS specific facets, see the respective adapter or EDS documentation.</p>
 </li>
 </ol>
+<h2 id="remove-a-component">Remove a component</h2>
+<p>Complete the following steps to remove a component from the adapter or EDS:</p>
+<ol>
+<li>Access EdgeCmd utility through the command line.</li>
+<li><p>Type the following in the command line, replacing <code>&lt;componentId&gt;</code> with the ID of the component to remove, and press Enter.</p>
+<pre><code class="lang-cmd">edgecmd remove Components [-id &lt;componentId] [-y]
+</code></pre><p> <strong>Example</strong>: Removal of the Modbus component</p>
+<pre><code class="lang-cmd">edgecmd remove Components -id Modbus1
+</code></pre></li>
+</ol>
+<p><strong>Note:</strong> You cannot remove the OmfEgress from PI adapters or the Storage component from EDS. They are required for the products to operate.</p>
 </article>
           </div>
           
@@ -98,7 +131,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/osisoft/Edgecmd-Docs/blob/master/V1.1/Administration/reset-application.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/osisoft/Edgecmd-Docs/blob/master/V1.2/Configuration/configure-adapter-or-eds-component.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

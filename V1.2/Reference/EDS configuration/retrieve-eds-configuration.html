@@ -5,19 +5,19 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Reset application </title>
+    <title>Retrieve EDS configuration </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Reset application ">
+    <meta name="title" content="Retrieve EDS configuration ">
     <meta name="generator" content="docfx 2.56.6.0">
     
-    <link rel="shortcut icon" href="../../favicon.ico">
-    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../../styles/docfx.css">
-    <link rel="stylesheet" href="../../styles/main.css">
-    <meta property="docfx:navrel" content="../../toc.html">
-    <meta property="docfx:tocrel" content="../toc.html">
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
     
-    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:rel" content="../../../">
     
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
@@ -33,8 +33,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="../../index.html" width="46">
-                <img id="logo" src="../../V1.1/images/atlas_icon.png" height="46" width="46" alt="OSIsoft Edge System"> 
+              <a class="navbar-brand" href="../../../index.html" width="46">
+                <img id="logo" src="../../../V1.1/images/atlas_icon.png" height="46" width="46" alt="OSIsoft Edge System"> 
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -75,20 +75,32 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="ResetApplication1-1">
-<h1 id="reset-application">Reset application</h1>
+            <article class="content wrap" id="_content" data-uid="RetrieveEDSConfiguration1-2">
+<h1 id="retrieve-eds-configuration">Retrieve EDS configuration</h1>
 
-<p>Use the EdgeCmd utility to reset the entire application and the storage in EDS.</p>
-<p><strong>Note:</strong> The examples in this topic are using the default port number <code>5590</code>. If you specified a different port number for your adapter or EDS, you need to add it in the command. For example:</p>
+<p>Use EdgeCmd utility to retrieve the configuration of EDS.</p>
+<p><strong>Note:</strong> The examples in this topic are using the default port number <code>5590</code>. If you specified a different port number for your adapter, you need to add it in the command. For example:</p>
 <pre><code class="lang-cmd">edgecmd -port 5591 &lt;RestOfTheCommand&gt;
-</code></pre><ol>
+</code></pre><h2 id="retrieve-storage-component-configuration">Retrieve Storage component configuration</h2>
+<ol>
 <li>Access EdgeCmd utility through the command line.</li>
 <li><p>Run the following command:</p>
-<pre><code class="lang-cmd">edgecmd reset application
+<pre><code class="lang-cmd">edgecmd get -cid Storage
 </code></pre></li>
-<li><p>Answer prompt to confirm the reset.</p>
-<p> <strong>Note:</strong> You can specify the <code>-y</code> parameter in the command to skip the confirmation prompt.</p>
-</li>
+</ol>
+<h2 id="retrieve-periodic-egress-endpoints-configuration">Retrieve periodic egress endpoints configuration</h2>
+<ol>
+<li>Access EdgeCmd utility through the command line.</li>
+<li><p>Run the following command:</p>
+<pre><code class="lang-cmd">edgecmd get PeriodicEgressEndpoints
+</code></pre></li>
+</ol>
+<h2 id="retrieve-runtime-configuration">Retrieve runtime configuration</h2>
+<ol>
+<li>Access EdgeCmd utility through the command line.</li>
+<li><p>Run the following command:</p>
+<pre><code class="lang-cmd">edgecmd get Runtime
+</code></pre></li>
 </ol>
 </article>
           </div>
@@ -98,7 +110,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/osisoft/Edgecmd-Docs/blob/master/V1.1/Administration/reset-application.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/osisoft/Edgecmd-Docs/blob/master/V1.2/Reference/EDS configuration/retrieve-eds-configuration.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
@@ -124,8 +136,8 @@
       </footer>
     </div>
     
-    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../../styles/docfx.js"></script>
-    <script type="text/javascript" src="../../styles/main.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
   </body>
 </html>

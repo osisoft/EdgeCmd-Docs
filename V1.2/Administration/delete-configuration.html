@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Reset application </title>
+    <title>Delete configuration </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Reset application ">
+    <meta name="title" content="Delete configuration ">
     <meta name="generator" content="docfx 2.56.6.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -75,19 +75,36 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="ResetApplication1-1">
-<h1 id="reset-application">Reset application</h1>
+            <article class="content wrap" id="_content" data-uid="DeleteConfiguration1-2">
+<h1 id="delete-configuration">Delete configuration</h1>
 
-<p>Use the EdgeCmd utility to reset the entire application and the storage in EDS.</p>
+<p>Use the EdgeCmd utility to delete adapter or EDS configurations or configuration entries that you no longer need.</p>
 <p><strong>Note:</strong> The examples in this topic are using the default port number <code>5590</code>. If you specified a different port number for your adapter or EDS, you need to add it in the command. For example:</p>
 <pre><code class="lang-cmd">edgecmd -port 5591 &lt;RestOfTheCommand&gt;
-</code></pre><ol>
+</code></pre><h2 id="delete-configuration-entry">Delete configuration entry</h2>
+<p>Complete the following steps to delete a configuration entry from a collection configuration. For example, you can delete a single health endpoint of the &#39;HealthEndpoints&#39; facet within the &#39;System&#39; component.</p>
+<ol>
 <li>Access EdgeCmd utility through the command line.</li>
-<li><p>Run the following command:</p>
-<pre><code class="lang-cmd">edgecmd reset application
+<li>Type the <code>remove</code> keyword.</li>
+<li>Add the <code>&lt;facetName&gt;</code> and <code>&lt;componentId&gt;</code>, replacing both with their respective values.</li>
+<li><p>Add the ID of the entry to be removed. Then press Enter.</p>
+<pre><code class="lang-cmd">edgecmd remove &lt;facetName&gt; -cid &lt;componentId&gt; -id &lt;entry&gt;
+</code></pre><p><strong>Example:</strong> Delete &#39;endpoint_1&#39; of the &#39;HealthEndpoints&#39; facet in the &#39;System&#39; component:</p>
+<pre><code class="lang-cmd">edgecmd remove HealthEndpoints -cid System -id endpoint_1
+</code></pre><p><strong>Note:</strong> If the facet is part of the System component, the command does not require <code>&lt;componentId&gt;</code>, for example:</p>
+<pre><code class="lang-cmd">edgecmd remove HealthEndpoints -id OcsEndpoint
 </code></pre></li>
-<li><p>Answer prompt to confirm the reset.</p>
-<p> <strong>Note:</strong> You can specify the <code>-y</code> parameter in the command to skip the confirmation prompt.</p>
+</ol>
+<h2 id="delete-entire-configuration">Delete entire configuration</h2>
+<p>Complete the following steps to delete the entire configuration of a system facet. For example, you can delete the configuration of the &#39;HealthEndpoints&#39; facet within the &#39;System&#39; component.</p>
+<ol>
+<li>Access EdgeCmd utility through the command line.</li>
+<li>Type the <code>remove</code> keyword.</li>
+<li><p>Add the <code>&lt;facetName&gt;</code> and <code>&lt;componentId&gt;</code>, replacing both with their respective values. Then press Enter.</p>
+<pre><code class="lang-cmd">edgecmd remove &lt;facetName&gt; -cid &lt;componentId&gt;
+</code></pre><p><strong>Example:</strong> Delete the &#39;HealthEndpoints&#39; facet configuration file from the &#39;System&#39; component:</p>
+<pre><code class="lang-cmd">edgecmd remove HealthEndpoints -cid System
+</code></pre><p><strong>Note:</strong> To skip the confirmation prompt, specify the <code>-y</code> parameter in the command.</p>
 </li>
 </ol>
 </article>
@@ -98,7 +115,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/osisoft/Edgecmd-Docs/blob/master/V1.1/Administration/reset-application.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/osisoft/Edgecmd-Docs/blob/master/V1.2/Administration/delete-configuration.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
