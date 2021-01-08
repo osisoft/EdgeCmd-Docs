@@ -35,7 +35,11 @@ EdgeCmd command| Description | Examples |
 EdgeCmd command| Description | Example |
 ---------------|-------------|----------|
 `edgecmd -port 5590 <command> [-cid <componentId>]` | Specify the port number for communication with EDS or the adapter. | `edgecmd -port 5595 get Components`
+<<<<<<< Updated upstream
 `edgecmd -port 5590 <command> [-cid <componentId>] -port <port>` | Specify the port number for the adapter or EDS payload. | `edgecmd -port 5590 edit datasource -cid Mqtt1 -port 1885 `
+=======
+`edgecmd -port 5590 <command> [-cid <componentId>] -port <port>` | Specify the port number for the adapter or EDS payload. | `edgecmd -port 5590 edit datasource -cid Mqtt1 -port 1885`
+>>>>>>> Stashed changes
 
 For more information on how to configure a payload port number, see [Configure an adapter or EDS with commands](xref:ConfigureAnAdapterOrEDSWithCommands#configure-payload-port).
 
