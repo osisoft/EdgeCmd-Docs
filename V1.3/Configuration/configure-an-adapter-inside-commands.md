@@ -75,24 +75,3 @@ Complete the following steps to add an entry to a collection configuration:
    ```cmd
    edgecmd add Schedules -cid Modbus1 -Id 2 -Period 00:00:30
    ```
-
-## Configure payload port
-
-EdgeCmd utility commands may include up to two port numbers. The first specified port number is always designated for the EdgeCmd application. The second port number is designated for the payload of the adapter or EDS.
-
-Complete the following steps to edit the port number of the payload:
-
-1. Access EdgeCmd utility through the command line.
-2. Type the `edit` and `datasource` keywords.
-3. Add the first `<port>`, replacing it with the port number of the EdgeCmd application. The default is `5590`.
-4. Add the `<componentId>`, replacing it with the ID of the component.
-5. Add the second `<port>`, replacing it with the port number of the payload. Then press Enter.
-
-```cmd
-edgecmd edit datasource -port 5590 -cid Mqtt1 -port 1885
-```
-
-**Note:** <br>
-
-- If a payload port number is configured for a component and you specify only one port number in the data source command, you will receive the following error message: `Invalid arguments. Input arguments are required.`
-- If you specify more than two port numbers, you will receive the following error message: `Duplicate optional argument: -port`
