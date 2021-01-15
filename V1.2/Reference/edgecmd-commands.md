@@ -202,3 +202,17 @@ EdgeCmd command| Description |
 ---------------|-------------|
 `edgecmd get Diagnostics` | Get the diagnostics configuration. |
 `edgecmd get Version` | Get version information.
+
+## Data discovery configuration
+
+EdgeCmd command| Description | Examples |
+---------------|-------------|----------|
+`edgecmd add discoveries -cid <componentId>` | Start a new discovery operation for specified component and return status object containing generated Id of the discovery | `edgecmd add discoveries -cid Mqtt1`|
+`edgecmd get discoveries -cid <componentId>` | Get active and completed discovery status information for specified component | `edgecmd get discoveries -cid Mqtt1`|
+| `edgecmd get discoveries -cid <componentId> -id <discoveryId> -result [-csv] [-file <filename>]` | Get the result of specified discovery for specified component | `edgecmd get discoveries -cid Mqtt1 -id 1 -result` |
+| `edgecmd add discoveries -cid <componentId> -query "<queryFilter>" -id <discoveryId>` | Start a new discovery operation for specified component with specified query | `edgecmd add discoveries -cid Mqtt1 -query "+/+/Device90" -id 1` |
+| `edgecmd get discoveries -cid <componentId> -id <discoveryId> -result -query diff=<discoveryId> [-csv]` | Get differences between two specified discoveries of specified component | `edgecmd get discoveries -cid Mqtt1 -id 1 -result -query diff=2` |
+| `edgecmd add dataselection -cid <componentId> -select -query discoveryId=<discoveryId>` | Add specified discovery result to data selection and set all items to be selected | `edgecmd add dataselection -cid Mqtt1 -select -query discoveryId=1` |
+| `edgecmd get dataselection -cid <componentId> -query diff=<discoveryId> [-csv]` | Compare data selection against a discovery result | `edgecmd get dataselection -cid Mqtt1 -query diff=2` |
+| `edgecmd  remove discoveries -cid <componentId> -id <discoveryId> -result [-y]` | Remove only the result of the specified discovery from the specified component and cancel discovery if active | `edgecmd  remove discoveries -cid Mqtt1 -id 2 -result -y`|
+| `edgecmd  remove discoveries -cid <componentId> -id <discoveryId> [-y]` | Remove the discovery state and result from the specified component and cancel discovery if active | `edgecmd  remove discoveries -cid Mqtt1 -id 2 -y`|
