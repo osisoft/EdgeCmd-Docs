@@ -8,7 +8,7 @@
     <title>EdgeCmd commands </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="EdgeCmd commands ">
-    <meta name="generator" content="docfx 2.56.5.0">
+    <meta name="generator" content="docfx 2.56.6.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -138,8 +138,14 @@
 <td>Specify the port number for communication with EDS or the adapter.</td>
 <td><code>edgecmd -port 5595 get Components</code></td>
 </tr>
+<tr>
+<td><code>edgecmd -port 5590 &lt;command&gt; [-cid &lt;componentId&gt;] -port &lt;port&gt;</code></td>
+<td>Specify the port number for the adapter or EDS payload.</td>
+<td><code>edgecmd -port 5590 edit datasource -cid Mqtt1 -port 1885</code></td>
+</tr>
 </tbody>
 </table>
+<p>For more information on how to configure a payload port number, see <a href="xref:ConfigureAnAdapterOrEDSWithCommands#configure-payload-port">Configure an adapter or EDS with commands</a>.</p>
 <h2 id="application-configuration">Application configuration</h2>
 <p>The following commands configure the application.</p>
 <table>
