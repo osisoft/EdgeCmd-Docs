@@ -8,7 +8,7 @@
     <title>EdgeCmd commands </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="EdgeCmd commands ">
-    <meta name="generator" content="docfx 2.56.6.0">
+    <meta name="generator" content="docfx 2.56.5.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -138,8 +138,14 @@
 <td>Specify the port number for communication with EDS or the adapter.</td>
 <td><code>edgecmd -port 5595 get Components</code></td>
 </tr>
+<tr>
+<td><code>edgecmd -port 5590 &lt;command&gt; [-cid &lt;componentId&gt;] -port &lt;port&gt;</code></td>
+<td>Specify the port number for the adapter or EDS payload.</td>
+<td><code>edgecmd -port 5590 edit datasource -cid Mqtt1 -port 1885</code></td>
+</tr>
 </tbody>
 </table>
+<p>For more information on how to configure a payload port number, see <a href="xref:ConfigureAnAdapterOrEDSWithCommands#configure-payload-port">Configure an adapter or EDS with commands</a>.</p>
 <h2 id="application-configuration">Application configuration</h2>
 <p>The following commands configure the application.</p>
 <table>
@@ -720,6 +726,63 @@
 <tr>
 <td><code>edgecmd get Version</code></td>
 <td>Get version information.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="data-discovery-configuration">Data discovery configuration</h2>
+<table>
+<thead>
+<tr>
+<th>EdgeCmd command</th>
+<th>Description</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>edgecmd add discoveries -cid &lt;componentId&gt;</code></td>
+<td>Start a new discovery operation for specified component and return status object containing generated Id of the discovery</td>
+<td><code>edgecmd add discoveries -cid Mqtt1</code></td>
+</tr>
+<tr>
+<td><code>edgecmd get discoveries -cid &lt;componentId&gt;</code></td>
+<td>Get active and completed discovery status information for specified component</td>
+<td><code>edgecmd get discoveries -cid Mqtt1</code></td>
+</tr>
+<tr>
+<td><code>edgecmd get discoveries -cid &lt;componentId&gt; -id &lt;discoveryId&gt; -result [-csv] [-file &lt;filename&gt;]</code></td>
+<td>Get the result of specified discovery for specified component</td>
+<td><code>edgecmd get discoveries -cid Mqtt1 -id 1 -result</code></td>
+</tr>
+<tr>
+<td><code>edgecmd add discoveries -cid &lt;componentId&gt; -query &quot;&lt;queryFilter&gt;&quot; -id &lt;discoveryId&gt;</code></td>
+<td>Start a new discovery operation for specified component with specified query</td>
+<td><code>edgecmd add discoveries -cid Mqtt1 -query &quot;+/+/Device90&quot; -id 1</code></td>
+</tr>
+<tr>
+<td><code>edgecmd get discoveries -cid &lt;componentId&gt; -id &lt;discoveryId&gt; -result -query diff=&lt;discoveryId&gt; [-csv]</code></td>
+<td>Get differences between two specified discoveries of specified component</td>
+<td><code>edgecmd get discoveries -cid Mqtt1 -id 1 -result -query diff=2</code></td>
+</tr>
+<tr>
+<td><code>edgecmd add dataselection -cid &lt;componentId&gt; -select -query discoveryId=&lt;discoveryId&gt;</code></td>
+<td>Add specified discovery result to data selection and set all items to be selected</td>
+<td><code>edgecmd add dataselection -cid Mqtt1 -select -query discoveryId=1</code></td>
+</tr>
+<tr>
+<td><code>edgecmd get dataselection -cid &lt;componentId&gt; -query diff=&lt;discoveryId&gt; [-csv]</code></td>
+<td>Compare data selection against a discovery result</td>
+<td><code>edgecmd get dataselection -cid Mqtt1 -query diff=2</code></td>
+</tr>
+<tr>
+<td><code>edgecmd  remove discoveries -cid &lt;componentId&gt; -id &lt;discoveryId&gt; -result [-y]</code></td>
+<td>Remove only the result of the specified discovery from the specified component and cancel discovery if active</td>
+<td><code>edgecmd  remove discoveries -cid Mqtt1 -id 2 -result -y</code></td>
+</tr>
+<tr>
+<td><code>edgecmd  remove discoveries -cid &lt;componentId&gt; -id &lt;discoveryId&gt; [-y]</code></td>
+<td>Remove the discovery state and result from the specified component and cancel discovery if active</td>
+<td><code>edgecmd  remove discoveries -cid Mqtt1 -id 2 -y</code></td>
 </tr>
 </tbody>
 </table>
