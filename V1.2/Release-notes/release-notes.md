@@ -4,7 +4,7 @@ uid: ReleaseNotes1-2
 
 # Release notes
 
-EdgeCmd utility 1-2
+EdgeCmd utility 1.2
 
 ## Overview
 
@@ -16,36 +16,12 @@ For more information, see [EdgeCmd utility](xref:index1-2).
 
 ### Fixes
 
-The command line syntax and processing of EdgeCmd utility v1-2 has been entirely reworked from scratch, so there are no specific fixes.
-
+<!-- Any fixes with this release? -->
 ### Enhancements
 
-Changes from version 1.0
+Changes from version 1.1
 
-* A simpler command line syntax is now used.
-
-* A verb (operation) is added to remove ambiguity between reading, writing, adding, removing, or editing.
-
-* Command line arguments no longer require a specific order.
-
-* Reduces the amount of command line arguments by not requiring full path to facets.  For example, for egress (PI Adapters) and storage (EDS), no component ID is required.
-
-* Help output is improved in the following ways:
-
-  * It is more comprehensive for overall program operation.
-  * If a PI adapter is available, the help output shows available facets.
-  * Available command line arguments are defined.
-  * Command line examples are shown in bright color to stand out better.
-
-* The command line syntax uses *-port* instead of *port* to instruct EdgeCmd utility which TCP port to use.  
-
-* Administration support is added to start and stop components, and reset configurations to initial values.
-
-* Diagnostics support is added.
-
-* Support for CSV configuration for data selection, for both reading and writing.  
-
-* No change to actual routes for setting or reading configuration although the PI Adapter's REST API port can no longer be modified through EdgeCmd utility.
+<!-- Enhancements are that discovery can be configured using EdgeCmd utility? -->
 
 ## Known issues
 
@@ -71,7 +47,7 @@ Because the PI System often serves as a barrier protecting control system networ
 
 ### Vulnerability communication
 
-The practice of publicly disclosing internally discovered vulnerabilities is consistent with the Common Industrial Control System Vulnerability Disclosure Framework developed by the Industrial Control Systems Joint Working Group (ICSJWG). Despite the increased risk posed by greater transparency, OSIsoft is sharing this information to help you make an informed decision about when to upgrade to ensure your PI System has the best available protection.
+The practice of publicly disclosing internally discovered vulnerabilities is consistent with the [Common Industrial Control System Vulnerability Disclosure Framework](https://ics-cert.us-cert.gov/sites/default/files/ICSJWG-Archive/ICSJWG_Vulnerability_Disclosure_Framework_Final_1.pdf) developed by the [Industrial Control Systems Joint Working Group (ICSJWG)](https://ics-cert.us-cert.gov/Industrial-Control-Systems-Joint-Working-Group-ICSJWG). Despite the increased risk posed by greater transparency, OSIsoft is sharing this information to help you make an informed decision about when to upgrade to ensure your PI System has the best available protection.
 
 For more information, refer to [OSIsoft’s Ethical Disclosure Policy (https://www.osisoft.com/ethical-disclosure-policy)](https://www.osisoft.com/ethical-disclosure-policy).
 
@@ -79,7 +55,7 @@ To report a security vulnerability, refer to [OSIsoft's Report a Security Vulner
 
 ### Vulnerability scoring
 
-OSIsoft has selected the Common Vulnerability Scoring System (CVSS) to quantify the severity of security vulnerabilities for disclosure. To calculate the CVSS scores, OSIsoft uses the National Vulnerability Database (NVD) calculator maintained by the National Institute of Standards and Technology (NIST).  OSIsoft uses High, Medium and Low categories to aggregate the CVSS Base scores. This removes some of the opinion related errors of CVSS scoring.  As noted in the CVSS specification, Base score range from 0 for the lowest severity to 10 for the highest severity.
+OSIsoft has selected the [Common Vulnerability Scoring System (CVSS)](https://www.first.org/cvss/v2/guide) to quantify the severity of security vulnerabilities for disclosure. To calculate the CVSS scores, OSIsoft uses the [National Vulnerability Database (NVD) calculator](https://nvd.nist.gov/cvss.cfm?calculator&amp;version=2)  maintained by the National Institute of Standards and Technology (NIST). OSIsoft uses Critical, High, Medium and Low categories to aggregate the CVSS Base scores. This removes some of the opinion related errors of CVSS scoring. As noted in the CVSS specification, Base score range from 0 for the lowest severity to 10 for the highest severity.
 
 ### Overview of new vulnerabilities found or fixed
 
