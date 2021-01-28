@@ -16,12 +16,13 @@ For more information, see [EdgeCmd utility](xref:index1-2).
 
 ### Fixes
 
-<!-- Any fixes with this release? -->
+The port configuration has been reworked, so that two ports can be configured. One for communication and one for the payload.
+
 ### Enhancements
 
 Changes from version 1.1
 
-<!-- Enhancements are that discovery can be configured using EdgeCmd utility? -->
+* Support of the data source discovery feature
 
 ## Known issues
 
@@ -61,7 +62,11 @@ OSIsoft has selected the [Common Vulnerability Scoring System (CVSS)](https://ww
 
 This section is intended to provide relevant security-related information to guide your installation or upgrade decision. OSIsoft is proactively disclosing aggregate information about the number and severity of EdgeCmd utility security vulnerabilities that are fixed in this release.
 
-No security-related information is applicable to this release.
+The following table lists the known vulnerabilities and with their mitigation in this product.
+
+ Component | Version | CVE or Reference | CVSS | Mitigation
+ --------- | ------- | -----------------| ------ | ----------
+ json.Net | 12.0.3 | https://alephsecurity.com/vulns/aleph-2018004 | 6.8 | No code paths result in json parsing and subsequent serialization resulting in DoS vulnerability.
 
 ## Technical support and resources
 
