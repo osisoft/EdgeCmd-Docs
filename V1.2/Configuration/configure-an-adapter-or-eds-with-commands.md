@@ -38,6 +38,20 @@ Complete the following steps to change all values of a facet:
    edgecmd set Logging -cid OpcUa1 -LogLevel Warning -LogFileSizeLimitBytes 5000 -LogFileCountLimit 30
    ```
 
+### Add or change data selection items containing single quotes
+
+Linux only: The following TextParser-based adapters might require the value of data selection items that contain single quotes to be wrapped in single quotes and escaped with a backslash.
+
+- PI Adapter for Structured Data Files
+- PI Adapter for MQTT
+- PI Adapter for Azure Event Hubs  
+
+Instead of `$['Value1']`, type `'$['\''Value1'\'']'`.
+
+**Example:**
+
+`edgecmd add dataselection -cid MQTT1 -timefield '$['\''Timestamp'\'']' -valuefield '$['\''Value'\'']'`
+
 ## Configure key=value pairs in a facet
 
 Complete the following steps to configure any number of valid key=value pairs in a facet:
