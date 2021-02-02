@@ -102,6 +102,16 @@
 <pre><code class="lang-cmd">edgecmd set Logging -cid OpcUa1 -LogLevel Warning -LogFileSizeLimitBytes 5000 -LogFileCountLimit 30
 </code></pre></li>
 </ol>
+<h3 id="add-or-change-data-selection-items-containing-single-quotes">Add or change data selection items containing single quotes</h3>
+<p>Linux only: The following TextParser-based adapters might require the value of data selection items that contain single quotes to be wrapped in single quotes and escaped with a backslash.</p>
+<ul>
+<li>PI Adapter for Structured Data Files</li>
+<li>PI Adapter for MQTT</li>
+<li>PI Adapter for Azure Event Hubs  </li>
+</ul>
+<p>Instead of <code>$[&#39;Value1&#39;]</code>, type <code>&#39;$[&#39;\&#39;&#39;Value1&#39;\&#39;&#39;]&#39;</code>.</p>
+<p><strong>Example:</strong></p>
+<p><code>edgecmd add dataselection -cid MQTT1 -timefield &#39;$[&#39;\&#39;&#39;Timestamp&#39;\&#39;&#39;]&#39; -valuefield &#39;$[&#39;\&#39;&#39;Value&#39;\&#39;&#39;]&#39;</code></p>
 <h2 id="configure-keyvalue-pairs-in-a-facet">Configure key=value pairs in a facet</h2>
 <p>Complete the following steps to configure any number of valid key=value pairs in a facet:</p>
 <ol>
