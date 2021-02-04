@@ -1,5 +1,5 @@
 ---
-uid: ConfigureAnAdapterWithCommands1-2
+uid: ConfigureAnAdapterOrEDSWithCommands1-2
 ---
 
 # Configure an adapter or EDS with commands
