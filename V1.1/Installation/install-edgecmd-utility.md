@@ -56,7 +56,7 @@ Complete the following steps to install the EdgeCmd utility on Linux:
 
     A validation check for prerequisites is completed.
 
-    **Note:** The default installatation location is `/opt/OSIsoft/EdgeCmd`.
+    **Note:** The default installation location is `/opt/OSIsoft/EdgeCmd`.
 
 2. After the check for prerequisites succeeds, accept the default port number `5590` or change the port number.
 
