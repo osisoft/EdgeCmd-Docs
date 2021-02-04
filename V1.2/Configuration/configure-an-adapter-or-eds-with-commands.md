@@ -102,11 +102,11 @@ Complete the following steps to edit the port number of the payload:
 4. Add the `<componentId>`, replacing it with the ID of the component.
 5. Add the second `<port>`, replacing it with the port number of the payload. Then press Enter.
 
-```cmd
-edgecmd edit datasource -port 5590 -cid Mqtt1 -port 1885
-```
+  ```cmd
+  edgecmd edit datasource -port 5590 -cid Mqtt1 -port 1885
+  ```
 
-**Note:** <br>
+  **Note:** <br>
 
-- If a payload port number is configured for a component and you specify only one port number in the data source command, you will receive the following error message: `Invalid arguments. Input arguments are required.`
-- If you specify more than two port numbers, you will receive the following error message: `Duplicate optional argument: -port`
+  - If a payload port number is configured for a component and you specify only one port number in the data source command, you will receive the following error message: `Invalid arguments. Input arguments are required.`
+  - If you specify more than two port numbers, you will receive the following error message: `Duplicate optional argument: -port`
