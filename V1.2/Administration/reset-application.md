@@ -4,7 +4,7 @@ uid: ResetApplication1-2
 
 # Reset application
 
-Use the EdgeCmd utility to reset the entire application and the storage in EDS.
+Use EdgeCmd utility to reset the entire application and the storage in EDS.
 
 **Note:** The examples in this topic are using the default port number `5590`. If you specified a different port number for your adapter or EDS, you need to add it in the command. For example:
 

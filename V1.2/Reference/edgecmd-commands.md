@@ -4,8 +4,11 @@ uid: EdgeCmdCommands1-2
 
 # EdgeCmd commands
 
-The following tables provide a description of every command available in EdgeCmd utility. Every command used with the EdgeCmd utility has to be preceded by `edgecmd`. Parts of the command that are in `[ ]` are optional and do not need to be specified. <!-- Small matter, but you refer to the utility as "EdgeCmd utility" and "the EdgeCmd utility". You should be consistent.>
+The tables in the following sections provide a description of every command available in EdgeCmd utility. The following rules apply:
 
+- Every command has to be preceded by `edgecmd`.
+- All parts of a command that are wrapped in `[ ]` are optional and do not need to be specified.
+- The `-y` keyword in a command confirms overwriting of an existing file.
 
 **Note:** The examples in this topic are using the default port number `5590`. If you specified a different port number for your adapter, you need to add it in the command. For example:
 
@@ -13,7 +16,8 @@ The following tables provide a description of every command available in EdgeCmd
 edgecmd -port 5591 Configuration <RestOfTheCommand>
 ```
 
-**Note:** If a command contains slashes, you must add escape characters as follows:<br> 
+**Note:** If a command contains slashes, you must add escape characters as follows:<br>
+
   - In *Windows*, add a second slash.<br> 
        Example: `TestUser\OilCompany` becomes `TestUser\\OilCompany`
 
@@ -28,17 +32,15 @@ EdgeCmd command| Description | Examples |
 ---------------|-------------|----------|
 `edgecmd help` | Display help output for the EdgeCmd application.
 `edgecmd help [<target>]` | Display configuration help output for System level targets, for example `application`, `healthendpoints`, and `logging`. | `edgecmd help System`
-`edgecmd  help <target> -cid <componentId>` | Display configuration help output for any registered component and facet.  | `edgecmd help DataSource -cid opcua1` 
+`edgecmd  help <target> -cid <componentId>` | Display configuration help output for any registered component and facet.  | `edgecmd help DataSource -cid opcua1`
 `edgecmd help -cid <componentId>` | Display configuration help output for any registered component. | `edgecmd help -cid OpcUa1`
 
 ## Port configuration
 
 EdgeCmd command| Description | Example |
 ---------------|-------------|----------|
-`edgecmd -port 5590 <command> [-cid <componentId>]` | Specify the port number for communication with EDS or the adapter. The default is `5590`. | `edgecmd -port 5595 get Components` <!-- Are you missing "-cid" in the example? If it's optional, you should make clear in line 7 by saying that some or all of the commands in [ ] are optional.>
+`edgecmd -port 5590 <command> [-cid <componentId>]` | Specify the port number for communication with EDS or the adapter. The default is `5590`. | `edgecmd -port 5595 get Components`
 `edgecmd -port 5590 <command> [-cid <componentId>] -port <port>` | Specify the port number for the adapter or EDS payload.<br><br>For more information on how to configure a payload port number, see [Configure an adapter or EDS with commands](xref:ConfigureAnAdapterOrEDSWithCommands1-2#configure-payload-port). | `edgecmd -port 5590 edit datasource -cid Mqtt1 -port 1885`
-
-
 
 ## Application configuration
 
@@ -55,21 +57,21 @@ EdgeCmd command| Description | Example |
 
 The following commands configure specific facets of the system component.
 
-### Components facet configuration <!-- Should "Components" be plural?>
+### Components facet configuration
 
 EdgeCmd command| Description | Example |
 ---------------|-------------|----------|
-`edgecmd get Components [-file <filepath>]` | Get the component configuration. | `edgecmd get Components`
-`edgecmd set Components [-file <filepath>]` | Import components configuration. | `edgecmd set Components -file C:\Users\TestUser\Components\Configuration.json`<!-- Should you use plural for "components in middle column?>
+`edgecmd get Components [-file <filepath>]` | Get components configuration. | `edgecmd get Components`
+`edgecmd set Components [-file <filepath>]` | Import components configuration. | `edgecmd set Components -file C:\Users\TestUser\Components\Configuration.json`
 `edgecmd add Components [-type <type>] [-id <componentId>]`  | Add component to components configuration. | `edgecmd add Components  -type Modbus -id Modbus1`
 `edgecmd remove Components [-id <componentId] [-y]` | Remove specified component from configuration. | `edgecmd remove Components -id Modbus1`
-`edgecmd help Components`| Display help output for components configuration. <!-- Should you use plural for "components in middle column? Instead perhaps use possessive?> |
+`edgecmd help Components`| Display help output for components configuration.
 
 ### Buffering facet configuration
 
 EdgeCmd command| Description | Examples |
 ---------------|-------------|----------|
-`edgecmd get Buffering [-file <filepath>]` | Get the buffering configuration. | `edgecmd get Buffering C:\Users\TestUser\Buffering\Configuration.json`<!-- Missing "-file" in example?">
+`edgecmd get Buffering [-file <filepath>]` | Get the buffering configuration. | `edgecmd get Buffering -file C:\Users\TestUser\Buffering\Configuration.json`
 `edgecmd set Buffering [-file <filepath>]` | Import buffering configuration. | `edgecmd set Buffering`
 `edgecmd edit Buffering [-bufferLocation <value>] [-maxBufferSizeMB <value>] [-enableBuffering <value>]`  | Change buffering configuration. | `edgecmd Buffering -bufferLocation C:/ProgramData/OSIsoft/Adapters/Modbus/Buffers -maxBufferSizeMB 1024 -enableBuffering true`
 `edgecmd help Buffering` | Display help output for buffering configuration.
@@ -97,7 +99,7 @@ EdgeCmd command| Description | Examples |
 `edgecmd remove DataEndpoints [-y]`| Remove all data endpoints. | `edgecmd remove DataEndpoints -y`
 `edgecmd help DataEndpoints`| Display help output for data endpoints configuration.
 
-## Component
+## Component configuration
 
 The following commands configure a component.
 
@@ -110,7 +112,9 @@ EdgeCmd command| Description | Examples |
 `edgecmd stop -cid <componentId>`| Stop specified component. | `edgecmd stop -cid OpcUa1`
 `edgecmd help -cid <componentId>` | Display help output for specified component. | `edgecmd help -cid Modbus1`
 
-The following commands configure specific facets of a component. <!-- Should this line go after the following heading? If not, it's kinda lost.>
+## Component facets configuration
+
+The following commands configure specific facets of a component.
 
 ### Logging facet configuration
 
@@ -141,7 +145,7 @@ EdgeCmd command| Description | Examples |
 `edgecmd set DataFilters -cid <componentId> [-file <filepath>]` | Import data filters configuration for specified component. | `edgecmd set DataFilters -cid Modbus1 -file C:\Users\TestUser\DataFilters\Configuration.json`
 `edgecmd add DataFilters -cid <componentId> -id <itemid> [-AbsoluteDeadband <value>] [-PercentChange <value>] [-ExpirationPeriod <value>]`  | Add data filters configuration for specified component. | `edgecmd add DataFilters -cid OpcUa1 -id DuplicateData -AbsoluteDeadband 0 -PercentChange 35`
 `edgecmd edit DataFilters -cid <componentId> -id <itemid> [-AbsoluteDeadband <value>] [-PercentChange <value>] [-ExpirationPeriod <value>]` | Change data filters configuration for specified component. | `edgecmd edit DataFilters -cid Modbus1 -id DuplicateData -AbsoluteDeadband 3 -PercentChange 35`
-`edgecmd remove DataFilters -cid <componentId> [-id <itemid>] [-y]`| Remove data filters configuration for item in specified component. | `edgecmd remove DataFilters -cid OpcUa1 -y` <!-- unclear what "-y" does. This is true in some of the following tables as well.>
+`edgecmd remove DataFilters -cid <componentId> [-id <itemid>] [-y]`| Remove data filters configuration for item in specified component. | `edgecmd remove DataFilters -cid OpcUa1 -y`
 `edgecmd help DataFilters –cid <componentId>` | Display help output for data filters facet. | `edgecmd help DataFilters -cid Modbus1`
 
 ### Data source facet configuration
@@ -211,12 +215,12 @@ EdgeCmd command| Description |
 
 EdgeCmd command| Description | Examples |
 ---------------|-------------|----------|
-`edgecmd add discoveries -cid <componentId>` | Start a new discovery operation for specified component and return status object containing generated Id of the discovery <!-- Descriptions in this table don't end with periods but they do in all the other tables> | `edgecmd add discoveries -cid Mqtt1`|
-`edgecmd get discoveries -cid <componentId>` | Get active and completed discovery status information for specified component | `edgecmd get discoveries -cid Mqtt1`|
-| `edgecmd get discoveries -cid <componentId> -id <discoveryId> -result [-csv] [-file <filename>]` | Get the result of specified discovery for specified component | `edgecmd get discoveries -cid Mqtt1 -id 1 -result` |
-| `edgecmd add discoveries -cid <componentId> -query "<queryFilter>" -id <discoveryId>` | Start a new discovery operation for specified component with specified query | `edgecmd add discoveries -cid Mqtt1 -query "+/+/Device90" -id 1` |
-| `edgecmd get discoveries -cid <componentId> -id <discoveryId> -result -query diff=<discoveryId> [-csv]` | Get differences between two specified discoveries of specified component | `edgecmd get discoveries -cid Mqtt1 -id 1 -result -query diff=2` |
-| `edgecmd add dataselection -cid <componentId> -select -query discoveryId=<discoveryId>` | Add specified discovery result to data selection and set all items to be selected | `edgecmd add dataselection -cid Mqtt1 -select -query discoveryId=1` |
-| `edgecmd get dataselection -cid <componentId> -query diff=<discoveryId> [-csv]` | Compare data selection against a discovery result | `edgecmd get dataselection -cid Mqtt1 -query diff=2` |
-| `edgecmd  remove discoveries -cid <componentId> -id <discoveryId> -result [-y]` | Remove only the result of the specified discovery from the specified component and cancel discovery if active | `edgecmd  remove discoveries -cid Mqtt1 -id 2 -result -y`|
-| `edgecmd  remove discoveries -cid <componentId> -id <discoveryId> [-y]` | Remove the discovery state and result from the specified component and cancel discovery if active | `edgecmd  remove discoveries -cid Mqtt1 -id 2 -y`|
+`edgecmd add discoveries -cid <componentId>` | Start a new discovery operation for specified component and return status object containing generated Id of the discovery. | `edgecmd add discoveries -cid Mqtt1`|
+`edgecmd get discoveries -cid <componentId>` | Get active and completed discovery status information for specified component. | `edgecmd get discoveries -cid Mqtt1`|
+| `edgecmd get discoveries -cid <componentId> -id <discoveryId> -result [-csv] [-file <filename>]` | Get the result of specified discovery for specified component. | `edgecmd get discoveries -cid Mqtt1 -id 1 -result` |
+| `edgecmd add discoveries -cid <componentId> -query "<queryFilter>" -id <discoveryId>` | Start a new discovery operation for specified component with specified query. | `edgecmd add discoveries -cid Mqtt1 -query "+/+/Device90" -id 1` |
+| `edgecmd get discoveries -cid <componentId> -id <discoveryId> -result -query diff=<discoveryId> [-csv]` | Get differences between two specified discoveries of specified component. | `edgecmd get discoveries -cid Mqtt1 -id 1 -result -query diff=2` |
+| `edgecmd add dataselection -cid <componentId> -select -query discoveryId=<discoveryId>` | Add specified discovery result to data selection and set all items to be selected. | `edgecmd add dataselection -cid Mqtt1 -select -query discoveryId=1` |
+| `edgecmd get dataselection -cid <componentId> -query diff=<discoveryId> [-csv]` | Compare data selection against a discovery result. | `edgecmd get dataselection -cid Mqtt1 -query diff=2` |
+| `edgecmd  remove discoveries -cid <componentId> -id <discoveryId> -result [-y]` | Remove only the result of the specified discovery from the specified component and cancel discovery if active. | `edgecmd  remove discoveries -cid Mqtt1 -id 2 -result -y`|
+| `edgecmd  remove discoveries -cid <componentId> -id <discoveryId> [-y]` | Remove the discovery state and result from the specified component and cancel discovery if active. | `edgecmd  remove discoveries -cid Mqtt1 -id 2 -y`|
