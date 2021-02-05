@@ -52,15 +52,15 @@ references:
 - uid: ConfigureAnAdapterOrEDSWithCommands1-1
   name: Configure an adapter or EDS with commands
   href: V1.1/Configuration/configure-an-adapter-or-eds-with-commands.html
+- uid: ConfigureAnAdapterOrEDSWithCommands1-2
+  name: Configure an adapter or EDS with commands
+  href: V1.2/Configuration/configure-an-adapter-or-eds-with-commands.html
 - uid: ConfigureAnAdapterOrEDSWithJsonFiles1-1
   name: Configure an adapter or EDS with JSON Files
   href: V1.1/Configuration/configure-an-adapter-or-eds-with-json-files.html
 - uid: ConfigureAnAdapterOrEDSWithJsonFiles1-2
   name: Configure an adapter or EDS with JSON Files
-  href: V1.2/Configuration/configure-an-adapter-with-json-files.html
-- uid: ConfigureAnAdapterWithCommands1-2
-  name: Configure an adapter or EDS with commands
-  href: V1.2/Configuration/configure-an-adapter-or-eds-with-commands.html
+  href: V1.2/Configuration/configure-an-adapter-or-eds-with-json-files.html
 - uid: ConfigureAnAdapterWithinCommands1-1-unreleased
   name: Configure an adapter within commands
   href: V1.1-unreleased/Configuration/Configure%20an%20adapter%20within%20commands_1-1-unreleased.html

@@ -75,10 +75,10 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="ConfigureAnAdapterWithCommands1-2">
+            <article class="content wrap" id="_content" data-uid="ConfigureAnAdapterOrEDSWithCommands1-2">
 <h1 id="configure-an-adapter-or-eds-with-commands">Configure an adapter or EDS with commands</h1>
 
-<p>Use EdgeCmd utility to configure an adapter or EDS using only commands or by pointing to JSON files. For more information, see <a class="xref" href="configure-an-adapter-with-json-files.html">Configure an adapter or EDS with JSON files</a>.</p>
+<p>Use EdgeCmd utility to configure an adapter or EDS using only commands or by pointing to JSON files. For more information, see <a class="xref" href="configure-an-adapter-or-eds-with-json-files.html">Configure an adapter or EDS with JSON files</a>.</p>
 <p><strong>Note:</strong> The examples in this topic are using the default port number <code>5590</code>. If you specified a different port number for your adapter or EDS, you need to add it in the command. For example:</p>
 <pre><code class="lang-cmd">edgecmd -port 5591 &lt;RestOfTheCommand&gt;
 </code></pre><p><strong>Note:</strong> If a command contains slashes, you must add escape characters as follows:<br></p>
@@ -144,14 +144,15 @@
 <li>Type the <code>edit</code> and <code>datasource</code> keywords.</li>
 <li>Add the first <code>&lt;port&gt;</code>, replacing it with the port number of the EdgeCmd application. The default is <code>5590</code>.</li>
 <li>Add the <code>&lt;componentId&gt;</code>, replacing it with the ID of the component.</li>
-<li>Add the second <code>&lt;port&gt;</code>, replacing it with the port number of the payload. Then press Enter.</li>
-</ol>
+<li><p>Add the second <code>&lt;port&gt;</code>, replacing it with the port number of the payload. Then press Enter.</p>
 <pre><code class="lang-cmd">edgecmd edit datasource -port 5590 -cid Mqtt1 -port 1885
 </code></pre><p><strong>Note:</strong> <br></p>
 <ul>
 <li>If a payload port number is configured for a component and you specify only one port number in the data source command, you will receive the following error message: <code>Invalid arguments. Input arguments are required.</code></li>
 <li>If you specify more than two port numbers, you will receive the following error message: <code>Duplicate optional argument: -port</code></li>
 </ul>
+</li>
+</ol>
 </article>
           </div>
           

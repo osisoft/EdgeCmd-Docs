@@ -135,17 +135,16 @@
 <tbody>
 <tr>
 <td><code>edgecmd -port 5590 &lt;command&gt; [-cid &lt;componentId&gt;]</code></td>
-<td>Specify the port number for communication with EDS or the adapter.</td>
+<td>Specify the port number for communication with EDS or the adapter. The default is <code>5590</code>.</td>
 <td><code>edgecmd -port 5595 get Components</code></td>
 </tr>
 <tr>
 <td><code>edgecmd -port 5590 &lt;command&gt; [-cid &lt;componentId&gt;] -port &lt;port&gt;</code></td>
-<td>Specify the port number for the adapter or EDS payload.</td>
+<td>Specify the port number for the adapter or EDS payload.<br><br>For more information on how to configure a payload port number, see <a class="xref" href="../Configuration/configure-an-adapter-or-eds-with-commands.html#configure-payload-port">Configure an adapter or EDS with commands</a>.</td>
 <td><code>edgecmd -port 5590 edit datasource -cid Mqtt1 -port 1885</code></td>
 </tr>
 </tbody>
 </table>
-<p>For more information on how to configure a payload port number, see <a href="xref:ConfigureAnAdapterOrEDSWithCommands#configure-payload-port">Configure an adapter or EDS with commands</a>.</p>
 <h2 id="application-configuration">Application configuration</h2>
 <p>The following commands configure the application.</p>
 <table>
