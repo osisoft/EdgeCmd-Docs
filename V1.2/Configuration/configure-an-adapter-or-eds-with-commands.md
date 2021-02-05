@@ -40,7 +40,7 @@ Complete the following steps to change all values of a facet:
 
 ### Add or change data selection items containing single quotes
 
-Linux only: The following TextParser-based adapters might require the value of data selection items that contain single quotes to be wrapped in single quotes and escaped with a backslash.
+Linux only: The following TextParser-based adapters might require the value of data selection items that contain single quotes to be wrapped in single quotes and escaped with a backslash. <!-- Does this entire section only apply to Linux? Seems unclear. Are we allowed to add "Linux only:" in the header for this section? Also, the sentence is pretty awkward. How about, "For the following TextParser-based adapters, you must wrap the value of data selection items that contain single quotes within single quotes and escape those single quotes with a backslash:">
 
 - PI Adapter for Structured Data Files
 - PI Adapter for MQTT
@@ -59,7 +59,7 @@ Complete the following steps to configure any number of valid key=value pairs in
 1. Access EdgeCmd utility through the command line.
 2. Type the `edit` keyword and the `<facetName>`.
 3. Add the `<facetName>`and `<componentId>`, replacing both with their respective values.
-4. Add the key=value pairs you want to configure. Then press Enter.
+4. Add the key=value pairs you want to configure. Then press Enter. <!-- Is "key=value pairs" the style we use? That seems strange. Typically you see "key-value pairs", or sometimes "key/value pairs" or just "key value pairs".>
 
    ```cmd
    edgecmd edit <facetName> -cid <componentId> -<Key1> <Value1>
