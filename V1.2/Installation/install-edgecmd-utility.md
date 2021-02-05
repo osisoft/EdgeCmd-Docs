@@ -10,7 +10,7 @@ You can install EdgeCmd utility on either a Windows or Linux operating system. F
 
 **Prerequisite:** Contact your IT department to ensure that you have administrative privileges necessary on the local machine to run the install kit.
 
-Complete the following steps to install the EdgeCmd utility on Windows:
+Complete the following steps to install EdgeCmd utility on Windows:
 
 1. Download the `EdgeCmd_win10-x64.msi` file from the [OSIsoft Customer portal (https://customers.osisoft.com/s/products)](https://customers.osisoft.com/s/products).
 
@@ -26,13 +26,13 @@ Complete the following steps to install the EdgeCmd utility on Windows:
 
    **Note:** You must type INSTALLFOLDER in all caps.
 
-The EdgeCmd utility is installed on your device.
+EdgeCmd utility is installed on your device.
 
 ## Linux
 
 **Note:** You must have administrative privileges to install the software, for example, root or sudo privilege.
 
-Complete the following steps to install the EdgeCmd utility on Linux:
+Complete the following steps to install EdgeCmd utility on Linux:
 
 1. Open a terminal window and type the sudo command for the appropriate EdgeCmd .deb file for your processor:
 
@@ -60,7 +60,7 @@ Complete the following steps to install the EdgeCmd utility on Linux:
 
 2. After the check for prerequisites succeeds, accept the default port number `5590` or change the port number.
 
-    If the Linux OS is up to date, the install will succeed and the EdgeCmd utility is running on your device.
+    If the Linux OS is up to date, the install will succeed and EdgeCmd utility is running on your device.
 
 3. If the install fails, run the following commands from the terminal window and try the install again:
 

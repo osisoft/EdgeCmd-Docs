@@ -4,7 +4,7 @@ uid: TroubleShootEdgeCmdUtility1-2
 
 # Troubleshoot EdgeCmd utility
 
-To troubleshoot issues with EdgeCmd utility, you can start with the following troubleshooting tips. If you are unable to resolve issues with the EdgeCmd utility or need additional guidance, contact OSIsoft Technical Support.
+To troubleshoot issues with EdgeCmd utility, you can start with the following troubleshooting tips. If you are unable to resolve issues with EdgeCmd utility or need additional guidance, contact OSIsoft Technical Support.
 
 1. To get more information on proper usage of EdgeCmd utility, use the `help` command on a particular command and facet.<br>For more information, see [Retrieve EdgeCmd utility help](xref:RetrieveEdgeCmdUtilityHelp).
 2. Check if your adapter is using the default port number `5590`.

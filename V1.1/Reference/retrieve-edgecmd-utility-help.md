@@ -4,7 +4,7 @@ uid: RetrieveEdgeCmdUtilityHelp1-1
 
 # Retrieve EdgeCmd utility help
 
-The EdgeCmd utility provides you with help output for any operation and from any component running within an Adapter.
+EdgeCmd utility provides you with help output for any operation and from any component running within an Adapter.
 
 **Note:** The examples in this topic are using the default port number `5590`. If you specified a different port number for your adapter, you need to add it in the command. For example:
 
