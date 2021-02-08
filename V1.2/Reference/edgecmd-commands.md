@@ -71,7 +71,7 @@ EdgeCmd command| Description | Example |
 
 EdgeCmd command| Description | Examples |
 ---------------|-------------|----------|
-`edgecmd get Buffering [-file <filepath>]` | Get the buffering configuration. | `edgecmd get Buffering C:\Users\TestUser\Buffering\Configuration.json`
+`edgecmd get Buffering [-file <filepath>]` | Get the buffering configuration. | `edgecmd get Buffering -file C:\Users\TestUser\Buffering\Configuration.json`
 `edgecmd set Buffering [-file <filepath>]` | Import the buffering configuration. | `edgecmd set Buffering`
 `edgecmd edit Buffering [-bufferLocation <value>] [-maxBufferSizeMB <value>] [-enableBuffering <value>]`  | Change the buffering configuration. | `edgecmd Buffering -bufferLocation C:/ProgramData/OSIsoft/Adapters/Modbus/Buffers -maxBufferSizeMB 1024 -enableBuffering true`
 `edgecmd help Buffering` | Display help output for the buffering configuration.
