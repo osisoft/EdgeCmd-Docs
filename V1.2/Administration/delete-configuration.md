@@ -4,7 +4,7 @@ uid: DeleteConfiguration1-2
 
 # Delete configuration
 
-Use the EdgeCmd utility to delete adapter or EDS configurations or configuration entries that you no longer need.
+Use EdgeCmd utility to delete adapter or EDS configurations or configuration entries that you no longer need.
 
 **Note:** The examples in this topic are using the default port number `5590`. If you specified a different port number for your adapter or EDS, you need to add it in the command. For example:
 

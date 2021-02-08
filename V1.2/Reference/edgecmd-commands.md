@@ -4,7 +4,11 @@ uid: EdgeCmdCommands1-2
 
 # EdgeCmd commands
 
-The following tables provide a description of every command available in EdgeCmd utility. Every command used with the EdgeCmd utility has to be preceded by `edgecmd`. Parts of the command that are in `[ ]` are optional and do not need to be specified.
+The tables in the following sections provide a description of every command available in EdgeCmd utility. The following rules apply:
+
+- Every command has to be preceded by `edgecmd`.
+- All parts of a command that are wrapped in `[ ]` are optional and do not need to be specified.
+- The `-y` keyword in a command confirms overwriting of an existing file.
 
 **Note:** The examples in this topic are using the default port number `5590`. If you specified a different port number for your adapter, you need to add it in the command. For example:
 
@@ -12,7 +16,8 @@ The following tables provide a description of every command available in EdgeCmd
 edgecmd -port 5591 Configuration <RestOfTheCommand>
 ```
 
-**Note:** If a command contains slashes, you must add escape characters as follows:<br> 
+**Note:** If a command contains slashes, you must add escape characters as follows:<br>
+
   - In *Windows*, add a second slash.<br> 
        Example: `TestUser\OilCompany` becomes `TestUser\\OilCompany`
 
@@ -27,7 +32,7 @@ EdgeCmd command| Description | Examples |
 ---------------|-------------|----------|
 `edgecmd help` | Display help output for the EdgeCmd application.
 `edgecmd help [<target>]` | Display configuration help output for System level targets, for example `application`, `healthendpoints`, and `logging`. | `edgecmd help System`
-`edgecmd  help <target> -cid <componentId>` | Display configuration help output for any registered component and facet.  | `edgecmd help DataSource -cid opcua1` 
+`edgecmd  help <target> -cid <componentId>` | Display configuration help output for any registered component and facet.  | `edgecmd help DataSource -cid opcua1`
 `edgecmd help -cid <componentId>` | Display configuration help output for any registered component. | `edgecmd help -cid OpcUa1`
 
 ## Port configuration
@@ -36,8 +41,6 @@ EdgeCmd command| Description | Example |
 ---------------|-------------|----------|
 `edgecmd -port 5590 <command> [-cid <componentId>]` | Specify the port number for communication with EDS or the adapter. The default is `5590`. | `edgecmd -port 5595 get Components`
 `edgecmd -port 5590 <command> [-cid <componentId>] -port <port>` | Specify the port number for the adapter or EDS payload.<br><br>For more information on how to configure a payload port number, see [Configure an adapter or EDS with commands](xref:ConfigureAnAdapterOrEDSWithCommands1-2#configure-payload-port). | `edgecmd -port 5590 edit datasource -cid Mqtt1 -port 1885`
-
-
 
 ## Application configuration
 
@@ -96,7 +99,7 @@ EdgeCmd command| Description | Examples |
 `edgecmd remove DataEndpoints [-y]`| Remove all data endpoints. | `edgecmd remove DataEndpoints -y`
 `edgecmd help DataEndpoints`| Display help output for the data endpoints configuration.
 
-## Component
+## Component configuration
 
 The following commands configure a component.
 
@@ -108,6 +111,8 @@ EdgeCmd command| Description | Examples |
 `edgecmd start -cid <componentId>` | Start the specified component. | `edgecmd start -cid Modbus1`
 `edgecmd stop -cid <componentId>`| Stop the specified component. | `edgecmd stop -cid OpcUa1`
 `edgecmd help -cid <componentId>` | Display help output for the specified component. | `edgecmd help -cid Modbus1`
+
+## Component facets configuration
 
 The following commands configure specific facets of a component.
 
