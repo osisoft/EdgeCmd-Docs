@@ -6,6 +6,8 @@ uid: InstallEdgeCmdUtility1-1
 
 You can install EdgeCmd utility on either a Windows or Linux operating system. For more information, see [System requirements](xref:SystemRequirements1-1).
 
+**Note:** EdgeCmd utility does not have a user interface or installation prompt.
+
 ## Windows
 
 **Prerequisite:** Contact your IT department to ensure that you have administrative privileges necessary on the local machine to run the install kit.
