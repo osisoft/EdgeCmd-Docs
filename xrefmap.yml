@@ -7,18 +7,12 @@ references:
 - uid: AccessEdgeCmdUtility1-1
   name: Access EdgeCmd utility
   href: V1.1/Installation/access-edgecmd-utility.html
-- uid: AccessEdgeCmdUtility1-1-unreleased
-  name: Access EdgeCmd utility
-  href: V1.1-unreleased/Installation/Access%20EdgeCmd%20utility_1-1-unreleased.html
 - uid: AccessEdgeCmdUtility1-2
   name: Access EdgeCmd utility
   href: V1.2/Installation/access-edgecmd-utility.html
 - uid: Administration1-1
   name: Administration
   href: V1.1/Administration/administration.html
-- uid: Administration1-1-unreleased
-  name: Administration
-  href: V1.1-unreleased/Administration/Administration_1-1-unreleased.html
 - uid: Administration1-2
   name: Administration
   href: V1.2/Administration/administration.html
@@ -28,15 +22,9 @@ references:
 - uid: Configuration1-1
   name: Configuration
   href: V1.1/Configuration/configuration.html
-- uid: Configuration1-1-unreleased
-  name: Configuration
-  href: V1.1-unreleased/Configuration/Configuration_1-1-unreleased.html
 - uid: Configuration1-2
   name: Configuration
   href: V1.2/Configuration/configuration.html
-- uid: ConfigureAdapterComponent1-1-unreleased
-  name: Configure adapter component
-  href: V1.1-unreleased/Configuration/Configure%20adapter%20component_1-1-unreleased.html
 - uid: ConfigureAdapterDataSelectionWithCSVFiles1-1
   name: Configure adapter data selection with CSV files
   href: V1.1/Configuration/configure-adapter-data-selection-with-csv-files.html
@@ -61,12 +49,6 @@ references:
 - uid: ConfigureAnAdapterOrEDSWithJsonFiles1-2
   name: Configure an adapter or EDS with JSON Files
   href: V1.2/Configuration/configure-an-adapter-or-eds-with-json-files.html
-- uid: ConfigureAnAdapterWithinCommands1-1-unreleased
-  name: Configure an adapter within commands
-  href: V1.1-unreleased/Configuration/Configure%20an%20adapter%20within%20commands_1-1-unreleased.html
-- uid: ConfigureAnAdapterWithJsonFiles1-1-unreleased
-  name: Configure an adapter with JSON Files
-  href: V1.1-unreleased/Configuration/Configure%20an%20adapter%20with%20JSON%20files_1-1-unreleased.html
 - uid: ConfigureEdgeDataStore1-0
   name: Configure Edge Data Store
   href: V1.0/Configuration/configure-edge-data-store.html
@@ -82,9 +64,6 @@ references:
 - uid: DeleteConfiguration1-1
   name: Delete configuration
   href: V1.1/Administration/delete-configuration.html
-- uid: DeleteConfiguration1-1-unreleased
-  name: Delete configuration
-  href: V1.1-unreleased/Administration/Delete%20configuration_1-1-unreleased.html
 - uid: DeleteConfiguration1-2
   name: Delete configuration
   href: V1.2/Administration/delete-configuration.html
@@ -94,9 +73,6 @@ references:
 - uid: EdgeCmdCommands1-1
   name: EdgeCmd commands
   href: V1.1/Reference/edgecmd-commands.html
-- uid: EdgeCmdCommands1-1-unreleased
-  name: EdgeCmd commands
-  href: V1.1-unreleased/Reference/EdgeCmd%20commands_1-1-unreleased.html
 - uid: EdgeCmdCommands1-2
   name: EdgeCmd commands
   href: V1.2/Reference/edgecmd-commands.html
@@ -106,9 +82,6 @@ references:
 - uid: EdgeCmdUtility1-1
   name: EdgeCmd utility
   href: V1.1/edgecmd-utility.html
-- uid: EdgeCmdUtility1-1-unreleased
-  name: EdgeCmd utility
-  href: V1.1-unreleased/EdgeCmd_utility_1-1-unreleased.html
 - uid: EdgeCmdUtility1-2
   name: EdgeCmd utility
   href: V1.2/edgecmd-utility.html
@@ -121,9 +94,6 @@ references:
 - uid: index1-1
   name: EdgeCmd utility
   href: V1.1/index.html
-- uid: index1-1-unreleased
-  name: EdgeCmd utility
-  href: V1.1-unreleased/index_1-1-unreleased.html
 - uid: index1-2
   name: EdgeCmd utility
   href: V1.2/index.html
@@ -133,9 +103,6 @@ references:
 - uid: Installation1-1
   name: Installation
   href: V1.1/Installation/installation.html
-- uid: Installation1-1-unreleased
-  name: Installation
-  href: V1.1-unreleased/Installation/Installation_1-1-unreleased.html
 - uid: Installation1-2
   name: Installation
   href: V1.2/Installation/installation.html
@@ -151,9 +118,6 @@ references:
 - uid: Reference1-1
   name: Reference
   href: V1.1/Reference/reference.html
-- uid: Reference1-1-unreleased
-  name: Reference
-  href: V1.1-unreleased/Reference/Reference_1-1-unreleased.html
 - uid: Reference1-2
   name: Reference
   href: V1.2/Reference/reference.html
@@ -181,9 +145,6 @@ references:
 - uid: RetrieveEdgeCmdUtilityHelp1-1
   name: Retrieve EdgeCmd utility help
   href: V1.1/Reference/retrieve-edgecmd-utility-help.html
-- uid: RetrieveEdgeCmdUtilityHelp1-1-unreleased
-  name: Retrieve EdgeCmd utility help
-  href: V1.1-unreleased/Reference/Retrieve%20EdgeCmd%20utility%20help_1-1-unreleased.html
 - uid: RetrieveEdgeCmdUtilityHelp1-2
   name: Retrieve EdgeCmd utility help
   href: V1.2/Reference/retrieve-edgecmd-utility-help.html
@@ -199,18 +160,12 @@ references:
 - uid: RetrieveExistingConfiguration1-1
   name: Retrieve existing configuration
   href: V1.1/Reference/retrieve-existing-configuration.html
-- uid: RetrieveExistingConfiguration1-1-unreleased
-  name: Retrieve existing configuration
-  href: V1.1-unreleased/Reference/Retrieve%20existing%20configuration_1-1-unreleased.html
 - uid: RetrieveExistingConfiguration1-2
   name: Retrieve existing configuration
   href: V1.2/Reference/retrieve-existing-configuration.html
 - uid: StartOrStopAComponent1-1
   name: Start or stop a component
   href: V1.1/Administration/start-or-stop-a-component.html
-- uid: StartOrStopAComponent1-1-unreleased
-  name: Start or stop a component
-  href: V1.1-unreleased/Administration/Start%20or%20stop%20a%20component_1-1-unreleased.html
 - uid: StartOrStopAComponent1-2
   name: Start or stop a component
   href: V1.2/Administration/start-or-stop-a-component.html
