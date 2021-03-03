@@ -24,6 +24,9 @@
           "V*/toc.yml",
           "toc.yml",
           "**.md"
+        ],
+        "exclude" : [
+          "V1.1-unreleased/**"
         ]
       }
     ],
