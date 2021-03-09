@@ -54,11 +54,11 @@ Complete the following steps to import a facet specific configuration file for a
 2. Type the following in the command line, replacing `<facetName>` with the name of the facet, `<componentId>` with the ID of the component, and `<PathToJsonFile>` with the path to the JSON file that contains the component facet configuration. Then press Enter.
 
    ```cmd
-   edgecmd set <facetName> -cid <componentId> file <PathToJsonFile>
+   edgecmd set <facetName> -cid <componentId> -file <PathToJsonFile>
    ```
 
    **Example:**
 
    ```cmd
-   edgecmd set Logging -cid OpcUa1 file C:\Users\TestUser\Adapter\FacetConfiguration.json
+   edgecmd set Logging -cid OpcUa1 -file C:\Users\TestUser\Adapter\FacetConfiguration.json
    ```
