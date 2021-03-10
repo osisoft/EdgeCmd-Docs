@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../../styles/docfx.css">
     <link rel="stylesheet" href="../../styles/main.css">
     <meta property="docfx:navrel" content="../../toc.html">
-    <meta property="docfx:tocrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
     
     <meta property="docfx:rel" content="../../">
     
@@ -66,7 +66,14 @@
         </div>
       </div>
       <div role="main" class="container body-content hide-when-search">
-        <div class="article row grid">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="ConfigureAnAdapterOrEDSWithJsonFiles1-1">
 <h1 id="configure-an-adapter-or-eds-with-json-files">Configure an adapter or EDS with JSON Files</h1>
@@ -99,9 +106,9 @@
 <ol>
 <li>Access EdgeCmd utility through the command line.</li>
 <li><p>Type the following in the command line, replacing <code>&lt;facetName&gt;</code> with the name of the facet, <code>&lt;componentId&gt;</code> with the ID of the component, and <code>&lt;PathToJsonFile&gt;</code> with the path to the JSON file that contains the component facet configuration. Then press Enter.</p>
-<pre><code class="lang-cmd">edgecmd set &lt;facetName&gt; -cid &lt;componentId&gt; file &lt;PathToJsonFile&gt;
+<pre><code class="lang-cmd">edgecmd set &lt;facetName&gt; -cid &lt;componentId&gt; -file &lt;PathToJsonFile&gt;
 </code></pre><p><strong>Example:</strong></p>
-<pre><code class="lang-cmd">edgecmd set Logging -cid OpcUa1 file C:\Users\TestUser\Adapter\FacetConfiguration.json
+<pre><code class="lang-cmd">edgecmd set Logging -cid OpcUa1 -file C:\Users\TestUser\Adapter\FacetConfiguration.json
 </code></pre></li>
 </ol>
 </article>
@@ -112,7 +119,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/osisoft/Edgecmd-Docs/blob/zoomin-publish-docs/V1.1/Configuration/configure-an-adapter-or-eds-with-json-files.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/osisoft/Edgecmd-Docs/blob/master/V1.1/Configuration/configure-an-adapter-or-eds-with-json-files.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
