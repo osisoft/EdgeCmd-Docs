@@ -5,19 +5,19 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Technical support and feedback </title>
+    <title>Troubleshoot EdgeCmd utility </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Technical support and feedback ">
+    <meta name="title" content="Troubleshoot EdgeCmd utility ">
     <meta name="generator" content="docfx 2.56.5.0">
     
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="styles/docfx.vendor.css">
-    <link rel="stylesheet" href="styles/docfx.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <meta property="docfx:navrel" content="toc.html">
-    <meta property="docfx:tocrel" content="v1.1/toc.html">
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
     
-    <meta property="docfx:rel" content="">
+    <meta property="docfx:rel" content="../../">
     
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
@@ -33,8 +33,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="index.html" width="46">
-                <img id="logo" src="v1.1/images/atlas_icon.png" height="46" width="46" alt="OSIsoft Edge System"> 
+              <a class="navbar-brand" href="../../index.html" width="46">
+                <img id="logo" src="../../v1.1/images/atlas_icon.png" height="46" width="46" alt="OSIsoft Edge System"> 
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -75,30 +75,23 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="TechnicalSupportAndFeedback">
-<h1 id="technical-support-and-feedback">Technical support and feedback</h1>
+            <article class="content wrap" id="_content" data-uid="TroubleShootEdgeCmdUtility">
+<h1 id="troubleshoot-edgecmd-utility">Troubleshoot EdgeCmd utility</h1>
 
-<p>OSIsoft provides several ways to report issues and provide feedback on EdgeCmd utility.</p>
-<h2 id="technical-support">Technical support</h2>
-<p>For technical assistance with EdgeCmd utility, contact OSIsoft Technical Support through the <a href="https://my.osisoft.com/">OSIsoft Customer Portal</a>. We can help you identify the problem, provide workarounds and address any concerns you may have. Remote access to your facilities may be necessary during the session.</p>
-<p><strong>Note:</strong>  You must have an account set up in the <a href="https://my.osisoft.com/">OSIsoft Customer Portal</a> before you can open a case. If you do not have a portal account, see <a href="https://explore.osisoft.com/myosisoft-customer-portal/how-to-get-a-login">How to Get a Login to OSIsoft Customer Portal</a>.</p>
-<p>Alternatively, call OSIsoft Technical Support at +1 510-297-5828.</p>
-<p>When you contact OSIsoft Technical Support, be prepared to provide this information:</p>
+<p>To troubleshoot issues with EdgeCmd utility, you can start with the following troubleshooting tips. If you are unable to resolve issues with EdgeCmd utility or need additional guidance, contact OSIsoft Technical Support.</p>
+<ol>
+<li>To get more information on proper usage of EdgeCmd utility, use the <code>help</code> command on a particular command and facet.<br>For more information, see <a class="xref" href="../reference/retrieve-edgecmd-utility-help.html">Retrieve EdgeCmd utility help</a>.</li>
+<li><p>Check if your adapter is using the default port number <code>5590</code>.</p>
 <ul>
-<li>Product name, version, and build numbers</li>
-<li>Details about your computer platform (CPU type, operating system, and version number)</li>
-<li>Time that the difficulty started</li>
-<li>Details of any environment changes prior to the start of the issue</li>
-<li>Summary of the issue, including any relevant log files during the time the issue occurred</li>
+<li>If the adapter is using any other port number, include <code>-port &lt;AdapterPortNumber&gt;</code> as an argument in your command.</li>
+<li>If you do not know what port to use, check the <code>appsettings.json</code> file in the directory where the adapter is installed. </li>
 </ul>
-<h2 id="documentation-feedback">Documentation feedback</h2>
-<p>To submit documentation feedback for EdgeCmd utility, send an email to <a href="mailto:documentation@osisoft.com?subject=EdgeCmd%20utility%20documentation&amp;body=Product%20name%20and%20version%20-%20Documentation%20topic%20URL%20-%20Details%20of%20the%20suggestion%20or%20error">documentation@osisoft.com</a>. Be sure to include the following information with your feedback:</p>
-<ul>
-<li>Product name and version</li>
-<li>Documentation topic URL</li>
-<li>Details of the suggestion or error</li>
-</ul>
-<p>The technical documentation team at OSIsoft will review and respond to your feedback.</p>
+</li>
+<li><p>Check if the adapter is running.<br>EdgeCmd utility makes REST calls against an active adapter. If the adapter is not running, there is nothing to respond to those REST requests.</p>
+</li>
+<li>If you run a command like <code>Reset</code>, add a data source configuration, or edit a large data selection, and so on. Wait 20 to 60 seconds before you attempt to make more calls; the adapter needs time to process the request.</li>
+<li>If a command is not working in EdgeCmd utility, verify the command does not work in other REST clients like Postman either.</li>
+</ol>
 </article>
           </div>
           
@@ -107,7 +100,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/osisoft/Edgecmd-Docs/blob/master/technical-support-and-feedback.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/osisoft/Edgecmd-Docs/blob/master/v1.1/troubleshooting/troubleshoot-edgecmd-utility.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
@@ -133,8 +126,8 @@
       </footer>
     </div>
     
-    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="styles/docfx.js"></script>
-    <script type="text/javascript" src="styles/main.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
   </body>
 </html>

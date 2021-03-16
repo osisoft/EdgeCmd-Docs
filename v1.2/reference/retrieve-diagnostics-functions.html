@@ -5,19 +5,19 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Technical support and feedback </title>
+    <title>Retrieve diagnostics functions </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Technical support and feedback ">
+    <meta name="title" content="Retrieve diagnostics functions ">
     <meta name="generator" content="docfx 2.56.5.0">
     
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="styles/docfx.vendor.css">
-    <link rel="stylesheet" href="styles/docfx.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <meta property="docfx:navrel" content="toc.html">
-    <meta property="docfx:tocrel" content="v1.1/toc.html">
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
     
-    <meta property="docfx:rel" content="">
+    <meta property="docfx:rel" content="../../">
     
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
@@ -33,8 +33,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="index.html" width="46">
-                <img id="logo" src="v1.1/images/atlas_icon.png" height="46" width="46" alt="OSIsoft Edge System"> 
+              <a class="navbar-brand" href="../../index.html" width="46">
+                <img id="logo" src="../../v1.1/images/atlas_icon.png" height="46" width="46" alt="OSIsoft Edge System"> 
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -75,30 +75,62 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="TechnicalSupportAndFeedback">
-<h1 id="technical-support-and-feedback">Technical support and feedback</h1>
+            <article class="content wrap" id="_content" data-uid="RetrieveDiagnosticsFunctions1-2">
+<h1 id="retrieve-diagnostics-functions">Retrieve diagnostics functions</h1>
 
-<p>OSIsoft provides several ways to report issues and provide feedback on EdgeCmd utility.</p>
-<h2 id="technical-support">Technical support</h2>
-<p>For technical assistance with EdgeCmd utility, contact OSIsoft Technical Support through the <a href="https://my.osisoft.com/">OSIsoft Customer Portal</a>. We can help you identify the problem, provide workarounds and address any concerns you may have. Remote access to your facilities may be necessary during the session.</p>
-<p><strong>Note:</strong>  You must have an account set up in the <a href="https://my.osisoft.com/">OSIsoft Customer Portal</a> before you can open a case. If you do not have a portal account, see <a href="https://explore.osisoft.com/myosisoft-customer-portal/how-to-get-a-login">How to Get a Login to OSIsoft Customer Portal</a>.</p>
-<p>Alternatively, call OSIsoft Technical Support at +1 510-297-5828.</p>
-<p>When you contact OSIsoft Technical Support, be prepared to provide this information:</p>
-<ul>
-<li>Product name, version, and build numbers</li>
-<li>Details about your computer platform (CPU type, operating system, and version number)</li>
-<li>Time that the difficulty started</li>
-<li>Details of any environment changes prior to the start of the issue</li>
-<li>Summary of the issue, including any relevant log files during the time the issue occurred</li>
-</ul>
-<h2 id="documentation-feedback">Documentation feedback</h2>
-<p>To submit documentation feedback for EdgeCmd utility, send an email to <a href="mailto:documentation@osisoft.com?subject=EdgeCmd%20utility%20documentation&amp;body=Product%20name%20and%20version%20-%20Documentation%20topic%20URL%20-%20Details%20of%20the%20suggestion%20or%20error">documentation@osisoft.com</a>. Be sure to include the following information with your feedback:</p>
-<ul>
-<li>Product name and version</li>
-<li>Documentation topic URL</li>
-<li>Details of the suggestion or error</li>
-</ul>
-<p>The technical documentation team at OSIsoft will review and respond to your feedback.</p>
+<p>Use EdgeCmd utility to retrieve diagnostics functions of the platform and components.</p>
+<p><strong>Note:</strong> The examples in this topic are using the default port number <code>5590</code>. If you specified a different port number for your adapter, you need to add it in the command. For example:</p>
+<pre><code class="lang-cmd">edgecmd -port 5591 &lt;RestOfTheCommand&gt;
+</code></pre><h2 id="retrieve-diagnostics">Retrieve diagnostics</h2>
+<ol>
+<li>Access EdgeCmd utility through the command line.</li>
+<li><p>Run the following command:</p>
+<pre><code class="lang-cmd">edgecmd get Diagnostics
+</code></pre> <details>
+ <summary>Sample output</summary>
+ <pre>
+
+     {
+         "timestamp": "2020-07-15T18:27:59.4804167Z",
+         "processIdentifier": 5744,
+         "startTime": "2020-07-20T21:26:45.9662964Z",
+         "workingSet": 41.90625,
+         "totalProcessorTime": 137.578125,
+         "totalUserProcessorTime": 73.53125,
+         "totalPrivilegedProcessorTime": 64.046875,
+         "threadCount": 23,
+         "handleCount": 628,
+         "managedMemorySize": 8.916587829589844,
+         "privateMemorySize": 49.54296875,
+         "peakPagedMemorySize": 57.21484375,
+         "storageTotalSize": 486699.0859375,
+         "storageFreeSpace": 365912.98828125
+     }
+
+ </pre>
+ </details>
+
+</li>
+</ol>
+<h2 id="retrieve-version">Retrieve version</h2>
+<ol>
+<li>Access EdgeCmd utility through the command line.</li>
+<li><p>Run the following command:</p>
+<pre><code class="lang-cmd">edgecmd get Version
+</code></pre> <details>
+ <summary>Sample output</summary>
+ <pre>
+
+     {
+         "Application Version": "1-2.0.234",
+         ".Net Core Version": ".NET Core 3.1.5",
+         "Operating System": "Microsoft Windows 10.0.18363"
+     }
+
+ </pre>
+ </details>
+</li>
+</ol>
 </article>
           </div>
           
@@ -107,7 +139,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/osisoft/Edgecmd-Docs/blob/master/technical-support-and-feedback.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/osisoft/Edgecmd-Docs/blob/master/v1.2/reference/retrieve-diagnostics-functions.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
@@ -133,8 +165,8 @@
       </footer>
     </div>
     
-    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="styles/docfx.js"></script>
-    <script type="text/javascript" src="styles/main.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
   </body>
 </html>
