@@ -8,7 +8,7 @@
       ],
       "dest": "api",
       "disableGitFeatures": false,
-      "_appLogoPath": "V1.1/images/atlas_icon.png",
+      "_appLogoPath": "v1.1/images/atlas_icon.png",
       "_appName": "OSIsoft Edge System"
     }
   ],
@@ -32,7 +32,7 @@
     ],
     "resource": [
       {
-        "files": ["V1.1/images/**"]
+        "files": ["v1.1/images/**"]
       }
     ],
     "overwrite": [
