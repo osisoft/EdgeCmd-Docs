@@ -3,7 +3,7 @@
 - name: Retrieve existing configuration
   href: retrieve-existing-configuration.md
 - name: Retrieve diagnostics functions
-  href: EDS configuration/toc.yml
+  href: eds-configuration/toc.yml
   topicHref: retrieve-diagnostics-functions.md
 - name: EdgeCmd commands
   href: edgecmd-commands.md
