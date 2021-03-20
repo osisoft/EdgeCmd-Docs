@@ -1,5 +1,5 @@
 ---
-uid: ReleaseNotes1-2
+uid: ReleaseNotes
 ---
 
 # Release notes
@@ -10,7 +10,7 @@ EdgeCmd utility 1.2
 
 Edge Data Store (EDS) and PI Adapters have a REST API that allows user interaction. Configuration is one of the most common interactions. This command line tool, EdgeCmd utility, uses this REST API to apply all changes and administration functions to EDS and PI adapters. Specifically, EdgeCmd utility's command line interface uses configuration and administration functions of the REST API, so the user does not need to know the REST routes. EdgeCmd utility thus improves the user experience, facilitates easier scripting experiences and provides built-in help.
 
-For more information, see [EdgeCmd utility](xref:index1-2).
+For more information, see [EdgeCmd utility](xref:index).
 
 ## Fixes and enhancements
 
@@ -30,15 +30,15 @@ There are no known issues at this time.
 
 ## System requirements
 
-Refer to [System requirements](xref:SystemRequirements1-2).
+Refer to [System requirements](xref:SystemRequirements).
 
 ## Installation and upgrade
 
-Refer to [Install EdgeCmd utility](xref:InstallEdgeCmdUtility1-2).
+Refer to [Install EdgeCmd utility](xref:InstallEdgeCmdUtility).
 
 ## Uninstallation
 
-Refer to [Uninstall EdgeCmd utility](xref:UninstallEdgeCmdUtility1-2).
+Refer to [Uninstall EdgeCmd utility](xref:UninstallEdgeCmdUtility).
 
 ## Security information and guidance
 

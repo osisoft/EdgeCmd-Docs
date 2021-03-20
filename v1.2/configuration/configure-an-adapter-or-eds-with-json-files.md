@@ -1,5 +1,5 @@
 ---
-uid: ConfigureAnAdapterOrEDSWithJsonFiles1-2
+uid: ConfigureAnAdapterOrEDSWithJsonFiles
 ---
 
 # Configure an adapter or EDS with JSON Files

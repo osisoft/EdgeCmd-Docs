@@ -1,5 +1,5 @@
 ---
-uid: ConfigureAdapterDataSelectionWithCSVFiles1-2
+uid: ConfigureAdapterDataSelectionWithCSVFiles
 ---
 
 # Configure adapter data selection with CSV files

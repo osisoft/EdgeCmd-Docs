@@ -1,5 +1,5 @@
 ---
-uid: SystemRequirements1-2
+uid: SystemRequirements
 ---
 
 # System requirements

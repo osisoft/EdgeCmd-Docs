@@ -1,5 +1,5 @@
 ---
-uid: Administration1-2
+uid: Administration
 ---
 
 # Administration

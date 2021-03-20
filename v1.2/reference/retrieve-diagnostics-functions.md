@@ -1,5 +1,5 @@
 ---
-uid: RetrieveDiagnosticsFunctions1-2
+uid: RetrieveDiagnosticsFunctions
 ---
 
 # Retrieve diagnostics functions
@@ -59,7 +59,7 @@ edgecmd -port 5591 <RestOfTheCommand>
     <pre>
 
         {
-            "Application Version": "1-2.0.234",
+            "Application Version": ".0.234",
             ".Net Core Version": ".NET Core 3.1.5",
             "Operating System": "Microsoft Windows 10.0.18363"
         }

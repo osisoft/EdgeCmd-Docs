@@ -1,10 +1,10 @@
 ---
-uid: InstallEdgeCmdUtility1-2
+uid: InstallEdgeCmdUtility
 ---
 
 # Install EdgeCmd utility
 
-You can install EdgeCmd utility on either a Windows or Linux operating system. For more information, see [System requirements](xref:SystemRequirements1-2).
+You can install EdgeCmd utility on either a Windows or Linux operating system. For more information, see [System requirements](xref:SystemRequirements).
 
 **Note:** EdgeCmd utility does not have a user interface or installation prompt.
 

@@ -1,5 +1,5 @@
 ---
-uid: index1-2
+uid: index
 ---
 
 # EdgeCmd utility
@@ -13,15 +13,15 @@ Use OSIsoft's proprietary tool, EdgeCmd utility, to configure and administer PI 
 
 =======
 
-- [EdgeCmd utility](xref:EdgecmdUtility1-2)
-- [Configuration](xref:Configuration1-2)
-  - [Configure adapter](xref:ConfigureAdapter1-2)
-  - [Configure adapter component](xref:ConfigureAdapterComponent1-2)
-- [Administration](xref:Administration1-2)
-  - [Delete configuration](xref:DeleteConfiguration1-2)
-  - [Start or stop a component](xref:StartOrStopAComponent1-2)
-- [Reference](xref:Reference1-2)
-  - [Retrieve EdgeCmd utility help](xref:RetrieveEdgeCmdUtilityHelp1-2)
-  - [Retrieve existing configuration](xref:RetrieveExistingConfiguration1-2)
-  - [EdgeCmd commands](xref:EdgeCmdCommands1-2)
+- [EdgeCmd utility](xref:EdgecmdUtility)
+- [Configuration](xref:Configuration)
+  - [Configure adapter](xref:ConfigureAdapter)
+  - [Configure adapter component](xref:ConfigureAdapterComponent)
+- [Administration](xref:Administration)
+  - [Delete configuration](xref:DeleteConfiguration)
+  - [Start or stop a component](xref:StartOrStopAComponent)
+- [Reference](xref:Reference)
+  - [Retrieve EdgeCmd utility help](xref:RetrieveEdgeCmdUtilityHelp)
+  - [Retrieve existing configuration](xref:RetrieveExistingConfiguration)
+  - [EdgeCmd commands](xref:EdgeCmdCommands)
 -->
