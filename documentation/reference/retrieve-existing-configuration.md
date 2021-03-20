@@ -1,5 +1,5 @@
 ---
-uid: RetrieveExistingConfiguration1-1
+uid: RetrieveExistingConfiguration
 ---
 
 # Retrieve existing configuration

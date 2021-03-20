@@ -1,5 +1,5 @@
 ---
-uid: ConfigureAdapterOrEDSComponent1-1
+uid: ConfigureAdapterOrEDSComponent
 ---
 
 # Configure adapter or EDS component

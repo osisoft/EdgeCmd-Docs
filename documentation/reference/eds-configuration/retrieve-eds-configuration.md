@@ -1,5 +1,5 @@
 ---
-uid: RetrieveEDSConfiguration1-1
+uid: RetrieveEDSConfiguration
 ---
 
 # Retrieve EDS configuration

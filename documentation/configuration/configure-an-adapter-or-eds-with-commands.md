@@ -1,10 +1,10 @@
 ---
-uid: ConfigureAnAdapterOrEDSWithCommands1-1
+uid: ConfigureAnAdapterOrEDSWithCommands
 ---
 
 # Configure an adapter or EDS with commands
 
-Use EdgeCmd utility to configure an adapter or EDS using only commands or by pointing to JSON files. For more information, see [Configure an adapter or EDS with JSON files](xref:ConfigureAnAdapterOrEDSWithJsonFiles1-1).
+Use EdgeCmd utility to configure an adapter or EDS using only commands or by pointing to JSON files. For more information, see [Configure an adapter or EDS with JSON files](xref:ConfigureAnAdapterOrEDSWithJsonFiles).
 
 **Note:** The examples in this topic are using the default port number `5590`. If you specified a different port number for your adapter or EDS, you need to add it in the command. For example:
 

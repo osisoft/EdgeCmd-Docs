@@ -1,5 +1,5 @@
 ---
-uid: RetrieveDiagnosticsFunctions1-1
+uid: RetrieveDiagnosticsFunctions
 ---
 
 # Retrieve diagnostics functions

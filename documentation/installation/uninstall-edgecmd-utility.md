@@ -1,5 +1,5 @@
 ---
-uid: UninstallEdgeCmdUtility1-1
+uid: UninstallEdgeCmdUtility
 ---
 
 # Uninstall EdgeCmd utility

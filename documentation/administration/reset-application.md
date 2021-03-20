@@ -1,5 +1,5 @@
 ---
-uid: ResetApplication1-1
+uid: ResetApplication
 ---
 
 # Reset application
