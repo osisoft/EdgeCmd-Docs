@@ -1,5 +1,5 @@
 ---
-uid: RetrieveEdgeCmdUtilityHelp1-0
+uid: RetrieveEdgeCmdUtilityHelp
 ---
 
 # Retrieve EdgeCmd utility help

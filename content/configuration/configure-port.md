@@ -1,5 +1,5 @@
 ---
-uid: ConfigurePort1-0
+uid: ConfigurePort
 ---
 
 # Configure port
@@ -19,4 +19,4 @@ Complete the following procedure to change the port on which the system is liste
     edgecmd Configuration System Port port=5595
     ```
 
- To verify that the port number has been changed, see [Retrieve existing system configuration](xref:RetrieveExistingConfiguration1-0#view-a-specific-facet-configuration).
+ To verify that the port number has been changed, see [Retrieve existing system configuration](xref:RetrieveExistingConfiguration#view-a-specific-facet-configuration).

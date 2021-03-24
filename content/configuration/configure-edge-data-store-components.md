@@ -1,5 +1,5 @@
 ---
-uid: ConfigureEdgeDataStoreComponent1-0
+uid: ConfigureEdgeDataStoreComponent
 ---
 
 # Configure Edge Data Store component
@@ -55,7 +55,7 @@ The Modbus TCP EDS adapter and OPC UA EDS adapter each have three configurable f
 	edgecmd Configuration Modbus1 DataSource IpAddress=117.23.45.110 port=502 ConnectTimeout=15000 StreamIdPrefix="DataSource1"
 	```
 
-For detailed information on how to configure each adapter, see [OPC UA EDS adapter](https://osisoft.github.io/Edge-Data-Store-Docs/V1/OpcUa/OpcUaOverview_1-0.html) and [Modbus TCP EDS adapter](https://osisoft.github.io/Edge-Data-Store-Docs/V1/Modbus/ModbusOverview_1-0.html) in the Edge Data Store documentation.
+For detailed information on how to configure each adapter, see [OPC UA EDS adapter](https://osisoft.github.io/Edge-Data-Store-Docs/content/OpcUa/OpcUaOverview_.html) and [Modbus TCP EDS adapter](https://osisoft.github.io/Edge-Data-Store-Docs/content/Modbus/ModbusOverview_.html) in the Edge Data Store documentation.
 
 ## Delete a component
 

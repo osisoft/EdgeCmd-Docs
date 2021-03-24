@@ -1,5 +1,5 @@
 ---
-uid: configuration1-0
+uid: configuration
 ---
 
 # Configuration

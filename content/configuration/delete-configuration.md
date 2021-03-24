@@ -1,5 +1,5 @@
 ---
-uid: DeleteConfiguration1-0
+uid: DeleteConfiguration
 ---
 
 # Delete configuration

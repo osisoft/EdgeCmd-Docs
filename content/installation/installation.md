@@ -1,5 +1,5 @@
 ---
-uid: Installation1-0
+uid: Installation
 ---
 
 # Install EdgeCmd utility
@@ -45,7 +45,7 @@ Complete the following steps to install the EdgeCmd utility on Linux:
     sudo apt install ./EdgeCmd_linux-arm.deb
     ```
 
-    ![alt text](https://osisoft.github.io/Edge-Data-Store-Docs/V1/images/LinuxInstall1.jpg "Linux Installation")
+    ![alt text](https://osisoft.github.io/Edge-Data-Store-Docs/content/images/LinuxInstall1.jpg "Linux Installation")
 
     **Debian 9 or later (Raspberry PI 3,4: Ubuntu ARM64 Server, Google Coral Dev Board, Nvidia Nano Jetson)**
 

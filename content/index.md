@@ -1,5 +1,5 @@
 ---
-uid: index1-0
+uid: index
 ---
 
 # EdgeCmd utility
@@ -13,16 +13,16 @@ Use OSIsoft's proprietary tool, EdgeCmd utility, to configure and administer Edg
 
 =======
 
-- [EdgeCmd utility](xref:EdgecmdUtility1-0)
-- [Installation](xref:Installation1-0)
-  - [Access EdgeCmd utility](xref:AccessEdgeCmdUtility1-0)
-- [Configuration](xref:Configuration1-0)
-  - [Configure Edge Data Store](xref:ConfigureEdgeDataStore1-0)
-  - [Configure Edge Data Store component](xref:ConfigureEdgeDataStoreComponent1-0)
-  - [Configure port](xref:ConfigurePort1-0)
-  - [Delete configuration](xref:DeleteConfiguration1-0)
-- [Reference](xref:Reference1-0)
-  - [Retrieve EdgeCmd utility help](xref:RetrieveEdgeCmdUtilityHelp1-0)
-  - [Retrieve existing configuration](xref:RetrieveExistingConfiguration1-0)
-  - [EdgeCmd commands](xref:EdgeCmdCommands1-0)
+- [EdgeCmd utility](xref:EdgecmdUtility)
+- [Installation](xref:Installation)
+  - [Access EdgeCmd utility](xref:AccessEdgeCmdUtility)
+- [Configuration](xref:Configuration)
+  - [Configure Edge Data Store](xref:ConfigureEdgeDataStore)
+  - [Configure Edge Data Store component](xref:ConfigureEdgeDataStoreComponent)
+  - [Configure port](xref:ConfigurePort)
+  - [Delete configuration](xref:DeleteConfiguration)
+- [Reference](xref:Reference)
+  - [Retrieve EdgeCmd utility help](xref:RetrieveEdgeCmdUtilityHelp)
+  - [Retrieve existing configuration](xref:RetrieveExistingConfiguration)
+  - [EdgeCmd commands](xref:EdgeCmdCommands)
 -->

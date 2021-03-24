@@ -1,5 +1,5 @@
 ---
-uid: ConfigureEdgeDataStore1-0
+uid: ConfigureEdgeDataStore
 ---
 
 # Configure Edge Data Store
