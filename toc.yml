@@ -1,12 +1,3 @@
-- name: EdgeCmd utility versions
-  dropdown: true
-  items:
-  - name: EdgeCmd utility 1.0
-    href: v1.0/
-    topicHref: v1.0/edgecmd-utility.md
-  - name: EdgeCmd utility 1.1
-    href: v1.1/
-    topicHref: v1.1/edgecmd-utility.md
-  - name: EdgeCmd utility 1.2
-    href: v1.2/
-    topicHref: v1.2/edgecmd-utility.md
+- name: EdgeCmd utility 1.1
+  href: v1.1/
+  topicHref: v1.1/edgecmd-utility.md
