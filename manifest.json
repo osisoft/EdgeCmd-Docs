@@ -156,9 +156,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "content/index.md",
       "output": {
@@ -320,7 +317,7 @@
       "output": {
         ".html": {
           "relative_path": "content/toc.html",
-          "hash": "6LJoOIvYJw3aOlwPRguqRA=="
+          "hash": "x8mik94ZyCQgWwoS2m4/Vw=="
         }
       },
       "is_incremental": false,
@@ -339,6 +336,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
@@ -368,7 +368,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "pdX1IEbf2d21IqYBdBwMMQ=="
+          "hash": "DZ97EL8sLo1T9EMt1jqTDw=="
         }
       },
       "is_incremental": false,
