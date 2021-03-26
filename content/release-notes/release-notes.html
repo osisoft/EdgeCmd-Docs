@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../../styles/docfx.css">
     <link rel="stylesheet" href="../../styles/main.css">
     <meta property="docfx:navrel" content="../../toc.html">
-    <meta property="docfx:tocrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
     
     <meta property="docfx:rel" content="../../">
     
@@ -66,29 +66,47 @@
         </div>
       </div>
       <div role="main" class="container body-content hide-when-search">
-        
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
-        </div>
-        <div class="article row grid-right">
+        <div class="article row grid">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="ReleaseNotes">
 <h1 id="release-notes">Release notes</h1>
 
-<p>EdgeCmd utility 1.2</p>
+<p>EdgeCmd utility 1.1</p>
 <h2 id="overview">Overview</h2>
 <p>Edge Data Store (EDS) and PI Adapters have a REST API that allows user interaction. Configuration is one of the most common interactions. This command line tool, EdgeCmd utility, uses this REST API to apply all changes and administration functions to EDS and PI adapters. Specifically, EdgeCmd utility&#39;s command line interface uses configuration and administration functions of the REST API, so the user does not need to know the REST routes. EdgeCmd utility thus improves the user experience, facilitates easier scripting experiences and provides built-in help.</p>
 <p>For more information, see <a class="xref" href="../index.html">EdgeCmd utility</a>.</p>
 <h2 id="fixes-and-enhancements">Fixes and enhancements</h2>
 <h3 id="fixes">Fixes</h3>
-<p>The port configuration has been reworked, so that two ports can be configured. One for communication and one for the payload.</p>
+<p>The command line syntax and processing of EdgeCmd utility v1.1 has been entirely reworked from scratch, so there are no specific fixes.</p>
 <h3 id="enhancements">Enhancements</h3>
-<p>Changes from version 1.1</p>
+<p>Changes from version 1.0</p>
 <ul>
-<li>Support of the data source discovery feature</li>
+<li><p>A simpler command line syntax is now used.</p>
+</li>
+<li><p>A verb (operation) is added to remove ambiguity between reading, writing, adding, removing, or editing.</p>
+</li>
+<li><p>Command line arguments no longer require a specific order.</p>
+</li>
+<li><p>Reduces the amount of command line arguments by not requiring full path to facets.  For example, for egress (PI Adapters) and storage (EDS), no component ID is required.</p>
+</li>
+<li><p>Help output is improved in the following ways:</p>
+<ul>
+<li>It is more comprehensive for overall program operation.</li>
+<li>If a PI adapter is available, the help output shows available facets.</li>
+<li>Available command line arguments are defined.</li>
+<li>Command line examples are shown in bright color to stand out better.</li>
+</ul>
+</li>
+<li><p>The command line syntax uses <em>-port</em> instead of <em>port</em> to instruct EdgeCmd utility which TCP port to use.  </p>
+</li>
+<li><p>Administration support is added to start and stop components, and reset configurations to initial values.</p>
+</li>
+<li><p>Diagnostics support is added.</p>
+</li>
+<li><p>Support for CSV configuration for data selection, for both reading and writing.  </p>
+</li>
+<li><p>No change to actual routes for setting or reading configuration although the PI Adapter&#39;s REST API port can no longer be modified through EdgeCmd utility.</p>
+</li>
 </ul>
 <h2 id="known-issues">Known issues</h2>
 <p>There are no known issues at this time.</p>
@@ -102,34 +120,14 @@
 <h3 id="osisofts-commitment">OSIsoft’s commitment</h3>
 <p>Because the PI System often serves as a barrier protecting control system networks and mission-critical infrastructure assets, OSIsoft is committed to (1) delivering a high-quality product and (2) communicating clearly what security issues have been addressed. This release of <em>EdgeCmd utility</em> is the highest quality and most secure version of the <em>EdgeCmd utility</em> released to date. OSIsoft&#39;s commitment to improving the PI System is ongoing, and each future version should raise the quality and security bar even further.</p>
 <h3 id="vulnerability-communication">Vulnerability communication</h3>
-<p>The practice of publicly disclosing internally discovered vulnerabilities is consistent with the <a href="https://ics-cert.us-cert.gov/sites/default/files/ICSJWG-Archive/ICSJWG_Vulnerability_Disclosure_Framework_Final_1.pdf">Common Industrial Control System Vulnerability Disclosure Framework</a> developed by the <a href="https://ics-cert.us-cert.gov/Industrial-Control-Systems-Joint-Working-Group-ICSJWG">Industrial Control Systems Joint Working Group (ICSJWG)</a>. Despite the increased risk posed by greater transparency, OSIsoft is sharing this information to help you make an informed decision about when to upgrade to ensure your PI System has the best available protection.</p>
+<p>The practice of publicly disclosing internally discovered vulnerabilities is consistent with the Common Industrial Control System Vulnerability Disclosure Framework developed by the Industrial Control Systems Joint Working Group (ICSJWG). Despite the increased risk posed by greater transparency, OSIsoft is sharing this information to help you make an informed decision about when to upgrade to ensure your PI System has the best available protection.</p>
 <p>For more information, refer to <a href="https://www.osisoft.com/ethical-disclosure-policy">OSIsoft’s Ethical Disclosure Policy (https://www.osisoft.com/ethical-disclosure-policy)</a>.</p>
 <p>To report a security vulnerability, refer to <a href="https://www.osisoft.com/report-a-security-vulnerability">OSIsoft&#39;s Report a Security Vulnerability (https://www.osisoft.com/report-a-security-vulnerability)</a>.</p>
 <h3 id="vulnerability-scoring">Vulnerability scoring</h3>
-<p>OSIsoft has selected the <a href="https://www.first.org/cvss/v2/guide">Common Vulnerability Scoring System (CVSS)</a> to quantify the severity of security vulnerabilities for disclosure. To calculate the CVSS scores, OSIsoft uses the <a href="https://nvd.nist.gov/cvss.cfm?calculator&amp;version=2">National Vulnerability Database (NVD) calculator</a>  maintained by the National Institute of Standards and Technology (NIST). OSIsoft uses Critical, High, Medium and Low categories to aggregate the CVSS Base scores. This removes some of the opinion related errors of CVSS scoring. As noted in the CVSS specification, Base score range from 0 for the lowest severity to 10 for the highest severity.</p>
+<p>OSIsoft has selected the Common Vulnerability Scoring System (CVSS) to quantify the severity of security vulnerabilities for disclosure. To calculate the CVSS scores, OSIsoft uses the National Vulnerability Database (NVD) calculator maintained by the National Institute of Standards and Technology (NIST).  OSIsoft uses High, Medium and Low categories to aggregate the CVSS Base scores. This removes some of the opinion related errors of CVSS scoring.  As noted in the CVSS specification, Base score range from 0 for the lowest severity to 10 for the highest severity.</p>
 <h3 id="overview-of-new-vulnerabilities-found-or-fixed">Overview of new vulnerabilities found or fixed</h3>
 <p>This section is intended to provide relevant security-related information to guide your installation or upgrade decision. OSIsoft is proactively disclosing aggregate information about the number and severity of EdgeCmd utility security vulnerabilities that are fixed in this release.</p>
-<p>The following table lists the known vulnerabilities and their mitigation in this product.</p>
-<table>
-<thead>
-<tr>
-<th>Component</th>
-<th>Version</th>
-<th>CVE or Reference</th>
-<th>CVSS</th>
-<th>Mitigation</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td> json.Net</td>
-<td>12.0.3</td>
-<td><a href="https://alephsecurity.com/vulns/aleph-2018004">Applications that use Newtonsoft.Json might be exposed to DOS vulnerability</a></td>
-<td>6.8</td>
-<td>No code paths result in json parsing and subsequent serialization resulting in DoS vulnerability.</td>
-</tr>
-</tbody>
-</table>
+<p>No security-related information is applicable to this release.</p>
 <h2 id="technical-support-and-resources">Technical support and resources</h2>
 <p>Refer to <a class="xref" href="../../technical-support-and-feedback.html">Technical support and feedback</a>.</p>
 </article>
@@ -140,7 +138,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/osisoft/Edgecmd-Docs/blob/main/content/release-notes/release-notes.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/osisoft/Edgecmd-Docs/blob/master/content/release-notes/release-notes.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
