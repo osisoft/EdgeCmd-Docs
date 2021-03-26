@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Retrieve EdgeCmd utility help </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Retrieve EdgeCmd utility help ">
+    <meta name="generator" content="docfx 2.56.5.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../../index.html" width="46">
+                <img id="logo" src="../../content/images/atlas_icon.png" height="46" width="46" alt="OSIsoft Edge System"> 
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="RetrieveEdgeCmdUtilityHelp">
+<h1 id="retrieve-edgecmd-utility-help">Retrieve EdgeCmd utility help</h1>
+
+<p>EdgeCmd utility provides you with help output for any operation and from any component running within an Adapter.</p>
+<p><strong>Note:</strong> The examples in this topic are using the default port number <code>5590</code>. If you specified a different port number for your adapter, you need to add it in the command. For example:</p>
+<pre><code class="lang-cmd">edgecmd -help -port 5591 &lt;RestOfCommand&gt;
+</code></pre><h2 id="view-application-help-instructions">View application help instructions</h2>
+<p>Complete the following steps to view help instructions for the entire application:</p>
+<ol>
+<li>Access EdgeCmd utility through the command line.</li>
+<li><p>Run the following command:</p>
+<pre><code class="lang-cmd">edgecmd help
+</code></pre></li>
+</ol>
+<h2 id="view-component-help-instructions">View component help instructions</h2>
+<p>Complete the following steps to view help instructions for configuration of a registered component that the adapter supports:</p>
+<ol>
+<li>Access EdgeCmd utility through the command line.</li>
+<li><p>Type the following in the command line, replacing <code>&lt;componentId&gt;</code> with ID of the component for which you want to see help output. Then press Enter.</p>
+<pre><code class="lang-cmd">edgecmd help -cid &lt;componentId&gt;
+</code></pre><p>Under <a href="#examples">Examples</a>, see <strong>Configuration help for the System component</strong>.</p>
+<p><strong>Note:</strong> The help output also provides examples of commands that you can run to configure the component.</p>
+</li>
+</ol>
+<h2 id="view-component-facet-help-instructions">View component facet help instructions</h2>
+<p>Complete the following steps to view configuration help instructions for a specific facet within a component that the adapter supports:</p>
+<ol>
+<li>Access EdgeCmd utility through the command line.</li>
+<li><p>Type the following in the command line, replacing <code>&lt;facetName&gt;</code> with the facet name and <code>&lt;componentId&gt;</code> with the ID of the component for which you want to see help output. Then press Enter.</p>
+<pre><code class="lang-cmd">edgecmd help &lt;facetName&gt; -cid &lt;ComponentId&gt;
+</code></pre><p>Under <a href="#examples">Examples</a>, see <strong>Configuration help for the buffering facet within the System component</strong>.</p>
+</li>
+</ol>
+<h3 id="examples">Examples</h3>
+<details>
+    <summary>Configuration help for the System component</summary>
+    <pre>
+
+    edgecmd help -cid System
+
+    ---------------------------------------------------------------------------------------------------------
+    Component System command-line facet => 'Logging'
+    ---------------------------------------------------------------------------------------------------------
+    LogLevel                    [Optional] Desired log level settings. Options: Trace, Debug, Information, Warning, Error, Critical, None.
+    LogFileSizeLimitBytes       [Optional] Maximum size in bytes of log files that the service will create for this component. Must be no less than 1000.
+    LogFileCountLimit           [Optional] Maximum number of log files that the service will create for this component. Must be a positive integer.
+
+
+    ---------------------------------------------------------------------------------------------------------
+    Component System command-line facet => 'HealthEndpoints'
+    ---------------------------------------------------------------------------------------------------------
+    Id                           [Optional] Id of existing configuration to be edited of removed.
+    Endpoint                     [Required] URL of OMF destination
+    UserName                     [Required group 1]  User name used for authentication to PI Web API OMF endpoint.
+    Password                     [Required group 1]  Password used for authentication to PI Web API OMF endpoint.
+    ClientId                     [Required group 2]  Client ID used for authentication to OSIsoft Cloud Services.
+    ClientSecret                 [Required group 2]  Client Secret used for authentication to OSIsoft Cloud Services.
+    TokenEndpoint                [Optional group 2] URL of OMF destination's token service.
+    ValidateEndpointCertificate  [Optional] If true, endpoint certificate will be validated (recommended). If false, any endpoint certificate will be accepted. OSIsoft strongly recommends using disabled endpoint certificate validation for testing purposes only.
+
+    Note: Only one Required group must be specified. Group 1 for PI Web API or Group 2 for OCS.
+
+
+    ---------------------------------------------------------------------------------------------------------
+    Component System command-line facet => 'Components'
+    ---------------------------------------------------------------------------------------------------------
+    ComponentId                    [Required] ID of the hosted component.
+    ComponentType                  [Required] Type of the hosted component. Valid component types: OmfEgress, OpcUa.
+
+
+    ---------------------------------------------------------------------------------------------------------
+    Component System command-line facet => 'Buffering'
+    ---------------------------------------------------------------------------------------------------------
+    BufferLocation                 [Required] Location of the on-disk buffers.
+    MaxBufferSizeMB                [Optional] Maximum size of the on-disk or in-memory buffers.
+    EnablePersistentBuffering      [Optional] Enable or disable on-disk buffering.
+
+
+    ---------------------------------------------------------------------------------------------------------
+    Component System command-line facet => 'General'
+    ---------------------------------------------------------------------------------------------------------
+    EnableDiagnostics              [Optional] Enable application diagnostics.
+    MetadataLevel                  [Optional] Defines amount of metadata sent to OMF endpoints. Options: None, Low, Medium, High.
+
+  </pre>
+  </details>
+
+  <details>
+      <summary>Configuration help for the Buffering facet within the System component</summary>
+      <pre>
+
+      edgecmd help Buffering -cid System
+
+      ---------------------------------------------------------------------------------------------------------
+      Component System command-line facet => 'Buffering'
+      ---------------------------------------------------------------------------------------------------------
+      BufferLocation                 [Required] Location of the on-disk buffers.
+      MaxBufferSizeMB                [Optional] Maximum size of the on-disk or in-memory buffers.
+      EnablePersistentBuffering      [Optional] Enable or disable on-disk buffering.
+
+ </pre>
+</details>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/osisoft/Edgecmd-Docs/blob/master/content/reference/retrieve-edgecmd-utility-help.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span><a href="https://www.osisoft.com/copyright/">© 2019 - 2021 OSIsoft, LLC. All rights reserved.</a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

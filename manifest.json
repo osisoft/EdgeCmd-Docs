@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "C:/Agent/_work/1/s",
+  "source_base_path": "C:/agent/_work/1/s",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -18,7 +18,309 @@
       "output": {
         ".html": {
           "relative_path": "README.html",
-          "hash": "Y9WhLOTX8Yoc2pqq/PJs6A=="
+          "hash": "ebVWwXCqFHfy9f4i76jiUQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/administration/administration.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/administration/administration.html",
+          "hash": "z5Te1azC285KpnQPBZsw+A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/administration/delete-configuration.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/administration/delete-configuration.html",
+          "hash": "lqzUejWHIk1A+KIb/jP2vg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/administration/reset-application.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/administration/reset-application.html",
+          "hash": "UaIVDN4SIBnb4OAjEtNZAA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/administration/start-or-stop-a-component.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/administration/start-or-stop-a-component.html",
+          "hash": "uWFJy/A39KBJx2U377HXJQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/configuration/configuration.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/configuration/configuration.html",
+          "hash": "8rJoXeJSQICGeivDTCIyig=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/configuration/configure-adapter-data-selection-with-csv-files.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/configuration/configure-adapter-data-selection-with-csv-files.html",
+          "hash": "7LU6ST8zi/iuEJJT681G4Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/configuration/configure-adapter-or-eds-component.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/configuration/configure-adapter-or-eds-component.html",
+          "hash": "aXe8TYI+ZS9vcDkOpuKD8w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/configuration/configure-an-adapter-or-eds-with-commands.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/configuration/configure-an-adapter-or-eds-with-commands.html",
+          "hash": "nQnPYJpAQC0t/RZ1bBLjeg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/configuration/configure-an-adapter-or-eds-with-json-files.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/configuration/configure-an-adapter-or-eds-with-json-files.html",
+          "hash": "RYXeec0Dlx27D9Ha/JdcCA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/edgecmd-utility.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/edgecmd-utility.html",
+          "hash": "KfIsjU/AQCoU3Nl5fN62sQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "content/images/atlas_icon.png",
+      "output": {
+        "resource": {
+          "relative_path": "content/images/atlas_icon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "DuplicateUids"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "content/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/index.html",
+          "hash": "/ymEW+rkn5CYU0SEpcg+wg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/installation/access-edgecmd-utility.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/installation/access-edgecmd-utility.html",
+          "hash": "HL9jJOiAtpgnA3NXpA6O6g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/installation/install-edgecmd-utility.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/installation/install-edgecmd-utility.html",
+          "hash": "Qpd4coTsKiRSOuuxVEHiKw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/installation/installation.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/installation/installation.html",
+          "hash": "dCYLJZFK6QYiGFNSo0470Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/installation/system-requirements.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/installation/system-requirements.html",
+          "hash": "7oZ5buIiRNSPZvwXT3MLvw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/installation/uninstall-edgecmd-utility.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/installation/uninstall-edgecmd-utility.html",
+          "hash": "joAQ2bN8e8P3w+wrFDMeIQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/reference/edgecmd-commands.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/reference/edgecmd-commands.html",
+          "hash": "qxRAb58N9sG8cp7Y3rVzbw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/reference/eds-configuration/retrieve-eds-configuration.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/reference/eds-configuration/retrieve-eds-configuration.html",
+          "hash": "/XkkkhLDgeBCdceR45laDA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/reference/reference.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/reference/reference.html",
+          "hash": "rd9jNI+6oa9VJOSmCcHQEA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/reference/retrieve-diagnostics-functions.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/reference/retrieve-diagnostics-functions.html",
+          "hash": "PYOYvd1ovuyefpcqGwLI7A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/reference/retrieve-edgecmd-utility-help.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/reference/retrieve-edgecmd-utility-help.html",
+          "hash": "uGksn9q4LpRARuaTQLiiYA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/reference/retrieve-existing-configuration.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/reference/retrieve-existing-configuration.html",
+          "hash": "Puirj8oUnLTYmHu42swylQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/release-notes/release-notes.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/release-notes/release-notes.html",
+          "hash": "SLv4dRrVtP/OBqoqN9SK/A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/troubleshooting/troubleshoot-edgecmd-utility.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/troubleshooting/troubleshoot-edgecmd-utility.html",
+          "hash": "eRIhHSCHiy3uh99HN6sD4g=="
         }
       },
       "is_incremental": false,
@@ -30,7 +332,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "0+cx+8z1dkqHljZNvRiTJQ=="
+          "hash": "zjXnOdcJ8THZuVUIkpWySw=="
         }
       },
       "is_incremental": false,
@@ -42,7 +344,7 @@
       "output": {
         ".html": {
           "relative_path": "technical-support-and-feedback.html",
-          "hash": "S89ctQU+X9yf6W2sLyDIGw=="
+          "hash": "7aJF+Cbl9ZRGOnsRB93cpw=="
         }
       },
       "is_incremental": false,
@@ -54,786 +356,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "Qwwg9nBPGAyMmqLECdPRFA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.0/configuration/configuration.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.0/configuration/configuration.html",
-          "hash": "FJZddFIzCbrCzLtLkadGFw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.0/configuration/configure-edge-data-store-components.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.0/configuration/configure-edge-data-store-components.html",
-          "hash": "E/nw8TOd8wlXOXbtk0OBlg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.0/configuration/configure-edge-data-store.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.0/configuration/configure-edge-data-store.html",
-          "hash": "MdwhjEcPOo/NXJeoCZw9HA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.0/configuration/configure-port.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.0/configuration/configure-port.html",
-          "hash": "qZi8fM2VTCvnW1f+yTxybA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.0/configuration/delete-configuration.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.0/configuration/delete-configuration.html",
-          "hash": "XIWXIKw7JuTGNpkoKuArsQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.0/edgecmd-utility.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.0/edgecmd-utility.html",
-          "hash": "9fLWfJ8HCysUlOyDvxtwSA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.0/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.0/index.html",
-          "hash": "7hmh5OcIgjRqgh37/ujJmw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.0/installation/access-edgecmd-utility.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.0/installation/access-edgecmd-utility.html",
-          "hash": "mPB9rs0tRXsQvYq0IQ3jMA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.0/installation/installation.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.0/installation/installation.html",
-          "hash": "k1/uI594K8msMXVTRwlODg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.0/reference/edgecmd-commands.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.0/reference/edgecmd-commands.html",
-          "hash": "MqTLN3awSnZI+zkRlsdkkQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.0/reference/reference.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.0/reference/reference.html",
-          "hash": "bXWSRukbqvAf+nmjpomegQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.0/reference/retrieve-edgecmd-utility-help.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.0/reference/retrieve-edgecmd-utility-help.html",
-          "hash": "HCFZaSQwkwBpSyw2UIIVZQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.0/reference/retrieve-existing-configuration.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.0/reference/retrieve-existing-configuration.html",
-          "hash": "VKj2aHWT4MwemQ8CDkvGAw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "v1.0/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "v1.0/toc.html",
-          "hash": "QhKQDpwaA6GCpa3qUp251Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.1/administration/administration.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.1/administration/administration.html",
-          "hash": "UNKOBG+yqeROh66XQJDguw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.1/administration/delete-configuration.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.1/administration/delete-configuration.html",
-          "hash": "ABRNNVreDufy8V0sAcpVMQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.1/administration/reset-application.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.1/administration/reset-application.html",
-          "hash": "70GPF5FoB8hWPBeo4LnFnQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.1/administration/start-or-stop-a-component.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.1/administration/start-or-stop-a-component.html",
-          "hash": "SxAYHf675SEI4BZBqKOX8w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.1/configuration/configuration.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.1/configuration/configuration.html",
-          "hash": "PpKJPU1Eb9j2UrzUVx253Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.1/configuration/configure-adapter-data-selection-with-csv-files.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.1/configuration/configure-adapter-data-selection-with-csv-files.html",
-          "hash": "dKx8PrN2PVmOlE6oSZQq5g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.1/configuration/configure-adapter-or-eds-component.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.1/configuration/configure-adapter-or-eds-component.html",
-          "hash": "JoAt6sbVprjdUgNksF5HpQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.1/configuration/configure-an-adapter-or-eds-with-commands.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.1/configuration/configure-an-adapter-or-eds-with-commands.html",
-          "hash": "tzp05yTGJoHMV0xrvNgMbA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.1/configuration/configure-an-adapter-or-eds-with-json-files.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.1/configuration/configure-an-adapter-or-eds-with-json-files.html",
-          "hash": "kJQRJvmp7lqHVmlxoNHMyg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.1/edgecmd-utility.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.1/edgecmd-utility.html",
-          "hash": "u020Qi79HGQAofX7BknFvg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "v1.1/images/atlas_icon.png",
-      "output": {
-        "resource": {
-          "relative_path": "v1.1/images/atlas_icon.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.1/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.1/index.html",
-          "hash": "SkgUeF2L3bX0r7STaL8mew=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.1/installation/access-edgecmd-utility.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.1/installation/access-edgecmd-utility.html",
-          "hash": "4y9WfcxU6BCFT3BuW8BhUQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.1/installation/install-edgecmd-utility.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.1/installation/install-edgecmd-utility.html",
-          "hash": "SaXzx3urWAY1FIvmBPyd4w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.1/installation/installation.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.1/installation/installation.html",
-          "hash": "AgkBaOxQHtJhm6h4wIaSUQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.1/installation/system-requirements.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.1/installation/system-requirements.html",
-          "hash": "NEFMcH7FYb1+lhIhWFsoWA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.1/installation/uninstall-edgecmd-utility.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.1/installation/uninstall-edgecmd-utility.html",
-          "hash": "d8eub+StUun9xbvMNZCm5g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.1/reference/edgecmd-commands.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.1/reference/edgecmd-commands.html",
-          "hash": "VAGfjrFtJXJ1Y1wFXEQRGg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.1/reference/eds-configuration/retrieve-eds-configuration.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.1/reference/eds-configuration/retrieve-eds-configuration.html",
-          "hash": "av5y42tHvMeWovSq13CaWA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.1/reference/reference.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.1/reference/reference.html",
-          "hash": "bJah4DQHKK6DuwZJwd7tOg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.1/reference/retrieve-diagnostics-functions.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.1/reference/retrieve-diagnostics-functions.html",
-          "hash": "V6Z56SfKZc5DgNgtidrEzw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.1/reference/retrieve-edgecmd-utility-help.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.1/reference/retrieve-edgecmd-utility-help.html",
-          "hash": "CJhWcUsXWjilUHo7ivhnKA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.1/reference/retrieve-existing-configuration.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.1/reference/retrieve-existing-configuration.html",
-          "hash": "pCND3PWH+MnIZB315giqkA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.1/release-notes/release-notes.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.1/release-notes/release-notes.html",
-          "hash": "gjZL5K4uv1bovd9cwbeQdQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "v1.1/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "v1.1/toc.html",
-          "hash": "6LJoOIvYJw3aOlwPRguqRA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.1/troubleshooting/troubleshoot-edgecmd-utility.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.1/troubleshooting/troubleshoot-edgecmd-utility.html",
-          "hash": "XmjI7DEmrn7oeAIwIRyUaw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.2/administration/administration.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.2/administration/administration.html",
-          "hash": "eDF3VoCz5Morl9/CavS35g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.2/administration/delete-configuration.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.2/administration/delete-configuration.html",
-          "hash": "avxXBNG/bjjVBXesA1y/nQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.2/administration/reset-application.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.2/administration/reset-application.html",
-          "hash": "Tk5MfPNzTdEKTXTbWyHShw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.2/administration/start-or-stop-a-component.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.2/administration/start-or-stop-a-component.html",
-          "hash": "Md8jF3aMbnNwEwNEjwifdA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.2/configuration/configuration.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.2/configuration/configuration.html",
-          "hash": "Oa1x2n/8EuMH/geecMu8IA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.2/configuration/configure-adapter-data-selection-with-csv-files.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.2/configuration/configure-adapter-data-selection-with-csv-files.html",
-          "hash": "dXOBm9/fXzjV80bdBZj12w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.2/configuration/configure-adapter-or-eds-component.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.2/configuration/configure-adapter-or-eds-component.html",
-          "hash": "YpU+ZvhTY0uATIo+IHrUtA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.2/configuration/configure-an-adapter-or-eds-with-commands.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.2/configuration/configure-an-adapter-or-eds-with-commands.html",
-          "hash": "Hstlg3uE2OhFC32HJaLRVw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.2/configuration/configure-an-adapter-or-eds-with-json-files.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.2/configuration/configure-an-adapter-or-eds-with-json-files.html",
-          "hash": "zP/lGFpn/dmo3lEArXVLEw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.2/edgecmd-utility.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.2/edgecmd-utility.html",
-          "hash": "BV9C3jNcy6sM1sHD6Wbpww=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.2/index.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.2/index.html",
-          "hash": "Ov/XEBWN1crF9ldUDvverw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.2/installation/access-edgecmd-utility.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.2/installation/access-edgecmd-utility.html",
-          "hash": "DEcYAdDVcm7C8GfcWeLX9A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.2/installation/install-edgecmd-utility.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.2/installation/install-edgecmd-utility.html",
-          "hash": "dZN+XF8+N+/sWLJIxOdxnw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.2/installation/installation.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.2/installation/installation.html",
-          "hash": "eQqFkF9bpe5HLCpPQnaAMQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.2/installation/system-requirements.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.2/installation/system-requirements.html",
-          "hash": "ZzlsJ5JmowVGeZ6c3TX1Qg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.2/installation/uninstall-edgecmd-utility.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.2/installation/uninstall-edgecmd-utility.html",
-          "hash": "b9Wpd9fInKDgiZFBGkG+3Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.2/reference/edgecmd-commands.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.2/reference/edgecmd-commands.html",
-          "hash": "Lf0IWgOMXwc6+P6bhQFr7Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.2/reference/eds-configuration/retrieve-eds-configuration.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.2/reference/eds-configuration/retrieve-eds-configuration.html",
-          "hash": "dM1mM9+nyqFkUGsc5AKa8A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.2/reference/reference.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.2/reference/reference.html",
-          "hash": "iUu9+lH74R4NlcDCzxraGg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.2/reference/retrieve-diagnostics-functions.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.2/reference/retrieve-diagnostics-functions.html",
-          "hash": "vPCCgEWrO7qKUtEfjBh7WQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.2/reference/retrieve-edgecmd-utility-help.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.2/reference/retrieve-edgecmd-utility-help.html",
-          "hash": "tv52U6E9p/G0NhJAM6SeCg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.2/reference/retrieve-existing-configuration.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.2/reference/retrieve-existing-configuration.html",
-          "hash": "yrWJ/QFwqtemkDNFcfoc+g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.2/release-notes/release-notes.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.2/release-notes/release-notes.html",
-          "hash": "RUjyApTpZ5e7NJD0ycq14A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "v1.2/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "v1.2/toc.html",
-          "hash": "6LJoOIvYJw3aOlwPRguqRA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "v1.2/troubleshooting/troubleshoot-edgecmd-utility.md",
-      "output": {
-        ".html": {
-          "relative_path": "v1.2/troubleshooting/troubleshoot-edgecmd-utility.html",
-          "hash": "vrLvUQE0Fdg8iBxMldokZw=="
+          "hash": "JaiN5FIuhAC9bQyI/olv6w=="
         }
       },
       "is_incremental": false,
@@ -854,7 +377,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 64,
+          "total_file_count": 27,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
