@@ -14,14 +14,17 @@
   ],
   "build": {
     "globalMetadata": {
-      "_enableSearch": true
+      "_enableSearch": true,
+      "_gitContribute": {
+        "branch": "v1.0"
+      }
     },
     "content": [
       {
         "files": [
-          "V*/**/toc.yml",
-          "V*/**/**.md",
-          "V*/toc.yml",
+          "content/**/toc.yml",
+          "content/**/**.md",
+          "content/toc.yml",
           "toc.yml",
           "**.md"
         ],
