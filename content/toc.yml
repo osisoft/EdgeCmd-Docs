@@ -1,6 +1,6 @@
 - name: EdgeCmd utility
-  href: edgecmd-utility.md
-  topicHref: edgecmd-utility.md
+  href: index.md
+  topicHref: index.md
 - name: Installation
   href: installation/toc.yml
   topicHref: installation/installation.md
