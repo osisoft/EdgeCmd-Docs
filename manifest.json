@@ -156,9 +156,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "content/index.md",
       "output": {
@@ -327,6 +324,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
@@ -356,7 +356,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "pZZ+Z81YH1jjp+swnE7Qcw=="
+          "hash": "1WMYmr4izC2tcOL+Tga/tA=="
         }
       },
       "is_incremental": false,
