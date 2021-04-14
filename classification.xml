@@ -213,12 +213,12 @@
    <Row ss:Height="14.5">
     <Cell><Data ss:Type="String">MAP</Data></Cell>
     <Cell ss:Index="3" ss:StyleID="s31"><Data ss:Type="String">edge</Data></Cell>
-    <Cell ss:StyleID="s44"><Data ss:Type="String">Edgecmd_1.1</Data></Cell>
+    <Cell ss:StyleID="s44"><Data ss:Type="String">EdgeCmd_1.1</Data></Cell>
    </Row>
    <Row ss:Height="14.5">
     <Cell><Data ss:Type="String">apply-ALL</Data></Cell>
     <Cell ss:Index="3" ss:StyleID="s31"><Data ss:Type="String">edge</Data></Cell>
-    <Cell ss:StyleID="s44"><Data ss:Type="String">Edgecmd_1.1</Data></Cell>
+    <Cell ss:StyleID="s44"><Data ss:Type="String">EdgeCmd_1.1</Data></Cell>
    </Row>
    <Row>
     <Cell><Data ss:Type="String">default</Data></Cell>
@@ -244,9 +244,8 @@
    <Panes>
     <Pane>
      <Number>3</Number>
-     <ActiveRow>2</ActiveRow>
+     <ActiveRow>1</ActiveRow>
      <ActiveCol>3</ActiveCol>
-     <RangeSelection>R2C4,R3C4</RangeSelection>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
@@ -1299,7 +1298,7 @@
    <Panes>
     <Pane>
      <Number>3</Number>
-     <ActiveRow>52</ActiveRow>
+     <ActiveRow>61</ActiveRow>
      <ActiveCol>1</ActiveCol>
     </Pane>
    </Panes>
