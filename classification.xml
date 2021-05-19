@@ -21,8 +21,8 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>8300</WindowHeight>
-  <WindowWidth>19200</WindowWidth>
+  <WindowHeight>12450</WindowHeight>
+  <WindowWidth>28800</WindowWidth>
   <WindowTopX>0</WindowTopX>
   <WindowTopY>0</WindowTopY>
   <TabRatio>500</TabRatio>
@@ -188,6 +188,10 @@
     ss:WrapText="1"/>
    <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
   </Style>
+  <Style ss:ID="s100">
+   <Alignment ss:Vertical="Bottom"/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11"/>
+  </Style>
  </Styles>
  <Names>
   <NamedRange ss:Name="Access" ss:RefersTo="='tag index lookup'!R6C4:R8C4"/>
@@ -200,9 +204,7 @@
    x:FullRows="1" ss:DefaultColumnWidth="63.5" ss:DefaultRowHeight="12.5">
    <Column ss:AutoFitWidth="0" ss:Width="215.5"/>
    <Column ss:AutoFitWidth="0" ss:Width="133"/>
-   <Column ss:AutoFitWidth="0" ss:Width="79.5"/>
-   <Column ss:Width="108.5"/>
-   <Column ss:AutoFitWidth="0" ss:Width="79.5" ss:Span="2"/>
+   <Column ss:AutoFitWidth="0" ss:Width="79.5" ss:Span="4"/>
    <Row>
     <Cell><Data ss:Type="String">Filename</Data></Cell>
     <Cell><Data ss:Type="String">Title</Data></Cell>
@@ -212,13 +214,13 @@
    </Row>
    <Row ss:Height="14.5">
     <Cell><Data ss:Type="String">MAP</Data></Cell>
-    <Cell ss:Index="3" ss:StyleID="s31"><Data ss:Type="String">edge</Data></Cell>
-    <Cell ss:StyleID="s44"><Data ss:Type="String">EdgeCmd_1.2</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">edge</Data></Cell>
+    <Cell ss:StyleID="s100"><Data ss:Type="String">Edgecmd_Preview</Data></Cell>
    </Row>
    <Row ss:Height="14.5">
     <Cell><Data ss:Type="String">apply-ALL</Data></Cell>
-    <Cell ss:Index="3" ss:StyleID="s31"><Data ss:Type="String">edge</Data></Cell>
-    <Cell ss:StyleID="s44"><Data ss:Type="String">EdgeCmd_1.2</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">edge</Data></Cell>
+    <Cell ss:StyleID="s100"><Data ss:Type="String">Edgecmd_Preview</Data></Cell>
    </Row>
    <Row>
     <Cell><Data ss:Type="String">default</Data></Cell>
@@ -244,7 +246,7 @@
    <Panes>
     <Pane>
      <Number>3</Number>
-     <ActiveRow>2</ActiveRow>
+     <ActiveRow>7</ActiveRow>
      <ActiveCol>3</ActiveCol>
     </Pane>
    </Panes>
@@ -822,7 +824,7 @@
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
-   <TopRowBottomPane>19</TopRowBottomPane>
+   <TopRowBottomPane>1</TopRowBottomPane>
    <ActivePane>2</ActivePane>
    <Panes>
     <Pane>
@@ -1294,7 +1296,7 @@
     <HorizontalResolution>300</HorizontalResolution>
     <VerticalResolution>300</VerticalResolution>
    </Print>
-   <TopRowVisible>45</TopRowVisible>
+   <TopRowVisible>42</TopRowVisible>
    <Panes>
     <Pane>
      <Number>3</Number>
