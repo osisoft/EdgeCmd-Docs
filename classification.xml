@@ -215,12 +215,12 @@
    <Row ss:Height="14.5">
     <Cell><Data ss:Type="String">MAP</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">edge</Data></Cell>
-    <Cell ss:StyleID="s100"><Data ss:Type="String">Edgecmd_Preview</Data></Cell>
+    <Cell ss:StyleID="s100"><Data ss:Type="String">EdgeCmd_Preview</Data></Cell>
    </Row>
    <Row ss:Height="14.5">
     <Cell><Data ss:Type="String">apply-ALL</Data></Cell>
     <Cell ss:Index="3"><Data ss:Type="String">edge</Data></Cell>
-    <Cell ss:StyleID="s100"><Data ss:Type="String">Edgecmd_Preview</Data></Cell>
+    <Cell ss:StyleID="s100"><Data ss:Type="String">EdgeCmd_Preview</Data></Cell>
    </Row>
    <Row>
     <Cell><Data ss:Type="String">default</Data></Cell>
@@ -246,7 +246,7 @@
    <Panes>
     <Pane>
      <Number>3</Number>
-     <ActiveRow>7</ActiveRow>
+     <ActiveRow>2</ActiveRow>
      <ActiveCol>3</ActiveCol>
     </Pane>
    </Panes>
