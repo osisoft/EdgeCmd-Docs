@@ -2,7 +2,7 @@
 
 EdgeCmd utility is OSIsoft's proprietary tool to configure and administer EDS and PI adapters on Linux and Windows using command line arguments.
 
-This repository contains the documentation for EdgeCmd utility. You can access a readable version of this documentation [here.](https://osisoft.github.io/Edgecmd-Docs/index.html)
+This repository contains the documentation for EdgeCmd utility. You can access a readable version of this documentation [here.](https://docs.osisoft.com/bundle/edgecmd/page/index.html)
 
 ## License
 
