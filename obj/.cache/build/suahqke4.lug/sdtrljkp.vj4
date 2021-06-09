@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Configure an adapter or EDS with commands </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Configure an adapter or EDS with commands ">
+    <meta name="generator" content="docfx 2.50.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ConfigureAnAdapterOrEDSWithCommands">
+<h1 id="configure-an-adapter-or-eds-with-commands" sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="5" sourceendlinenumber="5">Configure an adapter or EDS with commands</h1>
+
+<p sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="7" sourceendlinenumber="7">Use EdgeCmd utility to configure an adapter or EDS using only commands or by pointing to JSON files. For more information, see <a class="xref" href="configure-an-adapter-or-eds-with-json-files.html" data-raw-source="[Configure an adapter or EDS with JSON files](xref:ConfigureAnAdapterOrEDSWithJsonFiles)" sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="7" sourceendlinenumber="7">Configure an adapter or EDS with JSON files</a>.</p>
+<p sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="9" sourceendlinenumber="9"><strong>Note:</strong> The examples in this topic are using the default port number <code>5590</code>. If you specified a different port number for your adapter or EDS, you need to add it in the command. For example:</p>
+<pre sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="11" sourceendlinenumber="13"><code class="lang-cmd">edgecmd -port 5591 &lt;RestOfTheCommand&gt;
+</code></pre><p sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="15" sourceendlinenumber="15"><strong>Note:</strong> If a command contains slashes, you must add escape characters as follows:<br></p>
+<ul sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="16" sourceendlinenumber="20">
+<li sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="16" sourceendlinenumber="17"><p sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="16" sourceendlinenumber="17">In <em>Windows</em>, add a second slash.<br> 
+   Example: <code>TestUser\OilCompany</code> becomes <code>TestUser\\OilCompany</code></p>
+</li>
+<li sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="19" sourceendlinenumber="20"><p sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="19" sourceendlinenumber="20">In <em>Linux</em>, add three slashes.<br>
+   Example: <code>TestUser\OilCompany</code> becomes <code>TestUser\\\\OilCompany</code></p>
+</li>
+</ul>
+<h2 id="change-all-values-of-a-facet" sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="22" sourceendlinenumber="22">Change all values of a facet</h2>
+<p sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="24" sourceendlinenumber="24">Complete the following steps to change all values of a facet:</p>
+<ol sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="26" sourceendlinenumber="39">
+<li sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="26" sourceendlinenumber="26">Access EdgeCmd utility through the command line.</li>
+<li sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="27" sourceendlinenumber="27">Type the <code>set</code> keyword.</li>
+<li sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="28" sourceendlinenumber="28">Add the <code>&lt;facetName&gt;</code>and <code>&lt;componentId&gt;</code>, replacing both with their respective values.</li>
+<li sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="29" sourceendlinenumber="39"><p sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="29" sourceendlinenumber="29">Add all key-value pairs. Then press Enter.</p>
+<pre sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="31" sourceendlinenumber="33"><code class="lang-cmd">edgecmd set &lt;facetName&gt; -cid &lt;componentId&gt; -&lt;Key1&gt; &lt;Value1&gt; -&lt;Key2&gt; &lt;Value2&gt; -&lt;Key3&gt; &lt;Value3&gt;
+</code></pre><p sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="35" sourceendlinenumber="35"><strong>Example:</strong> Change all values in the &#39;Logging&#39; facet of the &#39;OpcUa1&#39; component:</p>
+<pre sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="37" sourceendlinenumber="39"><code class="lang-cmd">edgecmd set Logging -cid OpcUa1 -LogLevel Warning -LogFileSizeLimitBytes 5000 -LogFileCountLimit 30
+</code></pre></li>
+</ol>
+<h2 id="configure-key-value-pairs-in-a-facet" sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="41" sourceendlinenumber="41">Configure key-value pairs in a facet</h2>
+<p sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="43" sourceendlinenumber="43">Complete the following steps to configure any number of valid key-value pairs in a facet:</p>
+<ol sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="45" sourceendlinenumber="58">
+<li sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="45" sourceendlinenumber="45">Access EdgeCmd utility through the command line.</li>
+<li sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="46" sourceendlinenumber="46">Type the <code>edit</code> keyword and the <code>&lt;facetName&gt;</code>.</li>
+<li sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="47" sourceendlinenumber="47">Add the <code>&lt;facetName&gt;</code>and <code>&lt;componentId&gt;</code>, replacing both with their respective values.</li>
+<li sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="48" sourceendlinenumber="58"><p sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="48" sourceendlinenumber="48">Add the key-value pairs you want to configure. Then press Enter.</p>
+<pre sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="50" sourceendlinenumber="52"><code class="lang-cmd">edgecmd edit &lt;facetName&gt; -cid &lt;componentId&gt; -&lt;Key1&gt; &lt;Value1&gt;
+</code></pre><p sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="54" sourceendlinenumber="54"><strong>Example:</strong> Configure the &#39;LogFileCountLimit&#39; key in the &#39;Logging&#39; facet of the &#39;Modbus1&#39; component:</p>
+<pre sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="56" sourceendlinenumber="58"><code class="lang-cmd">edgecmd edit Logging -cid Modbus1 -LogFileCountLimit 15
+</code></pre></li>
+</ol>
+<h2 id="add-an-entry-to-a-collection-configuration" sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="60" sourceendlinenumber="60">Add an entry to a collection configuration</h2>
+<p sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="62" sourceendlinenumber="62">Complete the following steps to add an entry to a collection configuration:</p>
+<ol sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="64" sourceendlinenumber="77">
+<li sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="64" sourceendlinenumber="64">Access EdgeCmd utility through the command line.</li>
+<li sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="65" sourceendlinenumber="65">Type the <code>add</code> keyword and the <code>&lt;facetName&gt;</code>.</li>
+<li sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="66" sourceendlinenumber="66">Add the <code>&lt;componentId&gt;</code>, replacing it with the ID of the component.</li>
+<li sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="67" sourceendlinenumber="77"><p sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="67" sourceendlinenumber="67">Add the key-value pairs. Then press Enter.</p>
+<pre sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="69" sourceendlinenumber="71"><code class="lang-cmd">edgecmd add &lt;facetName&gt; -cid &lt;componentId&gt; -&lt;Key1&gt; &lt;Value1&gt; -&lt;Key2&gt; &lt;Value2&gt;
+</code></pre><p sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="73" sourceendlinenumber="73"><strong>Example:</strong> Add the &#39;Schedules&#39; facet to the &#39;Modbus1&#39; component:</p>
+<pre sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="75" sourceendlinenumber="77"><code class="lang-cmd">edgecmd add Schedules -cid Modbus1 -Id 2 -Period 00:00:30
+</code></pre></li>
+</ol>
+<h2 id="configure-payload-port" sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="79" sourceendlinenumber="79">Configure payload port</h2>
+<p sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="81" sourceendlinenumber="81">EdgeCmd utility commands may include up to two port numbers. The first specified port number is always designated for the EdgeCmd application. The second port number is designated for the payload of the adapter or EDS.</p>
+<p sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="83" sourceendlinenumber="83">Complete the following steps to edit the port number of the payload:</p>
+<ol sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="85" sourceendlinenumber="89">
+<li sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="85" sourceendlinenumber="85">Access EdgeCmd utility through the command line.</li>
+<li sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="86" sourceendlinenumber="86">Type the <code>edit</code> and <code>datasource</code> keywords.</li>
+<li sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="87" sourceendlinenumber="87">Add the first <code>&lt;port&gt;</code>, replacing it with the port number of the EdgeCmd application. The default is <code>5590</code>.</li>
+<li sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="88" sourceendlinenumber="88">Add the <code>&lt;componentId&gt;</code>, replacing it with the ID of the component.</li>
+<li sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="89" sourceendlinenumber="89">Add the second <code>&lt;port&gt;</code>, replacing it with the port number of the payload. Then press Enter.</li>
+</ol>
+<pre sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="91" sourceendlinenumber="93"><code class="lang-cmd">edgecmd edit datasource -port 5590 -cid Mqtt1 -port 1885
+</code></pre><p sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="95" sourceendlinenumber="95"><strong>Note:</strong> <br></p>
+<ul sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="97" sourceendlinenumber="98">
+<li sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="97" sourceendlinenumber="97">If a payload port number is configured for a component and you specify only one port number in the data source command, you will receive the following error message: <code>Invalid arguments. Input arguments are required.</code></li>
+<li sourcefile="content/configuration/configure-an-adapter-or-eds-with-commands.md" sourcestartlinenumber="98" sourceendlinenumber="98">If you specify more than two port numbers, you will receive the following error message: <code>Duplicate optional argument: -port</code></li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/osisoft/Edgecmd-Docs/blob/v1.1/content/configuration/configure-an-adapter-or-eds-with-commands.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

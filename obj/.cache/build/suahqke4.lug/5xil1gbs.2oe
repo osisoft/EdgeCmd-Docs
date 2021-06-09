@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>EdgeCmd commands </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="EdgeCmd commands ">
+    <meta name="generator" content="docfx 2.50.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="EdgeCmdCommands">
+<h1 id="edgecmd-commands" sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="5" sourceendlinenumber="5">EdgeCmd commands</h1>
+
+<p sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="7" sourceendlinenumber="7">The following tables provide a description of every command available in EdgeCmd utility. Every command used with EdgeCmd utility has to be preceded by <code>edgecmd</code>. Parts of the command that are in <code>[ ]</code> are optional and do not need to be specified.</p>
+<p sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="9" sourceendlinenumber="9"><strong>Note:</strong> The examples in this topic are using the default port number <code>5590</code>. If you specified a different port number for your adapter, you need to add it in the command. For example:</p>
+<pre sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="11" sourceendlinenumber="13"><code class="lang-cmd">edgecmd -port 5591 Configuration &lt;RestOfTheCommand&gt;
+</code></pre><p sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="15" sourceendlinenumber="15"><strong>Note:</strong> If a command contains slashes, you must add escape characters as follows:<br> </p>
+<ul sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="16" sourceendlinenumber="20">
+<li sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="16" sourceendlinenumber="17"><p sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="16" sourceendlinenumber="17">In <em>Windows</em>, add a second slash.<br> 
+   Example: <code>TestUser\OilCompany</code> becomes <code>TestUser\\OilCompany</code></p>
+</li>
+<li sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="19" sourceendlinenumber="20"><p sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="19" sourceendlinenumber="20">In <em>Linux</em>, add three slashes.<br>
+   Example: <code>TestUser\OilCompany</code> becomes <code>TestUser\\\\OilCompany</code></p>
+</li>
+</ul>
+<h2 id="help-output" sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="22" sourceendlinenumber="22">Help output</h2>
+<p sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="24" sourceendlinenumber="24">The following commands display help output for different levels of the application.</p>
+<table sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="26" sourceendlinenumber="31">
+<thead>
+<tr>
+<th>EdgeCmd command</th>
+<th>Description</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>edgecmd help</code></td>
+<td>Display help output for the EdgeCmd application.</td>
+<td></td>
+</tr>
+<tr>
+<td><code>edgecmd help [&lt;target&gt;]</code></td>
+<td>Display configuration help output for System level targets, for example <code>application</code>, <code>healthendpoints</code>, and <code>logging</code>.</td>
+<td><code>edgecmd help System</code></td>
+</tr>
+<tr>
+<td><code>edgecmd  help &lt;target&gt; -cid &lt;componentId&gt;</code></td>
+<td>Display configuration help output for any registered component and facet.</td>
+<td><code>edgecmd help DataSource -cid opcua1</code></td>
+</tr>
+<tr>
+<td><code>edgecmd help -cid &lt;componentId&gt;</code></td>
+<td>Display configuration help output for any registered component.</td>
+<td><code>edgecmd help -cid OpcUa1</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="port-configuration" sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="33" sourceendlinenumber="33">Port configuration</h2>
+<table sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="35" sourceendlinenumber="38">
+<thead>
+<tr>
+<th>EdgeCmd command</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>edgecmd -port 5590 &lt;command&gt; [-cid &lt;componentId&gt;]</code></td>
+<td>Specify the port number for communication with EDS or the adapter.</td>
+<td><code>edgecmd -port 5595 get Components</code></td>
+</tr>
+<tr>
+<td><code>edgecmd -port 5590 &lt;command&gt; [-cid &lt;componentId&gt;] -port &lt;port&gt;</code></td>
+<td>Specify the port number for the adapter or EDS payload.</td>
+<td><code>edgecmd -port 5590 edit datasource -cid Mqtt1 -port 1885</code></td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="40" sourceendlinenumber="40">For more information on how to configure a payload port number, see <a class="xref" href="../configuration/configure-an-adapter-or-eds-with-commands.html#configure-payload-port" data-raw-source="[Configure an adapter or EDS with commands](xref:ConfigureAnAdapterOrEDSWithCommands#configure-payload-port)" sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="40" sourceendlinenumber="40">Configure an adapter or EDS with commands</a>.</p>
+<h2 id="application-configuration" sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="42" sourceendlinenumber="42">Application configuration</h2>
+<p sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="44" sourceendlinenumber="44">The following commands configure the application.</p>
+<table sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="46" sourceendlinenumber="51">
+<thead>
+<tr>
+<th>EdgeCmd command</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>edgecmd get Application [-file &lt;filepath&gt;]</code></td>
+<td>Get the configuration for every platform component.</td>
+<td><code>edgecmd get Application</code></td>
+</tr>
+<tr>
+<td><code>edgecmd set Application -file &lt;filepath&gt;</code></td>
+<td>Import the entire configuration for a PI adapter or EDS.</td>
+<td><code>edgecmd set Application -file C:\Users\TestUser\Adapter\Configuration.json</code></td>
+</tr>
+<tr>
+<td><code>edgecmd reset Application</code></td>
+<td>Reset the entire application and storage in EDS.</td>
+<td></td>
+</tr>
+<tr>
+<td><code>edgecmd help Application</code></td>
+<td>Display help output for the application target.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="system-component-configuration" sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="53" sourceendlinenumber="53">System component configuration</h2>
+<p sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="55" sourceendlinenumber="55">The following commands configure specific facets of the system component.</p>
+<h3 id="components-facet-configuration" sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="57" sourceendlinenumber="57">Components facet configuration</h3>
+<table sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="59" sourceendlinenumber="65">
+<thead>
+<tr>
+<th>EdgeCmd command</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>edgecmd get Components [-file &lt;filepath&gt;]</code></td>
+<td>Get the component configuration.</td>
+<td><code>edgecmd get Components</code></td>
+</tr>
+<tr>
+<td><code>edgecmd set Components [-file &lt;filepath&gt;]</code></td>
+<td>Import components configuration.</td>
+<td><code>edgecmd set Components -file C:\Users\TestUser\Components\Configuration.json</code></td>
+</tr>
+<tr>
+<td><code>edgecmd add Components [-type &lt;type&gt;] [-id &lt;componentId&gt;]</code></td>
+<td>Add component to components configuration.</td>
+<td><code>edgecmd add Components  -type Modbus -id Modbus1</code></td>
+</tr>
+<tr>
+<td><code>edgecmd remove Components [-id &lt;componentId] [-y]</code></td>
+<td>Remove specified component from configuration.</td>
+<td><code>edgecmd remove Components -id Modbus1</code></td>
+</tr>
+<tr>
+<td><code>edgecmd help Components</code></td>
+<td>Display help output for components configuration.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="buffering-facet-configuration" sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="67" sourceendlinenumber="67">Buffering facet configuration</h3>
+<table sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="69" sourceendlinenumber="74">
+<thead>
+<tr>
+<th>EdgeCmd command</th>
+<th>Description</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>edgecmd get Buffering [-file &lt;filepath&gt;]</code></td>
+<td>Get the buffering configuration.</td>
+<td><code>edgecmd get Buffering C:\Users\TestUser\Buffering\Configuration.json</code></td>
+</tr>
+<tr>
+<td><code>edgecmd set Buffering [-file &lt;filepath&gt;]</code></td>
+<td>Import buffering configuration.</td>
+<td><code>edgecmd set Buffering</code></td>
+</tr>
+<tr>
+<td><code>edgecmd edit Buffering [-bufferLocation &lt;value&gt;] [-maxBufferSizeMB &lt;value&gt;] [-enableBuffering &lt;value&gt;]</code></td>
+<td>Change buffering configuration.</td>
+<td><code>edgecmd Buffering -bufferLocation C:/ProgramData/OSIsoft/Adapters/Modbus/Buffers -maxBufferSizeMB 1024 -enableBuffering true</code></td>
+</tr>
+<tr>
+<td><code>edgecmd help Buffering</code></td>
+<td>Display help output for buffering configuration.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="health-endpoints-facet-configuration" sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="76" sourceendlinenumber="76">Health endpoints facet configuration</h3>
+<table sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="78" sourceendlinenumber="85">
+<thead>
+<tr>
+<th>EdgeCmd command</th>
+<th>Description</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>edgecmd get HealthEndpoints [-file &lt;filepath&gt;]</code></td>
+<td>Get the health endpoints configuration.</td>
+<td><code>edgecmd get HealthEndpoints</code></td>
+</tr>
+<tr>
+<td><code>edgecmd set HealthEndpoints [-file &lt;filepath&gt;]</code></td>
+<td>Import health endpoints configuration.</td>
+<td><code>edgecmd set HealthEndpoints -file C:\Users\TestUser\HealthEndpoints\Configuration.json</code></td>
+</tr>
+<tr>
+<td><code>edgecmd add HealthEndpoints [-id &lt;string&gt;] [-Endpoint &lt;endpointUrl&gt;] [-UserName &lt;userName&gt;] [-Password &lt;password&gt;] [-ClientId &lt;clientId&gt;] [-ClientSecret &lt;clientSecret&gt;] [-TokenEndpoint &lt;tokenEndpoint&gt;] [-ValidateEndpointCertificate &lt;true/false&gt;]</code></td>
+<td>Add a health endpoint.</td>
+<td><code>edgecmd add HealthEndpoints -id OCS -Endpoint https://OCS_OMF_endpoint -ClientId TestUser -ClientSecret TestPassword</code></td>
+</tr>
+<tr>
+<td><code>edgecmd edit HealthEndpoints [-id &lt;string&gt;] [-Endpoint &lt;endpointUrl&gt;] [-UserName &lt;userName&gt;] [-Password &lt;password&gt;] [-ClientId &lt;clientId&gt;] [-ClientSecret &lt;clientSecret&gt;] [-TokenEndpoint &lt;tokenEndpoint&gt;] [-ValidateEndpointCertificate &lt;true/false&gt;]</code></td>
+<td>Change a health endpoint.</td>
+<td><code>edgecmd edit HealthEndpoints -id OCS -Endpoint https://OCS_OMF_endpoint -ClientId TestUser -ClientSecret TestPassword</code></td>
+</tr>
+<tr>
+<td><code>edgecmd remove HealthEndpoints [-id &lt;string&gt;] [-y]</code></td>
+<td>Remove health endpoint.</td>
+<td><code>edgecmd remove HealthEndpoints -id OCS</code></td>
+</tr>
+<tr>
+<td><code>edgecmd help HealthEndpoints</code></td>
+<td>Display help output for health endpoints configuration.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="omf-egress-data-endpoints-facet-configuration" sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="87" sourceendlinenumber="87">OMF egress data endpoints facet configuration</h2>
+<table sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="89" sourceendlinenumber="97">
+<thead>
+<tr>
+<th>EdgeCmd command</th>
+<th>Description</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>edgecmd get DataEndpoints [-file &lt;filepath&gt;]</code></td>
+<td>Get the data endpoints configuration.</td>
+<td><code>edgecmd get DataEndpoints</code></td>
+</tr>
+<tr>
+<td><code>edgecmd set DataEndpoints [-file &lt;filepath&gt;]</code></td>
+<td>Import data endpoints configuration.</td>
+<td><code>edgecmd set DataEndpoints -file C:\Users\TestUser\DataEndpoints\Configuration.json</code></td>
+</tr>
+<tr>
+<td><code>edgecmd add DataEndpoints [-id &lt;endpointId&gt;] [-Endpoint &lt;endpointUrl&gt;] [-UserName &lt;userName&gt;] [-Password &lt;password&gt;] [-ClientId &lt;clientId&gt;] [-ClientSecret &lt;clientSecret&gt;] [-TokenEndpoint &lt;tokenEndpoint&gt;] [-ValidateEndpointCertificate &lt;true/false&gt;]</code></td>
+<td>Add data endpoints.</td>
+<td><code>edgecmd add DataEndpoints -id PI Web Api  -Endpoint https://pi_web_api_server/piwebapi/omf/ -UserName TestUser -Password TestPassword -ValidateEndpointCertificate false</code></td>
+</tr>
+<tr>
+<td><code>edgecmd edit DataEndpoints -id &lt;string&gt; [-Endpoint &lt;endpointUrl&gt;] [-UserName &lt;userName&gt;] [-Password &lt;password&gt;] [-ClientId &lt;clientId&gt;] [-ClientSecret &lt;clientSecret&gt;] [-TokenEndpoint &lt;tokenEndpoint&gt;] [-ValidateEndpointCertificate &lt;true/false&gt;]</code></td>
+<td>Change a data endpoint.</td>
+<td><code>edgecmd edit DataEndpoints -id PI Web Api -Endpoint https://pi_web_api_server/piwebapi/omf/ -UserName TestUser -Password TestPassword -ValidateEndpointCertificate true</code></td>
+</tr>
+<tr>
+<td><code>edgecmd remove DataEndpoints -id &lt;string&gt; [-y]</code></td>
+<td>Remove specified data endpoint.</td>
+<td><code>edgecmd remove DataEndpoints -id PI Web API</code></td>
+</tr>
+<tr>
+<td><code>edgecmd remove DataEndpoints [-y]</code></td>
+<td>Remove all data endpoints.</td>
+<td><code>edgecmd remove DataEndpoints -y</code></td>
+</tr>
+<tr>
+<td><code>edgecmd help DataEndpoints</code></td>
+<td>Display help output for data endpoints configuration.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="component" sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="99" sourceendlinenumber="99">Component</h2>
+<p sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="101" sourceendlinenumber="101">The following commands configure a component.</p>
+<table sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="103" sourceendlinenumber="110">
+<thead>
+<tr>
+<th>EdgeCmd command</th>
+<th>Description</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>edgecmd get -cid &lt;componentId&gt; [-file &lt;filepath&gt;]</code></td>
+<td>Get the configuration of specified component.</td>
+<td><code>edgecmd get -cid OpcUa1</code></td>
+</tr>
+<tr>
+<td><code>edgecmd set -cid &lt;componentId&gt; -file &lt;filepath&gt;</code></td>
+<td>Import configuration for a component.</td>
+<td><code>edgecmd set -cid Modbus1 -file C:\Users\TestUser\Components\Configuration.json</code></td>
+</tr>
+<tr>
+<td><code>edgecmd remove -cid &lt;componentId&gt; [-y]</code></td>
+<td>Remove specified component.</td>
+<td><code>edgecmd remove -cid OpcUa1 -y</code></td>
+</tr>
+<tr>
+<td><code>edgecmd start -cid &lt;componentId&gt;</code></td>
+<td>Start specified component.</td>
+<td><code>edgecmd start -cid Modbus1</code></td>
+</tr>
+<tr>
+<td><code>edgecmd stop -cid &lt;componentId&gt;</code></td>
+<td>Stop specified component.</td>
+<td><code>edgecmd stop -cid OpcUa1</code></td>
+</tr>
+<tr>
+<td><code>edgecmd help -cid &lt;componentId&gt;</code></td>
+<td>Display help output for specified component.</td>
+<td><code>edgecmd help -cid Modbus1</code></td>
+</tr>
+</tbody>
+</table>
+<p sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="112" sourceendlinenumber="112">The following commands configure specific facets of a component.</p>
+<h3 id="logging-facet-configuration" sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="114" sourceendlinenumber="114">Logging facet configuration</h3>
+<table sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="116" sourceendlinenumber="121">
+<thead>
+<tr>
+<th>EdgeCmd command</th>
+<th>Description</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>edgecmd get Logging [-cid &lt;componentId&gt;] [-file &lt;filepath&gt;]</code></td>
+<td>Get the logging configuration for specified component.</td>
+<td><code>edgecmd get Logging -cid Modbus1</code></td>
+</tr>
+<tr>
+<td><code>edgecmd set Logging [-cid &lt;componentId&gt;] [-file &lt;filepath&gt;]</code></td>
+<td>Import logging configuration of specified component.</td>
+<td><code>edgecmd set Logging -cid OpcUa1</code></td>
+</tr>
+<tr>
+<td><code>edgecmd edit Logging [-cid &lt;componentId&gt;] [-LogLevel &lt;logLevel&gt;] [-LogFileSizeLimitBytes &lt;MaxSize&gt;] [-LogFileCountLimit &lt;FileCount&gt;]</code></td>
+<td>Change logging configuration for specified component</td>
+<td><code>edgecmd edit Logging -cid Modbus1 -LogLevel Information -LogFileSizeLimitBytes 4567 -LogFileCountLimit 123</code></td>
+</tr>
+<tr>
+<td><code>edgecmd help Logging</code></td>
+<td>Display help output for logging facet</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="schedules-facet-configuration" sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="123" sourceendlinenumber="123">Schedules facet configuration</h3>
+<table sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="125" sourceendlinenumber="133">
+<thead>
+<tr>
+<th>EdgeCmd command</th>
+<th>Description</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>edgecmd get Schedules -cid &lt;componentId&gt; [-file &lt;filepath&gt;]</code></td>
+<td>Get the schedules configuration for specified component.</td>
+<td><code>edgecmd get Schedules -cid Modbus1</code></td>
+</tr>
+<tr>
+<td><code>edgecmd set Schedules -cid &lt;componentId&gt; [-file &lt;filepath&gt;]</code></td>
+<td>Import schedules configuration for specified component.</td>
+<td><code>edgecmd set Schedules -cid OpcUa1 -file C:\Users\TestUsers\Schedules\Configuration.json</code></td>
+</tr>
+<tr>
+<td><code>edgecmd add Schedules -cid &lt;componentId&gt; -id &lt;itemid&gt; [-Period &lt;period&gt;] [-Offset &lt;offset&gt;]</code></td>
+<td>Add schedules configuration for specified component.</td>
+<td><code>edgecmd add Schedules -cid Modbus1 -id Schedule1 -Period 125 -Offset 25</code></td>
+</tr>
+<tr>
+<td><code>edgecmd edit Schedule -cid &lt;componentId&gt; -id &lt;itemid&gt; [-Period &lt;period&gt;] [-Offset &lt;offset&gt;]</code></td>
+<td>Change schedules configuration for specified component.</td>
+<td><code>edgecmd edit Schedule -cid OpcUa1 -id Schedule2</code></td>
+</tr>
+<tr>
+<td><code>edgecmd remove Schedule -cid &lt;componentId&gt; [-id &lt;itemid&gt;] [-y]</code></td>
+<td>Remove schedules configuration for item in specified component.</td>
+<td><code>edgecmd remove Schedule -cid Modbus1 -id Schedule3 -y</code></td>
+</tr>
+<tr>
+<td><code>edgecmd remove Schedule -cid &lt;componentId&gt; [-y]</code></td>
+<td>Remove schedules configuration for specified component.</td>
+<td><code>edgecmd remove Schedule -cid OpcUa1</code></td>
+</tr>
+<tr>
+<td><code>edgecmd help Schedule –cid &lt;componentId&gt;</code></td>
+<td>Display help output for schedules facet.</td>
+<td><code>edgecmd help Schedule -cid Modbus1</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="data-filters-facet-configuration" sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="135" sourceendlinenumber="135">Data filters facet configuration</h3>
+<table sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="137" sourceendlinenumber="144">
+<thead>
+<tr>
+<th>EdgeCmd command</th>
+<th>Description</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>edgecmd get DataFilters -cid &lt;componentId&gt; [-file &lt;filepath&gt;]</code></td>
+<td>Get the data filters configuration for specified component.</td>
+<td><code>edgecmd get DataFilters -cid OpcUa1</code></td>
+</tr>
+<tr>
+<td><code>edgecmd set DataFilters -cid &lt;componentId&gt; [-file &lt;filepath&gt;]</code></td>
+<td>Import data filters configuration for specified component.</td>
+<td><code>edgecmd set DataFilters -cid Modbus1 -file C:\Users\TestUser\DataFilters\Configuration.json</code></td>
+</tr>
+<tr>
+<td><code>edgecmd add DataFilters -cid &lt;componentId&gt; -id &lt;itemid&gt; [-AbsoluteDeadband &lt;value&gt;] [-PercentChange &lt;value&gt;] [-ExpirationPeriod &lt;value&gt;]</code></td>
+<td>Add data filters configuration for specified component.</td>
+<td><code>edgecmd add DataFilters -cid OpcUa1 -id DuplicateData -AbsoluteDeadband 0 -PercentChange 35</code></td>
+</tr>
+<tr>
+<td><code>edgecmd edit DataFilters -cid &lt;componentId&gt; -id &lt;itemid&gt; [-AbsoluteDeadband &lt;value&gt;] [-PercentChange &lt;value&gt;] [-ExpirationPeriod &lt;value&gt;]</code></td>
+<td>Change data filters configuration for specified component.</td>
+<td><code>edgecmd edit DataFilters -cid Modbus1 -id DuplicateData -AbsoluteDeadband 3 -PercentChange 35</code></td>
+</tr>
+<tr>
+<td><code>edgecmd remove DataFilters -cid &lt;componentId&gt; [-id &lt;itemid&gt;] [-y]</code></td>
+<td>Remove data filters configuration for item in specified component.</td>
+<td><code>edgecmd remove DataFilters -cid OpcUa1 -y</code></td>
+</tr>
+<tr>
+<td><code>edgecmd help DataFilters –cid &lt;componentId&gt;</code></td>
+<td>Display help output for data filters facet.</td>
+<td><code>edgecmd help DataFilters -cid Modbus1</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="data-source-facet-configuration" sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="146" sourceendlinenumber="146">Data source facet configuration</h3>
+<table sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="148" sourceendlinenumber="155">
+<thead>
+<tr>
+<th>EdgeCmd command</th>
+<th>Description</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>edgecmd get DataSource -cid &lt;componentId&gt;</code></td>
+<td>Get the data source configuration for specified component.</td>
+<td><code>edgecmd get DataSource -cid OpcUa1</code></td>
+</tr>
+<tr>
+<td><code>edgecmd set DataSource -cid &lt;componentId&gt; [-file &lt;filepath&gt;]</code></td>
+<td>Import data source configuration for specified component.</td>
+<td><code>edgecmd set DataSource -cid Modbus1 -file C:\Users\TestUser\DataSource\Configuration.json</code></td>
+</tr>
+<tr>
+<td><code>edgecmd set DataSource -cid &lt;componentId&gt; [-&lt;adapterSpecificParameter&gt; &lt;value&gt;]</code></td>
+<td>Import data source configuration parameter for specified component.</td>
+<td><code>edgecmd set DataSource -cid OpcUa1 -UseSecureConnection true</code></td>
+</tr>
+<tr>
+<td><code>edgecmd edit DataSource -cid &lt;componentId&gt; [-&lt;adapterSpecificParameter&gt; &lt;value&gt;]</code></td>
+<td>Change data source configuration parameter for specified component.</td>
+<td><code>edgecmd edit DataSource -cid Modbus1 -UseSecureConnection false</code></td>
+</tr>
+<tr>
+<td><code>edgecmd remove Datasource -cid &lt;componentId&gt; [-y]</code></td>
+<td>Remove data source configuration for specified component.</td>
+<td><code>edgecmd remove Datasource -cid OpcUa1 -y</code></td>
+</tr>
+<tr>
+<td><code>edgecmd help Datasource -cid &lt;componentId&gt;</code></td>
+<td>Display help output for data source facet.</td>
+<td><code>edgecmd help Datasource -cid Modbus1</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="data-selection-facet-configuration" sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="157" sourceendlinenumber="157">Data selection facet configuration</h3>
+<table sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="159" sourceendlinenumber="169">
+<thead>
+<tr>
+<th>EdgeCmd command</th>
+<th>Description</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>edgecmd get DataSelection -cid &lt;componentId&gt; [-file &lt;filepath&gt;]</code></td>
+<td>Get the data selection configuration for specified component.</td>
+<td><code>edgecmd get DataSelection -cid Modbus1 -file C:\Users\TestUser\DataSelection\Configuration.json</code></td>
+</tr>
+<tr>
+<td><code>edgecmd set DataSelection -cid &lt;componentId&gt; [-file &lt;filepath&gt;]</code></td>
+<td>Import data selection configuration for specified component.</td>
+<td><code>edgecmd set DataSelection -cid OpcUa1</code></td>
+</tr>
+<tr>
+<td><code>edgecmd get DataSelection -cid &lt;componentId&gt; [-file &lt;filepath&gt;] -csv</code></td>
+<td>Display data selection configuration for specified component in CSV format.</td>
+<td><code>edgecmd get DataSelection -cid Modbus1 -file C:\Users\TestUser\DataSelection\Configuration.csv -csv</code></td>
+</tr>
+<tr>
+<td><code>edgecmd set DataSelection -cid &lt;componentId&gt; [-file &lt;filepath&gt;] -csv</code></td>
+<td>Import data selection configuration for specified component in CSV format.</td>
+<td><code>edgecmd set DataSelection -cid OpcUa1 -csv</code></td>
+</tr>
+<tr>
+<td><code>edgecmd add  DataSelection -cid &lt;componentId&gt; -id &lt;itemid&gt;] [-&lt;adapterSpecificParameter&gt; &lt;value&gt;]</code></td>
+<td>Add data selection configuration for specified component.</td>
+<td><code>edgecmd add DataSelection -cid OpcUa1 -id Custom1 -Name RandomName</code></td>
+</tr>
+<tr>
+<td><code>edgecmd edit DataSelection -cid &lt;componentId&gt; [-id &lt;itemid&gt;] [-&lt;adapterSpecificParameter&gt; &lt;value&gt;]</code></td>
+<td>Change data selection configuration for specified component.</td>
+<td><code>edgecmd edit DataSelection -cid Modbus1 -Selected true</code></td>
+</tr>
+<tr>
+<td><code>edgecmd remove  DataSelection -cid &lt;componentId&gt; [-id &lt;itemid&gt;] [-y]</code></td>
+<td>Remove data selection configuration for item in specified component.</td>
+<td><code>edgecmd remove DataSelection -cid OpcUa1 -id Random1</code></td>
+</tr>
+<tr>
+<td><code>edgecmd remove DataSelection -cid &lt;componentId&gt; [-y]</code></td>
+<td>Remove data selection configuration for specified component.</td>
+<td><code>edgecmd remove DataSelection -cid Modbus1 -y</code></td>
+</tr>
+<tr>
+<td><code>edgecmd help DataSelection -cid &lt;componentId&gt;</code></td>
+<td>Display help output for data selection facet.</td>
+<td><code>edgecmd help DataSelection -cid OpcUa1</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="general-facet-configuration" sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="171" sourceendlinenumber="171">General facet configuration</h3>
+<table sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="173" sourceendlinenumber="180">
+<thead>
+<tr>
+<th>EdgeCmd command</th>
+<th>Description</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>edgecmd get &lt;FacetName&gt; -cid &lt;componentId&gt; [-file &lt;filepath&gt;]</code></td>
+<td>Get the configuration for specified facet in specified component.</td>
+<td><code>edgecmd get Logging -cid Modbus1</code></td>
+</tr>
+<tr>
+<td><code>edgecmd set &lt;FacetName&gt; -cid &lt;componentId&gt; [-file &lt;filepath&gt;]</code></td>
+<td>Import configuration for specified facet in specified component.</td>
+<td><code>edgecmd set DataFilters -cid OpcUa1</code></td>
+</tr>
+<tr>
+<td><code>edgecmd add &lt;FacetName&gt; -cid &lt;componentId&gt; [-&lt;facetSpecificParameter&gt; &lt;value&gt;]</code></td>
+<td>Add configuration for specified facet in specified component.</td>
+<td><code>edgecmd add Logging -cid Modbus1 -LogFileCountLimit 30</code></td>
+</tr>
+<tr>
+<td><code>edgecmd edit &lt;FacetName&gt; -cid &lt;componentId&gt; [-&lt;facetSpecificParameter&gt; &lt;value&gt;]</code></td>
+<td>Change configuration for specified facet in specified component.</td>
+<td><code>edgecmd edit DataFilters -cid OpcUa1 -AbsoluteDeadband 0</code></td>
+</tr>
+<tr>
+<td><code>edgecmd remove &lt;FacetName&gt; -cid &lt;componentId&gt; [-y]</code></td>
+<td>Remove configuration for specified facet in specified component.</td>
+<td><code>edgecmd remove Logging -cid Modbus1 -y</code></td>
+</tr>
+<tr>
+<td><code>edgecmd help &lt;FacetName&gt; -cid &lt;componentId&gt;</code></td>
+<td>Display help out output for specified facet in specified component.</td>
+<td><code>edgecmd help DataFilters -cid OpcUa1</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="eds-configuration" sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="182" sourceendlinenumber="182">EDS configuration</h2>
+<h3 id="storage-configuration" sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="184" sourceendlinenumber="184">Storage configuration</h3>
+<table sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="186" sourceendlinenumber="191">
+<thead>
+<tr>
+<th>EdgeCmd command</th>
+<th>Description</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>edgecmd get Storage</code></td>
+<td>Get the Storage configuration.</td>
+<td></td>
+</tr>
+<tr>
+<td><code>edgecmd set Storage [-file &lt;string&gt;]</code></td>
+<td>Import Storage configuration.</td>
+<td><code>edgecmd set Storage -file C:\Users\TestUser\Storage\Configuration.json</code></td>
+</tr>
+<tr>
+<td><code>edgecmd reset Storage [-y]</code></td>
+<td>Reset Storage configuration.</td>
+<td><code>edgecmd reset Storage -y</code></td>
+</tr>
+<tr>
+<td><code>edgecmd help Storage</code></td>
+<td>Display help output for Storage configuration.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="runtime-configuration" sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="193" sourceendlinenumber="193">Runtime configuration</h3>
+<table sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="195" sourceendlinenumber="200">
+<thead>
+<tr>
+<th>EdgeCmd command</th>
+<th>Description</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>edgecmd get Runtime</code></td>
+<td>Get the runtime configuration.</td>
+<td></td>
+</tr>
+<tr>
+<td><code>edgecmd set Runtime [-file &lt;filepath&gt;]</code></td>
+<td>Import runtime configuration.</td>
+<td><code>edgecmd set Runtime -file C:\Users\TestUser\Runtime\Configuration.json</code></td>
+</tr>
+<tr>
+<td><code>edgecmd edit Runtime [-parameter &lt;value&gt;]</code></td>
+<td>Change runtime configuration.</td>
+<td><code>edgecmd edit Runtime</code></td>
+</tr>
+<tr>
+<td><code>edgecmd help Runtime</code></td>
+<td>Display help output for runtime configuration.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="diagnostics-configuration" sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="202" sourceendlinenumber="202">Diagnostics configuration</h2>
+<table sourcefile="content/reference/edgecmd-commands.md" sourcestartlinenumber="204" sourceendlinenumber="207">
+<thead>
+<tr>
+<th>EdgeCmd command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>edgecmd get Diagnostics</code></td>
+<td>Get the diagnostics configuration.</td>
+</tr>
+<tr>
+<td><code>edgecmd get Version</code></td>
+<td>Get version information.</td>
+</tr>
+</tbody>
+</table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/osisoft/Edgecmd-Docs/blob/v1.1/content/reference/edgecmd-commands.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

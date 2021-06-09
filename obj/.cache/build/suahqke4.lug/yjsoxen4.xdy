@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Release notes </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Release notes ">
+    <meta name="generator" content="docfx 2.50.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ReleaseNotes">
+<h1 id="release-notes" sourcefile="content/release-notes/release-notes.md" sourcestartlinenumber="5" sourceendlinenumber="5">Release notes</h1>
+
+<p sourcefile="content/release-notes/release-notes.md" sourcestartlinenumber="7" sourceendlinenumber="7">EdgeCmd utility 1.2</p>
+<h2 id="overview" sourcefile="content/release-notes/release-notes.md" sourcestartlinenumber="9" sourceendlinenumber="9">Overview</h2>
+<p sourcefile="content/release-notes/release-notes.md" sourcestartlinenumber="11" sourceendlinenumber="11">Edge Data Store (EDS) and PI Adapters have a REST API that allows user interaction. Configuration is one of the most common interactions. This command line tool, EdgeCmd utility, uses this REST API to apply all changes and administration functions to EDS and PI adapters. Specifically, EdgeCmd utility&#39;s command line interface uses configuration and administration functions of the REST API, so the user does not need to know the REST routes. EdgeCmd utility thus improves the user experience, facilitates easier scripting experiences and provides built-in help.</p>
+<p sourcefile="content/release-notes/release-notes.md" sourcestartlinenumber="13" sourceendlinenumber="13">For more information, see <a class="xref" href="../index.html" data-raw-source="[EdgeCmd utility](xref:index)" sourcefile="content/release-notes/release-notes.md" sourcestartlinenumber="13" sourceendlinenumber="13">EdgeCmd utility</a>.</p>
+<h2 id="fixes-and-enhancements" sourcefile="content/release-notes/release-notes.md" sourcestartlinenumber="15" sourceendlinenumber="15">Fixes and enhancements</h2>
+<h3 id="fixes" sourcefile="content/release-notes/release-notes.md" sourcestartlinenumber="17" sourceendlinenumber="17">Fixes</h3>
+<p sourcefile="content/release-notes/release-notes.md" sourcestartlinenumber="19" sourceendlinenumber="19">The port configuration has been reworked, so that two ports can be configured. One for communication and one for the payload.</p>
+<h3 id="enhancements" sourcefile="content/release-notes/release-notes.md" sourcestartlinenumber="21" sourceendlinenumber="21">Enhancements</h3>
+<p sourcefile="content/release-notes/release-notes.md" sourcestartlinenumber="23" sourceendlinenumber="23">Changes from version 1.1</p>
+<ul sourcefile="content/release-notes/release-notes.md" sourcestartlinenumber="25" sourceendlinenumber="25">
+<li sourcefile="content/release-notes/release-notes.md" sourcestartlinenumber="25" sourceendlinenumber="25">Support of the data source discovery feature</li>
+</ul>
+<h2 id="known-issues" sourcefile="content/release-notes/release-notes.md" sourcestartlinenumber="27" sourceendlinenumber="27">Known issues</h2>
+<p sourcefile="content/release-notes/release-notes.md" sourcestartlinenumber="29" sourceendlinenumber="29">There are no known issues at this time.</p>
+<h2 id="system-requirements" sourcefile="content/release-notes/release-notes.md" sourcestartlinenumber="31" sourceendlinenumber="31">System requirements</h2>
+<p sourcefile="content/release-notes/release-notes.md" sourcestartlinenumber="33" sourceendlinenumber="33">Refer to <a class="xref" href="../installation/system-requirements.html" data-raw-source="[System requirements](xref:SystemRequirements)" sourcefile="content/release-notes/release-notes.md" sourcestartlinenumber="33" sourceendlinenumber="33">System requirements</a>.</p>
+<h2 id="installation-and-upgrade" sourcefile="content/release-notes/release-notes.md" sourcestartlinenumber="35" sourceendlinenumber="35">Installation and upgrade</h2>
+<p sourcefile="content/release-notes/release-notes.md" sourcestartlinenumber="37" sourceendlinenumber="37">Refer to <a class="xref" href="../installation/install-edgecmd-utility.html" data-raw-source="[Install EdgeCmd utility](xref:InstallEdgeCmdUtility)" sourcefile="content/release-notes/release-notes.md" sourcestartlinenumber="37" sourceendlinenumber="37">Install EdgeCmd utility</a>.</p>
+<h2 id="uninstallation" sourcefile="content/release-notes/release-notes.md" sourcestartlinenumber="39" sourceendlinenumber="39">Uninstallation</h2>
+<p sourcefile="content/release-notes/release-notes.md" sourcestartlinenumber="41" sourceendlinenumber="41">Refer to <a class="xref" href="../installation/uninstall-edgecmd-utility.html" data-raw-source="[Uninstall EdgeCmd utility](xref:UninstallEdgeCmdUtility)" sourcefile="content/release-notes/release-notes.md" sourcestartlinenumber="41" sourceendlinenumber="41">Uninstall EdgeCmd utility</a>.</p>
+<h2 id="security-information-and-guidance" sourcefile="content/release-notes/release-notes.md" sourcestartlinenumber="43" sourceendlinenumber="43">Security information and guidance</h2>
+<h3 id="osisofts-commitment" sourcefile="content/release-notes/release-notes.md" sourcestartlinenumber="45" sourceendlinenumber="45">OSIsoft’s commitment</h3>
+<p sourcefile="content/release-notes/release-notes.md" sourcestartlinenumber="47" sourceendlinenumber="47">Because the PI System often serves as a barrier protecting control system networks and mission-critical infrastructure assets, OSIsoft is committed to (1) delivering a high-quality product and (2) communicating clearly what security issues have been addressed. This release of <em>EdgeCmd utility</em> is the highest quality and most secure version of the <em>EdgeCmd utility</em> released to date. OSIsoft&#39;s commitment to improving the PI System is ongoing, and each future version should raise the quality and security bar even further.</p>
+<h3 id="vulnerability-communication" sourcefile="content/release-notes/release-notes.md" sourcestartlinenumber="49" sourceendlinenumber="49">Vulnerability communication</h3>
+<p sourcefile="content/release-notes/release-notes.md" sourcestartlinenumber="51" sourceendlinenumber="51">The practice of publicly disclosing internally discovered vulnerabilities is consistent with the <a href="https://ics-cert.us-cert.gov/sites/default/files/ICSJWG-Archive/ICSJWG_Vulnerability_Disclosure_Framework_Final_1.pdf" data-raw-source="[Common Industrial Control System Vulnerability Disclosure Framework](https://ics-cert.us-cert.gov/sites/default/files/ICSJWG-Archive/ICSJWG_Vulnerability_Disclosure_Framework_Final_1.pdf)" sourcefile="content/release-notes/release-notes.md" sourcestartlinenumber="51" sourceendlinenumber="51">Common Industrial Control System Vulnerability Disclosure Framework</a> developed by the <a href="https://ics-cert.us-cert.gov/Industrial-Control-Systems-Joint-Working-Group-ICSJWG" data-raw-source="[Industrial Control Systems Joint Working Group (ICSJWG)](https://ics-cert.us-cert.gov/Industrial-Control-Systems-Joint-Working-Group-ICSJWG)" sourcefile="content/release-notes/release-notes.md" sourcestartlinenumber="51" sourceendlinenumber="51">Industrial Control Systems Joint Working Group (ICSJWG)</a>. Despite the increased risk posed by greater transparency, OSIsoft is sharing this information to help you make an informed decision about when to upgrade to ensure your PI System has the best available protection.</p>
+<p sourcefile="content/release-notes/release-notes.md" sourcestartlinenumber="53" sourceendlinenumber="53">For more information, refer to <a href="https://www.osisoft.com/ethical-disclosure-policy" data-raw-source="[OSIsoft’s Ethical Disclosure Policy (https://www.osisoft.com/ethical-disclosure-policy)](https://www.osisoft.com/ethical-disclosure-policy)" sourcefile="content/release-notes/release-notes.md" sourcestartlinenumber="53" sourceendlinenumber="53">OSIsoft’s Ethical Disclosure Policy (https://www.osisoft.com/ethical-disclosure-policy)</a>.</p>
+<p sourcefile="content/release-notes/release-notes.md" sourcestartlinenumber="55" sourceendlinenumber="55">To report a security vulnerability, refer to <a href="https://www.osisoft.com/report-a-security-vulnerability" data-raw-source="[OSIsoft&#39;s Report a Security Vulnerability (https://www.osisoft.com/report-a-security-vulnerability)](https://www.osisoft.com/report-a-security-vulnerability)" sourcefile="content/release-notes/release-notes.md" sourcestartlinenumber="55" sourceendlinenumber="55">OSIsoft&#39;s Report a Security Vulnerability (https://www.osisoft.com/report-a-security-vulnerability)</a>.</p>
+<h3 id="vulnerability-scoring" sourcefile="content/release-notes/release-notes.md" sourcestartlinenumber="57" sourceendlinenumber="57">Vulnerability scoring</h3>
+<p sourcefile="content/release-notes/release-notes.md" sourcestartlinenumber="59" sourceendlinenumber="59">OSIsoft has selected the <a href="https://www.first.org/cvss/v2/guide" data-raw-source="[Common Vulnerability Scoring System (CVSS)](https://www.first.org/cvss/v2/guide)" sourcefile="content/release-notes/release-notes.md" sourcestartlinenumber="59" sourceendlinenumber="59">Common Vulnerability Scoring System (CVSS)</a> to quantify the severity of security vulnerabilities for disclosure. To calculate the CVSS scores, OSIsoft uses the <a href="https://nvd.nist.gov/cvss.cfm?calculator&amp;version=2" data-raw-source="[National Vulnerability Database (NVD) calculator](https://nvd.nist.gov/cvss.cfm?calculator&amp;amp;version=2)" sourcefile="content/release-notes/release-notes.md" sourcestartlinenumber="59" sourceendlinenumber="59">National Vulnerability Database (NVD) calculator</a>  maintained by the National Institute of Standards and Technology (NIST). OSIsoft uses Critical, High, Medium and Low categories to aggregate the CVSS Base scores. This removes some of the opinion related errors of CVSS scoring. As noted in the CVSS specification, Base score range from 0 for the lowest severity to 10 for the highest severity.</p>
+<h3 id="overview-of-new-vulnerabilities-found-or-fixed" sourcefile="content/release-notes/release-notes.md" sourcestartlinenumber="61" sourceendlinenumber="61">Overview of new vulnerabilities found or fixed</h3>
+<p sourcefile="content/release-notes/release-notes.md" sourcestartlinenumber="63" sourceendlinenumber="63">This section is intended to provide relevant security-related information to guide your installation or upgrade decision. OSIsoft is proactively disclosing aggregate information about the number and severity of EdgeCmd utility security vulnerabilities that are fixed in this release.</p>
+<p sourcefile="content/release-notes/release-notes.md" sourcestartlinenumber="65" sourceendlinenumber="65">The following table lists the known vulnerabilities and their mitigation in this product.</p>
+<table sourcefile="content/release-notes/release-notes.md" sourcestartlinenumber="67" sourceendlinenumber="69">
+<thead>
+<tr>
+<th>Component</th>
+<th>Version</th>
+<th>CVE or Reference</th>
+<th>CVSS</th>
+<th>Mitigation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> json.Net</td>
+<td>12.0.3</td>
+<td><a href="https://alephsecurity.com/vulns/aleph-2018004" data-raw-source="[Applications that use Newtonsoft.Json might be exposed to DOS vulnerability](https://alephsecurity.com/vulns/aleph-2018004)" sourcefile="content/release-notes/release-notes.md" sourcestartlinenumber="69" sourceendlinenumber="69">Applications that use Newtonsoft.Json might be exposed to DOS vulnerability</a></td>
+<td>6.8</td>
+<td>No code paths result in json parsing and subsequent serialization resulting in DoS vulnerability.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="technical-support-and-resources" sourcefile="content/release-notes/release-notes.md" sourcestartlinenumber="71" sourceendlinenumber="71">Technical support and resources</h2>
+<p sourcefile="content/release-notes/release-notes.md" sourcestartlinenumber="73" sourceendlinenumber="73">Refer to <a class="xref" href="../../technical-support-and-feedback.html" data-raw-source="[Technical support and feedback](xref:TechnicalSupportAndFeedback)" sourcefile="content/release-notes/release-notes.md" sourcestartlinenumber="73" sourceendlinenumber="73">Technical support and feedback</a>.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/osisoft/Edgecmd-Docs/blob/main/content/release-notes/release-notes.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
