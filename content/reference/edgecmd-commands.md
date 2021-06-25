@@ -233,4 +233,4 @@ EdgeCmd command| Description | Examples |
 | `edgecmd add historyrecoveries -cid <componentId> -StartTime <time>` | Start the history recovery for the specified component. | `edgecmd add historyrecoveries -cid Mqtt1 -StartTime 2021-01-09T05:55:00.0` |
 | `edgecmd delete historyrecoveries -cid <componentId> -id <historyRecoveryId>` | Cancel the history recovery for the specified component and delete its state. | `edgecmd delete historyrecoveries -cid Mqtt1 -id HistoryRecovery1` | 
 | `edgecmd cancel historyrecoveries-cid <componentId> -id <historyRecoveryId>` | Cancel the history recovery for the specified component. | `edgecmd cancel historyrecoveries -cid Mqtt1 -id HistoryRecovery1` |
-| `edgecmd resume historyrecoveries -cid <componentId> -id <historyRecoveryId>` | Resume a failed history recovery | `edgecmd resume historyrecoveries -cid Mqtt1 -id HistoryRecovery1` |
+| `edgecmd resume historyrecoveries -cid <componentId> -id <historyRecoveryId>` | Resume a failed history recovery. | `edgecmd resume historyrecoveries -cid Mqtt1 -id HistoryRecovery1` |
