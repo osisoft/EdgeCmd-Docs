@@ -224,3 +224,13 @@ EdgeCmd command| Description | Examples |
 | `edgecmd get dataselection -cid <componentId> -query diff=<discoveryId> [-csv]` | Compare the data selection against a discovery result. | `edgecmd get dataselection -cid Mqtt1 -query diff=2` |
 | `edgecmd  remove discoveries -cid <componentId> -id <discoveryId> -result [-y]` | Remove only the result of the specified discovery from the specified component and cancel discovery if active. | `edgecmd  remove discoveries -cid Mqtt1 -id 2 -result -y`|
 | `edgecmd  remove discoveries -cid <componentId> -id <discoveryId> [-y]` | Remove the discovery state and result from the specified component and cancel discovery if active. | `edgecmd  remove discoveries -cid Mqtt1 -id 2 -y`|
+| `edgecmd cancel discoveries -cid <componentId> -id <discoveryId>` | Cancel the discovery for the specified component. | `edgecmd cancel discoveries -cid Mqtt1 -id 2` 
+
+## History recovery configuration
+
+EdgeCmd command| Description | Examples |
+---------------|-------------|----------|
+| `edgecmd add historyrecoveries -cid <componentId> -StartTime <time>` | Start the history recovery for the specified component. | `edgecmd add historyrecoveries -cid Mqtt1 -StartTime 2021-01-09T05:55:00.0` |
+| `edgecmd delete historyrecoveries -cid <componentId> -id <historyRecoveryId>` | Cancel the history recovery for the specified component and delete its state. | `edgecmd delete historyrecoveries -cid Mqtt1 -id HistoryRecovery1` | 
+| `edgecmd cancel historyrecoveries-cid <componentId> -id <historyRecoveryId>` | Cancel the history recovery for the specified component. | `edgecmd cancel historyrecoveries -cid Mqtt1 -id HistoryRecovery1` |
+| `edgecmd resume historyrecoveries -cid <componentId> -id <historyRecoveryId>` | Resume a failed history recovery | `edgecmd resume historyrecoveries -cid Mqtt1 -id HistoryRecovery1` |
