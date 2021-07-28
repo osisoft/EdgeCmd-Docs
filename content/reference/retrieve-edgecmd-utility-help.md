@@ -9,7 +9,7 @@ EdgeCmd utility provides you with help output for any operation and from any com
 **Note:** The examples in this topic are using the default port number `5590`. If you specified a different port number for your adapter, you need to add it in the command. For example:
 
 ```cmd
-edgecmd -help -port 5591 <RestOfCommand>
+edgecmd help -port 5591 <RestOfCommand>
 ```
 
 ## View application help instructions
