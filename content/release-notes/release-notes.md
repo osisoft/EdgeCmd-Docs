@@ -16,13 +16,23 @@ For more information, see [EdgeCmd utility](xref:index).
 
 ### Fixes
 
-The port configuration has been reworked, so that two ports can be configured. One for communication and one for the payload.
+* The port configuration has been reworked, so that two ports can be configured. One for communication and one for the payload.
+* Extra arguments in a command line with the *help* keyword are detected and an error message returned.
+* Reworded and fixed an error in the edgecmd message presented when trying to add a component using an input file.
 
 ### Enhancements
 
 Changes from version 1.1
 
-* Support of the data source discovery feature
+* Added support for datasource discovery.
+* Added *cancel* and *resume* keywords for historyrecoveries and *cancel* for discoveries.
+* Added support for CSV import and export of complex types. 
+* Improved help messages.
+* Built Edgecmd as a .NET 5 console application, which reduces its size and improves startup performance.
+* Enhanced the Windows installer:
+  * Added "welcome" and "finished" dialog windows.
+  * Edgecmd's product version is clearly displayed.
+  * Edgecmd's path is added to the system PATH environment variable, so that edgecmd can be run from any folder on Windows without typing its full path name.
 
 ## Known issues
 
@@ -62,11 +72,7 @@ OSIsoft has selected the [Common Vulnerability Scoring System (CVSS)](https://ww
 
 This section is intended to provide relevant security-related information to guide your installation or upgrade decision. OSIsoft is proactively disclosing aggregate information about the number and severity of EdgeCmd utility security vulnerabilities that are fixed in this release.
 
-The following table lists the known vulnerabilities and their mitigation in this product.
-
-  Component | Version | CVE or Reference | CVSS | Mitigation
- --------- | ------- | -----------------| ------ | ----------
- json.Net | 12.0.3 | [Applications that use Newtonsoft.Json might be exposed to DOS vulnerability](https://alephsecurity.com/vulns/aleph-2018004) | 6.8 | No code paths result in json parsing and subsequent serialization resulting in DoS vulnerability.
+There are no known vulnerabilities in this product.
 
 ## Technical support and resources
 
