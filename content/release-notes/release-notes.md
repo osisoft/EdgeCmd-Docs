@@ -16,9 +16,9 @@ For more information, see [EdgeCmd utility](xref:index).
 
 ### Fixes
 
-* The port configuration has been reworked, so that two ports can be configured. One for communication and one for the payload.
+* The port configuration has been enhanced, so that two ports can be configured. One for communication and one for the payload.
 * Extra arguments in a command line with the *help* keyword are detected and an error message returned.
-* Reworded and fixed an error in the edgecmd message presented when trying to add a component using an input file.
+* Fixed an error in the edgecmd message presented when trying to add a component using an input file.
 
 ### Enhancements
 
@@ -28,11 +28,9 @@ Changes from version 1.1
 * Added *cancel* and *resume* keywords for historyrecoveries and *cancel* for discoveries.
 * Added support for CSV import and export of complex types. 
 * Improved help messages.
-* Built Edgecmd as a .NET 5 console application, which reduces its size and improves startup performance.
-* Enhanced the Windows installer:
-  * Added "welcome" and "finished" dialog windows.
-  * Edgecmd's product version is clearly displayed.
-  * Edgecmd's path is added to the system PATH environment variable, so that edgecmd can be run from any folder on Windows without typing its full path name.
+* The runtime has been upgraded to .NET 5.0.
+* Enhanced Windows installation experience
+* EdgeCmd is now added to the PATH on Windows systems
 
 ## Known issues
 
