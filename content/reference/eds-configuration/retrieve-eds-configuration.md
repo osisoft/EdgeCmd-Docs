@@ -23,6 +23,8 @@ edgecmd -port 5591 <RestOfTheCommand>
 
 ## Retrieve periodic egress endpoints configuration
 
+<!-- MB 9/16: What is this cmd supposed to do? When I fire it off, I get an error message that the resource cannot be retrieved. -->
+
 1. Access EdgeCmd utility through the command line.
 2. Run the following command:
 
@@ -31,6 +33,8 @@ edgecmd -port 5591 <RestOfTheCommand>
     ```
 
 ## Retrieve runtime configuration
+
+<!-- MB 9/16: Same deal here--I get an error message that the resource cannot be retrieved. -->
 
 1. Access EdgeCmd utility through the command line.
 2. Run the following command:

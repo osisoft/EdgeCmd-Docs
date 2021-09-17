@@ -2,28 +2,28 @@
 uid: ConfigureAdapterDataSelectionWithCSVFiles
 ---
 
-# Configure adapter data selection with CSV files
+# Configure adapter data selection with .csv files
 
-Use EdgeCmd utility to import data selection from, and export it into, a CSV (comma-separated value) file.
+Use EdgeCmd utility to import data selection from, and export it into, a .csv (comma-separated value) file.
 
-EdgeCmd utility recognizes the content in CSV format from the specified file path and converts it.
+EdgeCmd utility recognizes the content in .csv format from the specified file path and converts it.
 
-**Note:** The CSV file needs to include a header row.
+**Note:** The .csv file needs to include a header row.
 
-## Import data selection from a CSV file
+## Import data selection from a .csv file
 
-Complete the following steps to import data selection from a CSV file
+Complete the following steps to import data selection from a .csv file
 
 1. Access EdgeCmd utility through the command line.
-2. Type the following in the command line, replacing `<componentId>` with the ID of the component and `<PathToCsvFile>` with the path to the CSV file from which you want to import the data selection. Then press Enter.
+2. Type the following in the command line, replacing `<componentId>` with the ID of the component and `<PathToCsvFile>` with the path to the .csv file from which you want to import the data selection. Then press Enter.
 
     ```cmd
     edgecmd set DataSelection -cid <componentId> -file <PathToCsvFile> -csv
     ```
 
-## Export data selection into a CSV file
+## Export data selection into a .csv file
 
-Complete the following steps to export data selection into a CSV file
+Complete the following steps to export data selection into a .csv file
 
 1. Access EdgeCmd utility through the command line.
 2. Type the following in the command line, replacing `<componentId>` with the ID of the component for which you want to export the data selection. Then press Enter.
