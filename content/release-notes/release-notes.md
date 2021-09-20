@@ -16,7 +16,7 @@ For more information, see [EdgeCmd utility](xref:index).
 
 ### Fixes
 
-* The port configuration has been enhanced, so that two ports can be configured. One for communication and one for the payload.
+* Enhanced port configuration. Two ports can be configured, one for communication and one for the payload.
 * Extra arguments in a command line with the *help* keyword are detected and an error message returned.
 * Fixed an error in the edgecmd message presented when trying to add a component using an input file.
 
