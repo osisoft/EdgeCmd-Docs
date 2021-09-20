@@ -28,9 +28,9 @@ Changes from version 1.1
 * Added *cancel* and *resume* keywords for historyrecoveries and *cancel* for discoveries.
 * Added support for CSV import and export of complex types. 
 * Improved help messages.
-* The runtime has been upgraded to .NET 5.0.
-* Enhanced Windows installation experience
-* EdgeCmd is now added to the PATH on Windows systems
+* Upgraded runtime to .NET 5.0.
+* Enhanced Windows installation experience.
+* EdgeCmd is now added to the PATH on Windows systems.
 
 ## Known issues
 
