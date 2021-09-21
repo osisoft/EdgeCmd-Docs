@@ -24,13 +24,13 @@ For more information, see [EdgeCmd utility](xref:index).
 
 Changes from version 1.1
 
-* Added support for datasource discovery.
-* Added *cancel* and *resume* keywords for historyrecoveries and *cancel* for discoveries.
+* Added support for data source discovery.
+* Added *cancel* and *resume* keywords for history recoveries and *cancel* for discoveries.
 * Added support for CSV import and export of complex types. 
 * Improved help messages.
 * Upgraded runtime to .NET 5.0.
 * Enhanced Windows installation experience.
-* EdgeCmd is now added to the PATH on Windows systems.
+* Added EdgeCmd to the PATH on Windows.
 
 ## Known issues
 
