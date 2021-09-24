@@ -20,7 +20,7 @@ Complete the following steps to install EdgeCmd utility on Windows:
 
 2. Run the .msi file.
 
-   **Note:** To change the install path from the default path of *C:\Program Files\OSIsoft\EdgeCmd*, enter the following command in the command prompt and update the <file_path>. OSIsoft recommends you use the default value.
+   **Note:** To change the install path from the default path of *C:\Program Files\OSIsoft\EdgeCmd*, enter the following command in the command prompt and update the *<file_path>*. OSIsoft recommends you use the default value.
 
     ```bash
     msiexec /i EdgeCmd.msi INSTALLFOLDER=<file_path>
@@ -62,7 +62,7 @@ Complete the following steps to install EdgeCmd utility on Linux:
 
 2. After the check for prerequisites succeeds, accept the default port number `5590` or change the port number.
 
-    If the Linux OS is up to date, the install will succeed and EdgeCmd utility is running on your device.
+    If the Linux OS is up-to-date, the install succeeds and EdgeCmd utility starts running on your device.
 
 3. If the install fails, run the following commands from the terminal window and try the install again:
 

@@ -14,6 +14,8 @@ edgecmd -port 5591 <RestOfTheCommand>
 
 ## Retrieve Storage component configuration
 
+Complete the following steps to retrieve EDS's storage component configuration:
+
 1. Access EdgeCmd utility through the command line.
 2. Run the following command:
 
@@ -23,6 +25,8 @@ edgecmd -port 5591 <RestOfTheCommand>
 
 ## Retrieve periodic egress endpoints configuration
 
+Complete the following steps to retrieve EDS's periodic egress endpoint configuration:
+
 1. Access EdgeCmd utility through the command line.
 2. Run the following command:
 
@@ -31,6 +35,8 @@ edgecmd -port 5591 <RestOfTheCommand>
     ```
 
 ## Retrieve runtime configuration
+
+Complete the following steps to retrieve EDS's runtime configuration:
 
 1. Access EdgeCmd utility through the command line.
 2. Run the following command:

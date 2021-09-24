@@ -19,6 +19,6 @@ edgecmd -port 5591 <RestOfTheCommand>
     edgecmd reset application
     ```
 
-3. Answer prompt to confirm the reset.
+3. Answer the prompt to confirm the reset.
 
     **Note:** You can specify the `-y` parameter in the command to skip the confirmation prompt.
