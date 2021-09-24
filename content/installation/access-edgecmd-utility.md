@@ -15,8 +15,6 @@ Complete the following steps to access EdgeCmd utility on Windows:
 
    **Note:** EdgeCmd is added to PATH, so you can execute it from any folder.
 
-   <!-- Mark Bishop 9/16: Not sure if I encountered a bug, but I ran through install and EdgeCmd DID NOT automatically get added to PATH. I had to either run from the install path or manually add the install path to PATH. -->
-
 ## Access EdgeCmd utility on Linux
 
 Complete the following steps to access EdgeCmd utility on Linux:

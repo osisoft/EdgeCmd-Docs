@@ -6,8 +6,6 @@ uid: ConfigureAdapterOrEDSComponent
 
 Use EdgeCmd utility to add and remove adapter or EDS components, and to configure facets of the components.
 
-<!-- MB 9/16: We may want to consider moving this topic up in the toc before "Configure an adapter or EDS with commands", as you're more likely to configure a component before configuring an adapter/EDS. -->
-
 **Note:** The examples in this topic are using the default port number `5590`. If you specified a different port number for your adapter or EDS, you need to add it in the command. For example:
 
 ```cmd
@@ -18,9 +16,8 @@ edgecmd -port 5591 <RestOfTheCommand>
   - In *Windows*, add a second slash.<br> 
        Example: `TestUser\OilCompany` becomes `TestUser\\OilCompany`
 
-  - In *Linux*, add three slashes.<br>
+  - In *Linux*, add three additional slashes.<br>
        Example: `TestUser\OilCompany` becomes `TestUser\\\\OilCompany`
-    <!-- Mark Bishop 9/16: This part for Linux is confusing. Is it add three slashes total, or three slashes in addition to the first? -->
 
 ## Add components
 
@@ -65,12 +62,11 @@ All adapters and EDS have different configurable facets. Complete the following 
 Complete the following steps to remove a component from the adapter or EDS:
 
 1. Access EdgeCmd utility through the command line.
-2. Type the following in the command line, replacing `<componentId>` with the ID of the component to remove, and press Enter.
+2. Type the following in the command line, replacing `<componentId>` with the ID of the component to remove, and press Enter.<br>**Note:** You can specify the `-y` parameter in the command to skip the confirmation prompt.
 
     ```cmd
     edgecmd remove Components [-id <componentId] [-y]
     ```
-     <!-- MB 9/16: What is `-y` here supposed to be? -->
 
     **Example**: Removal of the Modbus component
 

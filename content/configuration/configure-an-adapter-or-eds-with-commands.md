@@ -16,10 +16,8 @@ edgecmd -port 5591 <RestOfTheCommand>
   - In *Windows*, add a second slash.<br> 
        Example: `TestUser\OilCompany` becomes `TestUser\\OilCompany`
 
-  - In *Linux*, add three slashes.<br>
+  - In *Linux*, add three additional slashes.<br>
        Example: `TestUser\OilCompany` becomes `TestUser\\\\OilCompany`
-
-       <!-- Mark Bishop 9/16: This part for Linux is confusing. Is it add three slashes total, or three slashes in addition to the first? -->
 
 ## Change all values of a facet
 
@@ -47,7 +45,6 @@ For the following TextParser-based adapters, you must wrap the value of data sel
 - PI Adapter for Structured Data Files
 - PI Adapter for MQTT
 - PI Adapter for Azure Event Hubs
-<!-- Mark Bishop 9/16: Do we have a fourth adapter using text parser now? -->
 
 Instead of `$['Value1']`, type `'$['\''Value1'\'']'`.
 
@@ -59,9 +56,7 @@ edgecmd add dataselection -cid MQTT1 -timefield '$['\''Timestamp'\'']' -valuefie
 
 ## Configure key-value pairs in a facet
 
-Complete the following steps to configure any number of valid key-value pairs in a facet:
-
-<!-- Mark Bishop 6/16: This task needs some explanation of how its use case is different from "## Change all values of a facet" -->
+Complete the following steps to configure not all but any number of valid key-value pairs in a facet:
 
 1. Access EdgeCmd utility through the command line.
 2. Type the `edit` keyword and the `<facetName>`.
@@ -80,9 +75,8 @@ Complete the following steps to configure any number of valid key-value pairs in
 
 ## Add an entry to a collection configuration
 
+An entry in a collection configuration is, for example, a complete facet of a configured component.
 Complete the following steps to add an entry to a collection configuration:
-
-<!-- Mark Bishop 6/16: A similar comment to the last one--this task needs more context about its use case. -->
 
 1. Access EdgeCmd utility through the command line.
 2. Type the `add` keyword and the `<facetName>`.
