@@ -14,7 +14,7 @@ edgecmd -port 5591 <RestOfTheCommand>
 
 ## Delete configuration entry
 
-Complete the following steps to delete a configuration entry from a collection configuration. For example, you can delete a single health endpoint of the 'HealthEndpoints' facet within the 'System' component.
+Complete the following steps to delete a configuration entry from a collection configuration. For example, you can delete a single health endpoint of the `HealthEndpoints` facet within the `System` component.
 
 1. Access EdgeCmd utility through the command line.
 2. Type the `remove` keyword.
@@ -25,7 +25,7 @@ Complete the following steps to delete a configuration entry from a collection c
    edgecmd remove <facetName> -cid <componentId> -id <entry>
    ```
 
-   **Example:** Delete 'endpoint_1' of the 'HealthEndpoints' facet in the 'System' component:
+   **Example:** Delete `endpoint_1` of the `HealthEndpoints` facet in the `System` component:
 
    ```cmd
    edgecmd remove HealthEndpoints -cid System -id endpoint_1
@@ -39,7 +39,7 @@ Complete the following steps to delete a configuration entry from a collection c
 
 ## Delete entire configuration
 
-Complete the following steps to delete the entire configuration of a system facet. For example, you can delete the configuration of the 'HealthEndpoints' facet within the 'System' component.
+Complete the following steps to delete the entire configuration of a system facet. For example, you can delete the configuration of the `HealthEndpoints` facet within the `System` component.
 
 1. Access EdgeCmd utility through the command line.
 2. Type the `remove` keyword.
@@ -49,7 +49,7 @@ Complete the following steps to delete the entire configuration of a system face
    edgecmd remove <facetName> -cid <componentId>
    ```
 
-   **Example:** Delete the 'HealthEndpoints' facet configuration file from the 'System' component:
+   **Example:** Delete the `HealthEndpoints` facet configuration file from the `System` component:
 
    ```cmd
    edgecmd remove HealthEndpoints -cid System

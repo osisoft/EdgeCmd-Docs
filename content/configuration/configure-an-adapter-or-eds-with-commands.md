@@ -16,7 +16,7 @@ edgecmd -port 5591 <RestOfTheCommand>
   - In *Windows*, add a second slash.<br> 
        Example: `TestUser\OilCompany` becomes `TestUser\\OilCompany`
 
-  - In *Linux*, add three slashes.<br>
+  - In *Linux*, add three additional slashes.<br>
        Example: `TestUser\OilCompany` becomes `TestUser\\\\OilCompany`
 
 ## Change all values of a facet
@@ -25,14 +25,14 @@ Complete the following steps to change all values of a facet:
 
 1. Access EdgeCmd utility through the command line.
 2. Type the `set` keyword.
-3. Add the `<facetName>`and `<componentId>`, replacing both with their respective values.
+3. Add the `<facetName>` and `<componentId>`, replacing both with their respective values.
 4. Add all key-value pairs. Then, press Enter.
 
    ```cmd
    edgecmd set <facetName> -cid <componentId> -<Key1> <Value1> -<Key2> <Value2> -<Key3> <Value3>
    ```
 
-   **Example:** Change all values in the 'Logging' facet of the 'OpcUa1' component:
+   **Example:** Change all values in the `Logging` facet of the `OpcUa1` component:
 
    ```cmd
    edgecmd set Logging -cid OpcUa1 -LogLevel Warning -LogFileSizeLimitBytes 5000 -LogFileCountLimit 30
@@ -44,17 +44,19 @@ For the following TextParser-based adapters, you must wrap the value of data sel
 
 - PI Adapter for Structured Data Files
 - PI Adapter for MQTT
-- PI Adapter for Azure Event Hubs  
+- PI Adapter for Azure Event Hubs
 
 Instead of `$['Value1']`, type `'$['\''Value1'\'']'`.
 
 **Example:**
 
-`edgecmd add dataselection -cid MQTT1 -timefield '$['\''Timestamp'\'']' -valuefield '$['\''Value'\'']'`
+```bash
+edgecmd add dataselection -cid MQTT1 -timefield '$['\''Timestamp'\'']' -valuefield '$['\''Value'\'']'`
+```
 
 ## Configure key-value pairs in a facet
 
-Complete the following steps to configure any number of valid key-value pairs in a facet:
+Complete the following steps to configure not all but any number of valid key-value pairs in a facet:
 
 1. Access EdgeCmd utility through the command line.
 2. Type the `edit` keyword and the `<facetName>`.
@@ -65,7 +67,7 @@ Complete the following steps to configure any number of valid key-value pairs in
    edgecmd edit <facetName> -cid <componentId> -<Key1> <Value1>
    ```
 
-   **Example:** Configure the 'LogFileCountLimit' key in the 'Logging' facet of the 'Modbus1' component:
+   **Example:** Configure the `LogFileCountLimit` key in the `Logging` facet of the `Modbus1` component:
 
    ```cmd
    edgecmd edit Logging -cid Modbus1 -LogFileCountLimit 15
@@ -73,6 +75,7 @@ Complete the following steps to configure any number of valid key-value pairs in
 
 ## Add an entry to a collection configuration
 
+An entry in a collection configuration is, for example, a complete facet of a configured component.
 Complete the following steps to add an entry to a collection configuration:
 
 1. Access EdgeCmd utility through the command line.
