@@ -13,8 +13,11 @@ edgecmd -port 5591 <RestOfTheCommand>
 ```
 
 **Note:** If a command contains slashes, you must add escape characters as follows:<br> 
-  - In *Windows* or *LINUX*, add a second slash.<br> 
+  - In *Windows*, add a second slash.<br> 
        Example: `TestUser\OilCompany` becomes `TestUser\\OilCompany`
+       
+  - In *Linux*, add three additional slashes.<br>
+       Example: `TestUser\OilCompany` becomes `TestUser\\\\OilCompany`
 
 ## Add components
 
