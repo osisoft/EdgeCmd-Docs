@@ -61,7 +61,7 @@ All adapters and EDS have different configurable facets. Complete the following 
 Complete the following steps to remove a component from the adapter or EDS:
 
 1. Access EdgeCmd utility through the command line.
-2. Type the following in the command line, replacing `<componentId>` with the ID of the component to remove, and press Enter. Edgecmd will prompt with "Please Confirm [y/N]: " unless you include the optional *-y* parameter.
+2. Type the following in the command line, replacing `<componentId>` with the ID of the component to remove, and press Enter. Edgecmd prompts with "Please Confirm [y/N]: " unless you include the optional *-y* parameter.
 
     ```cmd
     edgecmd remove Components [-id <componentId] [-y]
