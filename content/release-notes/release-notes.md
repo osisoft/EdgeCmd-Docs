@@ -36,15 +36,17 @@ Changes from version 1.1
 
 There are no known issues at this time.
 
-## System requirements
+## Setup
+
+### System requirements
 
 Refer to [System requirements](xref:SystemRequirements).
 
-## Installation and upgrade
+### Installation and upgrade
 
 Refer to [Install EdgeCmd utility](xref:InstallEdgeCmdUtility).
 
-## Uninstallation
+### Uninstallation
 
 Refer to [Uninstall EdgeCmd utility](xref:UninstallEdgeCmdUtility).
 

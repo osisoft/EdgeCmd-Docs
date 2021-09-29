@@ -14,8 +14,7 @@ edgecmd -port 5591 <RestOfTheCommand>
 
 **Note:** If a command contains slashes, you must add escape characters as follows:<br> 
   - In *Windows*, add a second slash.<br> 
-       Example: `TestUser\OilCompany` becomes `TestUser\\OilCompany`
-
+       Example: `TestUser\OilCompany` becomes `TestUser\\OilCompany`   
   - In *Linux*, add three additional slashes.<br>
        Example: `TestUser\OilCompany` becomes `TestUser\\\\OilCompany`
 
@@ -62,7 +61,7 @@ All adapters and EDS have different configurable facets. Complete the following 
 Complete the following steps to remove a component from the adapter or EDS:
 
 1. Access EdgeCmd utility through the command line.
-2. Type the following in the command line, replacing `<componentId>` with the ID of the component to remove, and press Enter.<br>**Note:** You can specify the `-y` parameter in the command to skip the confirmation prompt.
+2. Type the following in the command line, replacing `<componentId>` with the ID of the component to remove, and press Enter. Edgecmd prompts with "Please Confirm [y/N]: " unless you include the optional *-y* parameter.
 
     ```cmd
     edgecmd remove Components [-id <componentId] [-y]
