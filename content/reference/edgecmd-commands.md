@@ -49,7 +49,7 @@ The following commands configure the application.
 EdgeCmd command| Description | Example |
 ---------------|-------------|----------|
 `edgecmd get Application [-file <filepath>]` | Get the configuration for every platform component. | `edgecmd get Application`
-`edgecmd set Application -file <filepath>` | Import the entire configuration for a PI adapter or EDS. | `edgecmd set Application -file C:\Users\TestUser\Adapter\Configuration.json`
+`edgecmd set Application -file <filepath>` | Import the entire configuration for a AVEVA adapter or EDS. | `edgecmd set Application -file C:\Users\TestUser\Adapter\Configuration.json`
 `edgecmd reset Application`  | Reset the entire application and storage in EDS. |
 `edgecmd help Application` | Display help output for the application target.
 
