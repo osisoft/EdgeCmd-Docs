@@ -72,6 +72,7 @@ edgecmd -port 5591 <RestOfTheCommand>
 
 1. Access EdgeCmd utility through the command line.
 2. Run the following command:
+
    ```cmd
    edgecmd get FailoverState
    ```
