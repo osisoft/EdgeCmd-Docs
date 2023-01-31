@@ -67,7 +67,6 @@ edgecmd -port 5591 <RestOfTheCommand>
     </pre>
     </details>
 
-
 ## Retrieve failover state
 
 1. Access EdgeCmd utility through the command line.
