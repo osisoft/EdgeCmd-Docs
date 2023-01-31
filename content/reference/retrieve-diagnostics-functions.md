@@ -66,3 +66,26 @@ edgecmd -port 5591 <RestOfTheCommand>
 
     </pre>
     </details>
+
+
+## Retrieve failover state
+
+1. Access EdgeCmd utility through the command line.
+2. Run the following command:
+   ```cmd
+   edgecmd get FailoverState
+   ```
+
+   <details>
+   <summary>Sample output</summary>
+   <pre>
+
+        {
+            "role": "Secondary",
+            "lastDataProcessedTime": "0001-01-01T00:00:00",
+            "failoverScore": 0,
+            "adapterState": "Running"
+        }
+
+   </pre>
+   </details>
