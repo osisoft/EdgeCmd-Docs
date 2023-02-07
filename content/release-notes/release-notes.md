@@ -4,7 +4,7 @@ uid: ReleaseNotes
 
 # Release notes
 
-EdgeCmd utility 1.2
+EdgeCmd utility 1.3
 
 ## Overview
 
@@ -16,21 +16,15 @@ For more information, see [EdgeCmd utility](xref:index).
 
 ### Fixes
 
-* Enhanced port configuration. Two ports can be configured, one for communication and one for the payload.
-* Extra arguments in a command line with the *help* keyword are detected and an error message returned.
-* Fixed an error in the edgecmd message presented when trying to add a component using an input file.
+* Updated layout of EdgeCmd help message.
 
 ### Enhancements
 
-Changes from version 1.1
+Changes from version 1.2
 
-* Added support for data source discovery.
-* Added *cancel* and *resume* keywords for history recoveries and *cancel* for discoveries.
-* Added support for CSV import and export of complex types. 
-* Improved help messages.
-* Upgraded runtime to .NET 5.0.
-* Enhanced Windows installation experience.
-* Added EdgeCmd to the PATH on Windows.
+* Added support for secret management.
+* Added support for retrieving failover state.
+* Updated Windows and Linux installers to align with renaming work.
 
 ## Known issues
 
