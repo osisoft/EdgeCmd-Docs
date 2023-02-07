@@ -23,8 +23,9 @@ For more information, see [EdgeCmd utility](xref:index).
 Changes from version 1.2
 
 * Added support for secret management.
+* Added support for configuring failover.
 * Added support for retrieving failover state.
-* Updated Windows and Linux installers to align with renaming work.
+* Updated Windows and Linux installers to reflect new product name.
 
 ## Known issues
 
