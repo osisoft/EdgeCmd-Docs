@@ -246,3 +246,13 @@ EdgeCmd command| Description | Examples |
 | `edgecmd remove secrets [-y]` | Deletes the entire secrets configuration. |
 | `edgecmd remove secrets -id <secretI> [-y]` | Deletes a single secret. | `edgemcd remove secrets -id exampleSecret` |
 | `edgecmd help secrets` | Returns secrets help information. |
+
+## Client failover configuration
+
+EdgeCmd command| Description | Examples |
+---------------|-------------|----------|
+| `edgecmd get clientfailover` | Returns the client failover configuration. |
+| `edgecmd remove clientfailover [-y]` | Deletes the entire client failover configuration. |
+| `edgecmd add clientfailver [-cid System] -file <filePath>` | Creates a client failover configuration. Fails if the client failover configuration already exists. | `edgecmd add clientfailover -file C:\Users\TestUser\ClientFailover\Configuration.json` |
+| `edgecmd set clientfailover [-cid System] -file <filePath>` | Replaces the existing client failover configuration. | `edgecmd set clientfailover -file C:\Users\TestUser\ClientFailover\Configuration.json` |
+| `edgecmd get failoverstate` | Returns the current failover state. |
