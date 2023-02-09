@@ -234,3 +234,15 @@ EdgeCmd command| Description | Examples |
 | `edgecmd delete historyrecoveries -cid <componentId> -id <historyRecoveryId>` | Cancel the history recovery for the specified component and delete its state. | `edgecmd delete historyrecoveries -cid Mqtt1 -id HistoryRecovery1` | 
 | `edgecmd cancel historyrecoveries-cid <componentId> -id <historyRecoveryId>` | Cancel the history recovery for the specified component. | `edgecmd cancel historyrecoveries -cid Mqtt1 -id HistoryRecovery1` |
 | `edgecmd resume historyrecoveries -cid <componentId> -id <historyRecoveryId>` | Resume a failed history recovery. | `edgecmd resume historyrecoveries -cid Mqtt1 -id HistoryRecovery1` |
+
+## Secrets management configuration
+
+EdgeCmd command| Description | Examples |
+---------------|-------------|----------|
+| `edgecmd get secrets` | Returns the entire secrets configuration. |
+| `edgecmd get secrets -id <secretId>` | Returns a single secret. | `edgecmd get secrets -id exampleSecret` |
+| `edgecmd set secrets -file <filePath>` | Creates/Updates the entire secret configuration. | `edgecmd set secrets -file C:\Users\TestUser\Secrets\Configuration.json` |
+| `edgecmd set secrets -id <secretId> -value <secretValue> [-description <description>] [-expirationDate <expirationDate>]` | Updates an existing secret or adds a single secret into the current configuration. | `edgecmd set secrets -id exampleSecret -value secretValue -description secretDescription -expirationDate 2025-06-19T00:00:00` |
+| `edgecmd remove secrets [-y]` | Deletes the entire secrets configuration. |
+| `edgecmd remove secrets -id <secretI> [-y]` | Deletes a single secret. | `edgemcd remove secrets -id exampleSecret` |
+| `edgecmd help secrets` | Returns secrets help information. |
