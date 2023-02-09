@@ -31,7 +31,7 @@ The following commands display help output for different levels of the applicati
 EdgeCmd command| Description | Examples |
 ---------------|-------------|----------|
 `edgecmd help` | Display help output for the EdgeCmd application.
-`edgecmd help [<target>]` | Display configuration help output for System level targets, for example `application`, `healthendpoints`, and `logging`. | `edgecmd help System`
+`edgecmd help [<target>]` | Display configuration help output for System level targets, for example `application`, `healthendpoints`, and `logging`. | `edgecmd help General`
 `edgecmd  help <target> -cid <componentId>` | Display configuration help output for any registered component and facet.  | `edgecmd help DataSource -cid opcua1`
 `edgecmd help -cid <componentId>` | Display configuration help output for any registered component. | `edgecmd help -cid OpcUa1`
 
