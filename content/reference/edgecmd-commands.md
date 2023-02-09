@@ -209,7 +209,8 @@ EdgeCmd command| Description | Examples |
 EdgeCmd command| Description |
 ---------------|-------------|
 `edgecmd get Diagnostics` | Get the diagnostics configuration. |
-`edgecmd get Version` | Get the version information.
+`edgecmd get Version` | Get the version information. |
+`edgecmd get FailoverState` | Get the failover state information. |
 
 ## Data discovery configuration
 
@@ -255,4 +256,3 @@ EdgeCmd command| Description | Examples |
 | `edgecmd remove clientfailover [-y]` | Deletes the entire client failover configuration. |
 | `edgecmd add clientfailver [-cid System] -file <filePath>` | Creates a client failover configuration. Fails if the client failover configuration already exists. | `edgecmd add clientfailover -file C:\Users\TestUser\ClientFailover\Configuration.json` |
 | `edgecmd set clientfailover [-cid System] -file <filePath>` | Replaces the existing client failover configuration. | `edgecmd set clientfailover -file C:\Users\TestUser\ClientFailover\Configuration.json` |
-| `edgecmd get failoverstate` | Returns the current failover state. |
