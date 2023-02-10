@@ -9,7 +9,7 @@ Complete the procedure corresponding to your specific operating system to uninst
 ## Windows
 
 1. From the Windows Control Pane, open **Add or remove programs**.
-2. In the Apps & Features list, click **OSIsoft EdgeCmd Utility** > **Uninstall** > **Uninstall**.
+2. In the Apps & Features list, click **AVEVA EdgeCmd Utility** > **Uninstall** > **Uninstall**.
 
 ## Linux
 
@@ -17,5 +17,5 @@ Complete the procedure corresponding to your specific operating system to uninst
 2. Run the following command:
 
     ```bash
-    sudo apt remove osisoft.edgecmd
+    sudo apt remove aveva.edgecmd
     ```

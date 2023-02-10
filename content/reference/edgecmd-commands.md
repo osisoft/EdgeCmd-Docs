@@ -31,7 +31,7 @@ The following commands display help output for different levels of the applicati
 EdgeCmd command| Description | Examples |
 ---------------|-------------|----------|
 `edgecmd help` | Display help output for the EdgeCmd application.
-`edgecmd help [<target>]` | Display configuration help output for System level targets, for example `application`, `healthendpoints`, and `logging`. | `edgecmd help System`
+`edgecmd help [<target>]` | Display configuration help output for System level targets, for example `application`, `healthendpoints`, and `logging`. | `edgecmd help General`
 `edgecmd  help <target> -cid <componentId>` | Display configuration help output for any registered component and facet.  | `edgecmd help DataSource -cid opcua1`
 `edgecmd help -cid <componentId>` | Display configuration help output for any registered component. | `edgecmd help -cid OpcUa1`
 
@@ -49,7 +49,7 @@ The following commands configure the application.
 EdgeCmd command| Description | Example |
 ---------------|-------------|----------|
 `edgecmd get Application [-file <filepath>]` | Get the configuration for every platform component. | `edgecmd get Application`
-`edgecmd set Application -file <filepath>` | Import the entire configuration for a PI adapter or EDS. | `edgecmd set Application -file C:\Users\TestUser\Adapter\Configuration.json`
+`edgecmd set Application -file <filepath>` | Import the entire configuration for a AVEVA adapter or EDS. | `edgecmd set Application -file C:\Users\TestUser\Adapter\Configuration.json`
 `edgecmd reset Application`  | Reset the entire application and storage in EDS. |
 `edgecmd help Application` | Display help output for the application target.
 
@@ -209,7 +209,8 @@ EdgeCmd command| Description | Examples |
 EdgeCmd command| Description |
 ---------------|-------------|
 `edgecmd get Diagnostics` | Get the diagnostics configuration. |
-`edgecmd get Version` | Get the version information.
+`edgecmd get Version` | Get the version information. |
+`edgecmd get FailoverState` | Get the failover state information. |
 
 ## Data discovery configuration
 
@@ -234,3 +235,25 @@ EdgeCmd command| Description | Examples |
 | `edgecmd delete historyrecoveries -cid <componentId> -id <historyRecoveryId>` | Cancel the history recovery for the specified component and delete its state. | `edgecmd delete historyrecoveries -cid Mqtt1 -id HistoryRecovery1` | 
 | `edgecmd cancel historyrecoveries-cid <componentId> -id <historyRecoveryId>` | Cancel the history recovery for the specified component. | `edgecmd cancel historyrecoveries -cid Mqtt1 -id HistoryRecovery1` |
 | `edgecmd resume historyrecoveries -cid <componentId> -id <historyRecoveryId>` | Resume a failed history recovery. | `edgecmd resume historyrecoveries -cid Mqtt1 -id HistoryRecovery1` |
+
+## Secrets management configuration
+
+EdgeCmd command| Description | Examples |
+---------------|-------------|----------|
+| `edgecmd get secrets` | Returns the entire secrets configuration. |
+| `edgecmd get secrets -id <secretId>` | Returns a single secret. | `edgecmd get secrets -id exampleSecret` |
+| `edgecmd set secrets -file <filePath>` | Creates/Updates the entire secret configuration. | `edgecmd set secrets -file C:\Users\TestUser\Secrets\Configuration.json` |
+| `edgecmd set secrets -id <secretId> -value <secretValue> [-description <description>] [-expirationDate <expirationDate>]` | Updates an existing secret or adds a single secret into the current configuration. | `edgecmd set secrets -id exampleSecret -value secretValue -description secretDescription -expirationDate 2025-06-19T00:00:00` |
+| `edgecmd remove secrets [-y]` | Deletes the entire secrets configuration. |
+| `edgecmd remove secrets -id <secretId> [-y]` | Deletes a single secret. | `edgemcd remove secrets -id exampleSecret` |
+| `edgecmd help secrets` | Returns secrets help information. |
+
+## Client failover configuration
+
+EdgeCmd command| Description | Examples |
+---------------|-------------|----------|
+| `edgecmd get clientfailover` | Returns the client failover configuration. |
+| `edgecmd remove clientfailover [-y]` | Deletes the entire client failover configuration. |
+| `edgecmd add clientfailver [-cid System] -file <filePath>` | Creates a client failover configuration. Fails if the client failover configuration already exists. | `edgecmd add clientfailover -file C:\Users\TestUser\ClientFailover\Configuration.json` |
+| `edgecmd set clientfailover [-cid System] -file <filePath>` | Replaces the existing client failover configuration. | `edgecmd set clientfailover -file C:\Users\TestUser\ClientFailover\Configuration.json` |
+| `edgecmd help clientfailover` | Returns the help information for client failover. |
