@@ -11,7 +11,7 @@ Access EdgeCmd utility using a command prompt or terminal window.
 Complete the following steps to access EdgeCmd utility on Windows:
 
 1. Open a command prompt.
-2. Type `edgecmd` followed by the command of your choice and press Enter.<br> For example `edgecmd help system`.
+2. Type `edgecmd` followed by the command of your choice and press Enter.<br> For example `edgecmd help -cid system`.
 
    **Note:** EdgeCmd is added to PATH, so you can execute it from any folder.
 
