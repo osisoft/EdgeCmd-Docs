@@ -6,7 +6,3 @@
   href: configure-an-adapter-or-eds-with-json-files.md
 - name: Configure adapter data selection with CSV files
   href: configure-adapter-data-selection-with-csv-files.md
-- name: Secrets Management
-  href: management.md
-- name: Secrets
-  href: secrets.md
