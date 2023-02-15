@@ -8,7 +8,7 @@ EdgeCmd is supported on a variety of platforms and processors. Install kits are 
 
 | Operating System | Installation Kit | Processor(s) |
 |-------------------|----------------------------------|-------------|
-| Windows 10 x64 (any version)| `EdgeCmd_win10-x64.msi`     | Intel/AMD 64-bit processors |
-| Debian 9 or later x64 | `EdgeCmd_linux-x64.deb`     | Intel/AMD 64-bit processors |
-| Debian 9 or later arm32 | `EdgeCmd_linux-arm.deb`  | Arm 32-bit processors |
-| Debian 9 or later arm64 | `EdgeCmd_linux-arm64.deb`  | Arm 64-bit processors |
+| Windows 10 x64 (any version)| `EdgeCmd_1.3.0.27-x64_.msi`     | Intel/AMD 64-bit processors |
+| Debian 9, 10 x64 | `EdgeCmd_1.3.0.27-x64_.deb`     | Intel/AMD 64-bit processors |
+| Debian 9, 10 arm32 | `EdgeCmd_1.3.0.27-arm_.deb`  | Arm 32-bit processors |
+| Debian 9, 10 arm64 | `EdgeCmd_1.3.0.27-arm64_.deb`  | Arm 64-bit processors |

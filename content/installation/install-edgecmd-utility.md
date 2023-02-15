@@ -14,7 +14,7 @@ You can install EdgeCmd utility on either a Windows or Linux operating system. F
 
 Complete the following steps to install EdgeCmd utility on Windows:
 
-1. Download the `EdgeCmd_win10-x64.msi` file from the [OSIsoft Customer portal (https://customers.osisoft.com/s/products)](https://customers.osisoft.com/s/products).
+1. Download the `EdgeCmd_1.3.0.27-x64_.msi` file from the [OSIsoft Customer portal (https://customers.osisoft.com/s/products)](https://customers.osisoft.com/s/products).
 
     **Note**: Customer login credentials are required to access the portal.
 
@@ -38,22 +38,22 @@ Complete the following steps to install EdgeCmd utility on Linux:
 
 1. Open a terminal window and type the sudo command for the appropriate EdgeCmd .deb file for your processor:
 
-    **Debian 9 or later (Intel/AMD 64-bit processors)**
+    **Debian 10 or later (Intel/AMD 64-bit processors)**
 
     ```bash
-    sudo apt install ./EdgeCmd_linux-x64.deb
+    sudo apt install ./EdgeCmd_1.3.0.27-x64_.deb
     ```
 
-    **Debian 9 or later (ARM32, Raspberry PI 2,3,4: Raspbian, BeagleBone)**
+    **Debian 10 or later (ARM32, Raspberry PI 2,3,4: Raspbian, BeagleBone)**
 
     ```bash
-    sudo apt install ./EdgeCmd_linux-arm.deb
+    sudo apt install ./EdgeCmd_1.3.0.27-arm_.deb
     ```
 
-    **Debian 9 or later (Raspberry PI 3,4: Ubuntu ARM64 Server, Google Coral Dev Board, Nvidia Nano Jetson)**
+    **Debian 10 or later (Raspberry PI 3,4: Ubuntu ARM64 Server, Google Coral Dev Board, Nvidia Nano Jetson)**
 
     ```bash
-    sudo apt install ./EdgeCmd_linux-arm64.deb
+    sudo apt install ./EdgeCmd_1.3.0.27-arm64_.deb
     ```
 
     A validation check for prerequisites is completed.
