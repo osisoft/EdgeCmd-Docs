@@ -1,9 +1,9 @@
 - name: Retrieve EdgeCmd utility help
   href: retrieve-edgecmd-utility-help.md
 - name: Retrieve existing configuration
-  href: retrieve-existing-configuration.md
-- name: Retrieve diagnostics functions
   href: eds-configuration/toc.yml
-  topicHref: retrieve-diagnostics-functions.md
+  topicHref: retrieve-existing-configuration.md
+- name: Retrieve diagnostics functions
+  href: retrieve-diagnostics-functions.md
 - name: EdgeCmd commands
   href: edgecmd-commands.md
