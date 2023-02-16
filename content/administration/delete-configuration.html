@@ -8,7 +8,7 @@
     <title>Delete configuration </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Delete configuration ">
-    <meta name="generator" content="docfx 2.56.5.0">
+    <meta name="generator" content="docfx 2.59.1.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -33,7 +33,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="../../content/index.html" width="46">
+              <a class="navbar-brand" href="../../index.html" width="46">
                 <img id="logo" src="../../content/images/atlas_icon.png" height="46" width="46" alt="OSIsoft Edge System"> 
               </a>
             </div>
@@ -82,27 +82,27 @@
 <p><strong>Note:</strong> The examples in this topic are using the default port number <code>5590</code>. If you specified a different port number for your adapter or EDS, you need to add it in the command. For example:</p>
 <pre><code class="lang-cmd">edgecmd -port 5591 &lt;RestOfTheCommand&gt;
 </code></pre><h2 id="delete-configuration-entry">Delete configuration entry</h2>
-<p>Complete the following steps to delete a configuration entry from a collection configuration. For example, you can delete a single health endpoint of the &#39;HealthEndpoints&#39; facet within the &#39;System&#39; component.</p>
+<p>Complete the following steps to delete a configuration entry from a collection configuration. For example, you can delete a single health endpoint of the <code>HealthEndpoints</code> facet within the <code>System</code> component.</p>
 <ol>
 <li>Access EdgeCmd utility through the command line.</li>
 <li>Type the <code>remove</code> keyword.</li>
 <li>Add the <code>&lt;facetName&gt;</code> and <code>&lt;componentId&gt;</code>, replacing both with their respective values.</li>
 <li><p>Add the ID of the entry to be removed. Then press Enter.</p>
 <pre><code class="lang-cmd">edgecmd remove &lt;facetName&gt; -cid &lt;componentId&gt; -id &lt;entry&gt;
-</code></pre><p><strong>Example:</strong> Delete &#39;endpoint_1&#39; of the &#39;HealthEndpoints&#39; facet in the &#39;System&#39; component:</p>
+</code></pre><p><strong>Example:</strong> Delete <code>endpoint_1</code> of the <code>HealthEndpoints</code> facet in the <code>System</code> component:</p>
 <pre><code class="lang-cmd">edgecmd remove HealthEndpoints -cid System -id endpoint_1
 </code></pre><p><strong>Note:</strong> If the facet is part of the System component, the command does not require <code>&lt;componentId&gt;</code>, for example:</p>
 <pre><code class="lang-cmd">edgecmd remove HealthEndpoints -id OcsEndpoint
 </code></pre></li>
 </ol>
 <h2 id="delete-entire-configuration">Delete entire configuration</h2>
-<p>Complete the following steps to delete the entire configuration of a system facet. For example, you can delete the configuration of the &#39;HealthEndpoints&#39; facet within the &#39;System&#39; component.</p>
+<p>Complete the following steps to delete the entire configuration of a system facet. For example, you can delete the configuration of the <code>HealthEndpoints</code> facet within the <code>System</code> component.</p>
 <ol>
 <li>Access EdgeCmd utility through the command line.</li>
 <li>Type the <code>remove</code> keyword.</li>
 <li><p>Add the <code>&lt;facetName&gt;</code> and <code>&lt;componentId&gt;</code>, replacing both with their respective values. Then press Enter.</p>
 <pre><code class="lang-cmd">edgecmd remove &lt;facetName&gt; -cid &lt;componentId&gt;
-</code></pre><p><strong>Example:</strong> Delete the &#39;HealthEndpoints&#39; facet configuration file from the &#39;System&#39; component:</p>
+</code></pre><p><strong>Example:</strong> Delete the <code>HealthEndpoints</code> facet configuration file from the <code>System</code> component:</p>
 <pre><code class="lang-cmd">edgecmd remove HealthEndpoints -cid System
 </code></pre><p><strong>Note:</strong> To skip the confirmation prompt, specify the <code>-y</code> parameter in the command.</p>
 </li>
@@ -115,7 +115,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/osisoft/EdgeCmd-Docs/blob/main/content/administration/delete-configuration.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/osisoft/EdgeCmd-Docs/blob/v1.2/content/administration/delete-configuration.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

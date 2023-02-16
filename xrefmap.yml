@@ -11,7 +11,7 @@ references:
   name: Configuration
   href: content/configuration/configuration.html
 - uid: ConfigureAdapterDataSelectionWithCSVFiles
-  name: Configure adapter data selection with CSV files
+  name: Configure adapter data selection with .csv files
   href: content/configuration/configure-adapter-data-selection-with-csv-files.html
 - uid: ConfigureAdapterOrEDSComponent
   name: Configure adapter or EDS component
@@ -20,7 +20,7 @@ references:
   name: Configure an adapter or EDS with commands
   href: content/configuration/configure-an-adapter-or-eds-with-commands.html
 - uid: ConfigureAnAdapterOrEDSWithJsonFiles
-  name: Configure an adapter or EDS with JSON Files
+  name: Configure an adapter or EDS with .json Files
   href: content/configuration/configure-an-adapter-or-eds-with-json-files.html
 - uid: DeleteConfiguration
   name: Delete configuration
@@ -69,7 +69,7 @@ references:
   href: content/installation/system-requirements.html
 - uid: TechnicalSupportAndFeedback
   name: Technical support and feedback
-  href: content/technical-support-and-feedback.html
+  href: technical-support-and-feedback.html
 - uid: TroubleShootEdgeCmdUtility
   name: Troubleshoot EdgeCmd utility
   href: content/troubleshooting/troubleshoot-edgecmd-utility.html

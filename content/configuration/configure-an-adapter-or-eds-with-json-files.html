@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Configure an adapter or EDS with JSON Files </title>
+    <title>Configure an adapter or EDS with .json Files </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Configure an adapter or EDS with JSON Files ">
-    <meta name="generator" content="docfx 2.56.5.0">
+    <meta name="title" content="Configure an adapter or EDS with .json Files ">
+    <meta name="generator" content="docfx 2.59.1.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -33,7 +33,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="../../content/index.html" width="46">
+              <a class="navbar-brand" href="../../index.html" width="46">
                 <img id="logo" src="../../content/images/atlas_icon.png" height="46" width="46" alt="OSIsoft Edge System"> 
               </a>
             </div>
@@ -76,16 +76,17 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="ConfigureAnAdapterOrEDSWithJsonFiles">
-<h1 id="configure-an-adapter-or-eds-with-json-files">Configure an adapter or EDS with JSON Files</h1>
+<h1 id="configure-an-adapter-or-eds-with-json-files">Configure an adapter or EDS with .json Files</h1>
 
-<p>Use EdgeCmd utility to  import a JSON file that contains the adapter or EDS configuration into the adapter or EDS. A file import completely replaces the existing configurations; therefore, you cannot use it to change individual values in a facet without modifying others.</p>
+<p>Use EdgeCmd utility to  import a .json file that contains the adapter or EDS configuration into the adapter or EDS. A file import completely replaces the existing configurations; therefore, you cannot use it to change individual values in a facet without modifying others.</p>
 <p><strong>Note:</strong> The examples in this topic are using the default port number <code>5590</code>. If you specified a different port number for your adapter or EDS, you need to add it in the command. For example:</p>
 <pre><code class="lang-cmd">edgecmd -port 5591 &lt;RestOfTheCommand&gt;
-</code></pre><h2 id="import-bulk-configuration">Import bulk configuration</h2>
+</code></pre><!-- MB 9/16: This section needs a note that says each adapter doc set contains more information on valid key/value pairs for each configuration file. -->
+<h2 id="import-bulk-configuration">Import bulk configuration</h2>
 <p>Complete the following steps to import a bulk configuration:</p>
 <ol>
 <li>Access EdgeCmd utility through the command line.</li>
-<li><p>Type the following in the command line, replacing <code>&lt;PathToJsonFile&gt;</code> with the path to the JSON file that contains the application configuration. Then press Enter.</p>
+<li><p>Type the following in the command line, replacing <code>&lt;PathToJsonFile&gt;</code> with the path to the .json file that contains the application configuration. Then press Enter.</p>
 <pre><code class="lang-cmd">edgecmd set application -file &lt;PathToJsonFile&gt;
 </code></pre><p><strong>Example:</strong></p>
 <pre><code class="lang-cmd">edgecmd set application -file C:\Users\TestUser\Adapter\BulkConfiguration.json
@@ -95,17 +96,17 @@
 <p>Complete the following steps to import a configuration file for a component:</p>
 <ol>
 <li>Access EdgeCmd utility through the command line.</li>
-<li><p>Type the following in the command line, replacing <code>&lt;componentId&gt;</code> with the ID of the component and <code>&lt;PathToJsonFile&gt;</code> with the path to the JSON file that contains the component configuration. Then press Enter.</p>
+<li><p>Type the following in the command line, replacing <code>&lt;componentId&gt;</code> with the ID of the component and <code>&lt;PathToJsonFile&gt;</code> with the path to the .json file that contains the component configuration. Then press Enter.</p>
 <pre><code class="lang-cmd">edgecmd set -cid &lt;componentId&gt; -file &lt;PathToJsonFile&gt;
 </code></pre><p><strong>Example:</strong></p>
 <pre><code class="lang-cmd">edgecmd set -cid OpcUa1 -file C:\Users\TestUser\Adapter\ComponentConfiguration.json
 </code></pre></li>
 </ol>
-<h2 id="import-facet-specific-configuration">Import facet specific configuration</h2>
-<p>Complete the following steps to import a facet specific configuration file for a component:</p>
+<h2 id="import-facet-specific-configuration">Import facet-specific configuration</h2>
+<p>Complete the following steps to import a facet-specific configuration file for a component:</p>
 <ol>
 <li>Access EdgeCmd utility through the command line.</li>
-<li><p>Type the following in the command line, replacing <code>&lt;facetName&gt;</code> with the name of the facet, <code>&lt;componentId&gt;</code> with the ID of the component, and <code>&lt;PathToJsonFile&gt;</code> with the path to the JSON file that contains the component facet configuration. Then press Enter.</p>
+<li><p>Type the following in the command line, replacing <code>&lt;facetName&gt;</code> with the name of the facet, <code>&lt;componentId&gt;</code> with the ID of the component, and <code>&lt;PathToJsonFile&gt;</code> with the path to the .json file that contains the component facet configuration. Then press Enter.</p>
 <pre><code class="lang-cmd">edgecmd set &lt;facetName&gt; -cid &lt;componentId&gt; -file &lt;PathToJsonFile&gt;
 </code></pre><p><strong>Example:</strong></p>
 <pre><code class="lang-cmd">edgecmd set Logging -cid OpcUa1 -file C:\Users\TestUser\Adapter\FacetConfiguration.json
@@ -119,7 +120,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/osisoft/EdgeCmd-Docs/blob/main/content/configuration/configure-an-adapter-or-eds-with-json-files.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/osisoft/EdgeCmd-Docs/blob/v1.2/content/configuration/configure-an-adapter-or-eds-with-json-files.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
