@@ -18,7 +18,7 @@
       "output": {
         ".html": {
           "relative_path": "README.html",
-          "hash": "HKAjWHrDxSOoukJuf/XXvTojQO56ImUt8H5yPPSrg2s="
+          "hash": "fsLgNnsHIoUoQiX09MgHlTZ2PQc842oQJB4XDVRVJXo="
         }
       },
       "is_incremental": false,
@@ -30,7 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "content/administration/administration.html",
-          "hash": "0/kCG09ZsHv/je0EqWyk3x85s9teTgjfmsQmouPnJcg="
+          "hash": "EWBNqXEZoRkaQsaI1BKouvU8n9PV/RJrQiaYiZ7S3YI="
         }
       },
       "is_incremental": false,
@@ -134,11 +134,35 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "content/configuration/management.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/configuration/management.html",
+          "hash": "2Hl/NYX2DL8eddPDV2yQOwCwEgcTTxqpALCm+Sj4DAE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/configuration/secrets.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/configuration/secrets.html",
+          "hash": "iSJugGMN4cgIf1rhEfLtr/rYhUSp/2A37P2Xo8rNLVM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "content/edgecmd-utility.md",
       "output": {
         ".html": {
           "relative_path": "content/edgecmd-utility.html",
-          "hash": "IXTRUb9AH+n3XeP6qKwu8TnWJF8qE5ALrl9De2VjIlk="
+          "hash": "fsuB1wuUgH4qoeIIbd9C29pdRBXDjVHzLFv06/NsKNk="
         }
       },
       "is_incremental": false,
@@ -161,7 +185,7 @@
       "output": {
         ".html": {
           "relative_path": "content/index.html",
-          "hash": "nNzqhcCypX9p9Sfew6NHsKBA+Gkcc1777iuJeid1nfo="
+          "hash": "t11R1bkTn5tmPVEv6zeb8eud71bA+UAuU013mpFqU6k="
         }
       },
       "is_incremental": false,
@@ -221,7 +245,7 @@
       "output": {
         ".html": {
           "relative_path": "content/installation/uninstall-edgecmd-utility.html",
-          "hash": "KEIroY3Nwca8JVe0IZ4OztSRRAzIKIyavfwh3JUA3IE="
+          "hash": "g11EhuRpVMfcCLpeeShaKPZrJPFK5b3CuTXrS/E/WM4="
         }
       },
       "is_incremental": false,
@@ -233,7 +257,7 @@
       "output": {
         ".html": {
           "relative_path": "content/reference/edgecmd-commands.html",
-          "hash": "iOQxluBdIWK1mFgPyHXV4+XugcP02CFK9VrJXiBPW/I="
+          "hash": "8j8N4bGilnl46WxKK9HaId7QScKo52K1JRxJ0s1CZ68="
         }
       },
       "is_incremental": false,
@@ -257,7 +281,7 @@
       "output": {
         ".html": {
           "relative_path": "content/reference/reference.html",
-          "hash": "j4a7LV7cLEZlxtUGoEeOC3LtVahIEI23F4YOOcv2jMg="
+          "hash": "h85zueCwQU7P3dPCzVy5dglPIojrHtI7O+qUdcmx2mI="
         }
       },
       "is_incremental": false,
@@ -269,7 +293,7 @@
       "output": {
         ".html": {
           "relative_path": "content/reference/retrieve-diagnostics-functions.html",
-          "hash": "ym+0j8+Ela2mWBj/ev3eUKTsrIXOj6oPFGYY9C07sCI="
+          "hash": "Pn7r5M1PlPDsow1d9byhT95VG4D/hQPk1yhFaIa4im0="
         }
       },
       "is_incremental": false,
@@ -305,7 +329,7 @@
       "output": {
         ".html": {
           "relative_path": "content/release-notes/release-notes.html",
-          "hash": "zFXnRHmN+S+zuMss9z+UwnQiYv2eeTp+gBMtgqODx54="
+          "hash": "4ukEDU4jsQJYM+qN6uml8Js6+Hq8Rm/z9OrSCBvAtpY="
         }
       },
       "is_incremental": false,
@@ -344,7 +368,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "90KqqCe3X/LFJvfLGC+S+hAD62Hc/r9UhlIIOFEYERY="
+          "hash": "rRKhc58yD9F1QyUBMcTv4eLAtghpAaOouqAPkna6CFM="
         }
       },
       "is_incremental": false,
@@ -368,7 +392,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "SnQ+89ijO0ZntUpK3RwdwSKA0iLcRwctg9iMyao5bNI="
+          "hash": "M8f14GBayjQ1hNzZxf+LahWjfHW/3UaNvs+blYifNlo="
         }
       },
       "is_incremental": false,
@@ -389,7 +413,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 27,
+          "total_file_count": 29,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

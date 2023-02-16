@@ -114,7 +114,7 @@
 <tr>
 <td><code>edgecmd help [&lt;target&gt;]</code></td>
 <td>Display configuration help output for System level targets, for example <code>application</code>, <code>healthendpoints</code>, and <code>logging</code>.</td>
-<td><code>edgecmd help System</code></td>
+<td><code>edgecmd help General</code></td>
 </tr>
 <tr>
 <td><code>edgecmd  help &lt;target&gt; -cid &lt;componentId&gt;</code></td>
@@ -168,7 +168,7 @@
 </tr>
 <tr>
 <td><code>edgecmd set Application -file &lt;filepath&gt;</code></td>
-<td>Import the entire configuration for a PI adapter or EDS.</td>
+<td>Import the entire configuration for a AVEVA adapter or EDS.</td>
 <td><code>edgecmd set Application -file C:\Users\TestUser\Adapter\Configuration.json</code></td>
 </tr>
 <tr>
@@ -732,6 +732,10 @@
 <td><code>edgecmd get Version</code></td>
 <td>Get the version information.</td>
 </tr>
+<tr>
+<td><code>edgecmd get FailoverState</code></td>
+<td>Get the failover state information.</td>
+</tr>
 </tbody>
 </table>
 <h2 id="data-discovery-configuration">Data discovery configuration</h2>
@@ -825,6 +829,90 @@
 <td><code>edgecmd resume historyrecoveries -cid &lt;componentId&gt; -id &lt;historyRecoveryId&gt;</code></td>
 <td>Resume a failed history recovery.</td>
 <td><code>edgecmd resume historyrecoveries -cid Mqtt1 -id HistoryRecovery1</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="secrets-management-configuration">Secrets management configuration</h2>
+<table>
+<thead>
+<tr>
+<th>EdgeCmd command</th>
+<th>Description</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>edgecmd get secrets</code></td>
+<td>Returns the entire secrets configuration.</td>
+<td></td>
+</tr>
+<tr>
+<td><code>edgecmd get secrets -id &lt;secretId&gt;</code></td>
+<td>Returns a single secret.</td>
+<td><code>edgecmd get secrets -id exampleSecret</code></td>
+</tr>
+<tr>
+<td><code>edgecmd set secrets -file &lt;filePath&gt;</code></td>
+<td>Creates/Updates the entire secret configuration.</td>
+<td><code>edgecmd set secrets -file C:\Users\TestUser\Secrets\Configuration.json</code></td>
+</tr>
+<tr>
+<td><code>edgecmd set secrets -id &lt;secretId&gt; -value &lt;secretValue&gt; [-description &lt;description&gt;] [-expirationDate &lt;expirationDate&gt;]</code></td>
+<td>Updates an existing secret or adds a single secret into the current configuration.</td>
+<td><code>edgecmd set secrets -id exampleSecret -value secretValue -description secretDescription -expirationDate 2025-06-19T00:00:00</code></td>
+</tr>
+<tr>
+<td><code>edgecmd remove secrets [-y]</code></td>
+<td>Deletes the entire secrets configuration.</td>
+<td></td>
+</tr>
+<tr>
+<td><code>edgecmd remove secrets -id &lt;secretId&gt; [-y]</code></td>
+<td>Deletes a single secret.</td>
+<td><code>edgemcd remove secrets -id exampleSecret</code></td>
+</tr>
+<tr>
+<td><code>edgecmd help secrets</code></td>
+<td>Returns secrets help information.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="client-failover-configuration">Client failover configuration</h2>
+<table>
+<thead>
+<tr>
+<th>EdgeCmd command</th>
+<th>Description</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>edgecmd get clientfailover</code></td>
+<td>Returns the client failover configuration.</td>
+<td></td>
+</tr>
+<tr>
+<td><code>edgecmd remove clientfailover [-y]</code></td>
+<td>Deletes the entire client failover configuration.</td>
+<td></td>
+</tr>
+<tr>
+<td><code>edgecmd add clientfailver [-cid System] -file &lt;filePath&gt;</code></td>
+<td>Creates a client failover configuration. Fails if the client failover configuration already exists.</td>
+<td><code>edgecmd add clientfailover -file C:\Users\TestUser\ClientFailover\Configuration.json</code></td>
+</tr>
+<tr>
+<td><code>edgecmd set clientfailover [-cid System] -file &lt;filePath&gt;</code></td>
+<td>Replaces the existing client failover configuration.</td>
+<td><code>edgecmd set clientfailover -file C:\Users\TestUser\ClientFailover\Configuration.json</code></td>
+</tr>
+<tr>
+<td><code>edgecmd help clientfailover</code></td>
+<td>Returns the help information for client failover.</td>
+<td></td>
 </tr>
 </tbody>
 </table>

@@ -129,7 +129,27 @@
 
  </pre>
  </details>
+
 </li>
+</ol>
+<h2 id="retrieve-failover-state">Retrieve failover state</h2>
+<ol>
+<li>Access EdgeCmd utility through the command line.</li>
+<li><p>Run the following command:</p>
+<pre><code class="lang-cmd">edgecmd get FailoverState
+</code></pre><details>
+<summary>Sample output</summary>
+<pre>
+
+     {
+         "role": "Secondary",
+         "lastDataProcessedTime": "0001-01-01T00:00:00",
+         "failoverScore": 0,
+         "adapterState": "Running"
+     }
+
+</pre>
+</details></li>
 </ol>
 </article>
           </div>
