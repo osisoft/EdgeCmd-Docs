@@ -18,7 +18,7 @@
       "output": {
         ".html": {
           "relative_path": "README.html",
-          "hash": "fsLgNnsHIoUoQiX09MgHlTZ2PQc842oQJB4XDVRVJXo="
+          "hash": "cmLKzMRezE+OJ11ic8De0sTdZCjV0Xm2sYLpzS+uis4="
         }
       },
       "is_incremental": false,
@@ -134,6 +134,30 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "content/configuration/management.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/configuration/management.html",
+          "hash": "2Hl/NYX2DL8eddPDV2yQOwCwEgcTTxqpALCm+Sj4DAE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/configuration/secrets.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/configuration/secrets.html",
+          "hash": "iSJugGMN4cgIf1rhEfLtr/rYhUSp/2A37P2Xo8rNLVM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "content/edgecmd-utility.md",
       "output": {
         ".html": {
@@ -156,6 +180,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "content/index.md",
       "output": {
@@ -173,7 +200,7 @@
       "output": {
         ".html": {
           "relative_path": "content/installation/access-edgecmd-utility.html",
-          "hash": "gChv5J5b7IV2kNyeTD6qstXd6XUaLd10gJ5a32MDJeY="
+          "hash": "B9fX879Dq+k49DoKt5DrJ2+R3JfkpWJdHuTf/nQmHtI="
         }
       },
       "is_incremental": false,
@@ -317,7 +344,7 @@
       "output": {
         ".html": {
           "relative_path": "content/toc.html",
-          "hash": "lZvYIQZwnXAvgUDfcaB3nF3KRtrlD8NTU/ISpBppaTg="
+          "hash": "0JWMVX7w9V1S8FtuBp74I4yVhrXaeE+OYDUJ8hfdpX0="
         }
       },
       "is_incremental": false,
@@ -336,9 +363,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
@@ -389,7 +413,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 27,
+          "total_file_count": 29,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
