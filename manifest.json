@@ -134,30 +134,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "content/configuration/management.md",
-      "output": {
-        ".html": {
-          "relative_path": "content/configuration/management.html",
-          "hash": "2Hl/NYX2DL8eddPDV2yQOwCwEgcTTxqpALCm+Sj4DAE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "content/configuration/secrets.md",
-      "output": {
-        ".html": {
-          "relative_path": "content/configuration/secrets.html",
-          "hash": "iSJugGMN4cgIf1rhEfLtr/rYhUSp/2A37P2Xo8rNLVM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "content/edgecmd-utility.md",
       "output": {
         ".html": {
@@ -200,7 +176,7 @@
       "output": {
         ".html": {
           "relative_path": "content/installation/access-edgecmd-utility.html",
-          "hash": "B9fX879Dq+k49DoKt5DrJ2+R3JfkpWJdHuTf/nQmHtI="
+          "hash": "yf1Vpc4TKf1qfN/20xMhVHln0SEAaDytDAIj9/b+IqA="
         }
       },
       "is_incremental": false,
@@ -212,7 +188,7 @@
       "output": {
         ".html": {
           "relative_path": "content/installation/install-edgecmd-utility.html",
-          "hash": "AfFOGX+VbYjrXIC7zsYcD1gimzR/tKesNs76tYvxpTk="
+          "hash": "uOui0wYIWAayOXcYWCOdFRzl0nHCVHbdZtTFnr82sV0="
         }
       },
       "is_incremental": false,
@@ -236,7 +212,7 @@
       "output": {
         ".html": {
           "relative_path": "content/installation/system-requirements.html",
-          "hash": "CWZ7KCvUSwveq1J4ehc4S3VLBugTl06/xr3oqBsLIi4="
+          "hash": "1+qZGW4wZStqQN4lcy97t/R0zVADF9RBpQ2sr2lR/ZQ="
         }
       },
       "is_incremental": false,
@@ -249,6 +225,30 @@
         ".html": {
           "relative_path": "content/installation/uninstall-edgecmd-utility.html",
           "hash": "g11EhuRpVMfcCLpeeShaKPZrJPFK5b3CuTXrS/E/WM4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/management/management.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/management/management.html",
+          "hash": "6nzpkejgxgYFnuzSUtqH9w35dwrn9qq4Lqv+IfL3MCw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "content/management/secrets.md",
+      "output": {
+        ".html": {
+          "relative_path": "content/management/secrets.html",
+          "hash": "5aqbeYlG9pFhmWKaqjsEQibTCP/P20C1u40E/sAavTM="
         }
       },
       "is_incremental": false,
@@ -344,7 +344,7 @@
       "output": {
         ".html": {
           "relative_path": "content/toc.html",
-          "hash": "0JWMVX7w9V1S8FtuBp74I4yVhrXaeE+OYDUJ8hfdpX0="
+          "hash": "nqYrNzJdPsDeflmAEII/7WMqoNI08o6VkaR0Yw7d8kU="
         }
       },
       "is_incremental": false,

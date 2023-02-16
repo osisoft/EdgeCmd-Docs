@@ -42,7 +42,7 @@ references:
   href: content/installation/install-edgecmd-utility.html
 - uid: Management
   name: Management
-  href: content/configuration/management.html
+  href: content/management/management.html
 - uid: Reference
   name: Reference
   href: content/reference/reference.html
@@ -65,8 +65,8 @@ references:
   name: Retrieve existing configuration
   href: content/reference/retrieve-existing-configuration.html
 - uid: SecretsManagement
-  name: Secrets Management
-  href: content/configuration/secrets.html
+  name: Configure secrets
+  href: content/management/secrets.html
 - uid: StartOrStopAComponent
   name: Start or stop a component
   href: content/administration/start-or-stop-a-component.html
