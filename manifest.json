@@ -134,30 +134,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "content/configuration/management.md",
-      "output": {
-        ".html": {
-          "relative_path": "content/configuration/management.html",
-          "hash": "2Hl/NYX2DL8eddPDV2yQOwCwEgcTTxqpALCm+Sj4DAE="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "content/configuration/secrets.md",
-      "output": {
-        ".html": {
-          "relative_path": "content/configuration/secrets.html",
-          "hash": "iSJugGMN4cgIf1rhEfLtr/rYhUSp/2A37P2Xo8rNLVM="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "content/edgecmd-utility.md",
       "output": {
         ".html": {
@@ -413,7 +389,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 29,
+          "total_file_count": 27,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
