@@ -4,7 +4,7 @@ uid: ReleaseNotes
 
 # Release notes
 
-EdgeCmd utility 1.3
+EdgeCmd utility 1.3.1
 
 ## Overview
 
@@ -16,16 +16,9 @@ For more information, see [EdgeCmd utility](xref:index).
 
 ### Fixes
 
-* Updated layout of EdgeCmd help message.
+Fixes from version 1.3.0
 
-### Enhancements
-
-Changes from version 1.2
-
-* Added support for secret management.
-* Added support for configuring failover.
-* Added support for retrieving failover state.
-* Updated Windows and Linux installers to reflect new product name.
+* Added support for values with a comma or double quote when exporting and importing CSV files during DataSelection and Discovery.
 
 ## Known issues
 
