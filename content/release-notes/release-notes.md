@@ -18,7 +18,7 @@ For more information, see [EdgeCmd utility](xref:index).
 
 Fixes from version 1.3.0
 
-* Added support for values with a comma or double quote when exporting and importing CSV files during DataSelection and Discovery.
+* Added the support to import from or export to a data selection file in CSV format when the data selection fields contain comma and/or double quotes.
 
 ## Known issues
 
