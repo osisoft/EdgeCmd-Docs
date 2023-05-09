@@ -4,7 +4,7 @@ uid: ReleaseNotes
 
 # Release notes
 
-EdgeCmd utility 1.3
+EdgeCmd utility 1.3.1
 
 ## Overview
 
@@ -16,11 +16,17 @@ For more information, see [EdgeCmd utility](xref:index).
 
 ### Fixes
 
+Version 1.3.1
+
+* Added the support to import from or export to a data selection file in CSV format when the data selection fields contain comma and/or double quotes.
+
+Version 1.3.0
+
 * Updated layout of EdgeCmd help message.
 
 ### Enhancements
 
-Changes from version 1.2
+Version 1.3.0
 
 * Added support for secret management.
 * Added support for configuring failover.
