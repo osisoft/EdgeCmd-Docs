@@ -1,6 +1,6 @@
 # EdgeCmd utility
 
-EdgeCmd utility is OSIsoft's proprietary tool to configure and administer EDS and AVEVA adapters on Linux and Windows using command line arguments.
+EdgeCmd utility is OSIsoft's proprietary tool to configure and administer Edge Data Store (EDS) and AVEVA adapters on Linux and Windows using command line arguments.
 
 This repository contains the documentation for EdgeCmd utility. You can access a readable version of this documentation [here.](https://osisoft.github.io/Edgecmd-Docs/index.html)
 
