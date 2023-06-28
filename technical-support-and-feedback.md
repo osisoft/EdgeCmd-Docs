@@ -8,13 +8,13 @@ OSIsoft provides several ways to report issues and provide feedback on EdgeCmd u
 
 ## Technical support
 
-For technical assistance with EdgeCmd utility, contact OSIsoft Technical Support through the [OSIsoft Customer Portal](https://my.osisoft.com/). We can help you identify the problem, provide workarounds and address any concerns you may have. Remote access to your facilities may be necessary during the session.
+For technical assistance with EdgeCmd utility, contact AVEVA PI Support through the [AVEVA Customer Portal](https://my.osisoft.com/). We can help you identify the problem, provide workarounds and address any concerns you may have. Remote access to your facilities may be necessary during the session.
 
-**Note:**  You must have an account set up in the [OSIsoft Customer Portal](https://my.osisoft.com/) before you can open a case. If you do not have a portal account, see [How to Get a Login to OSIsoft Customer Portal](https://explore.osisoft.com/myosisoft-customer-portal/how-to-get-a-login).
+**Note:**  You must have an account set up in the [AVEVA Customer Portal](https://my.osisoft.com/) before you can open a case. If you do not have a portal account, see [How to Get a Login to AVEVA Customer Portal](https://explore.osisoft.com/myosisoft-customer-portal/how-to-get-a-login).
 
-Alternatively, call OSIsoft Technical Support at +1 510-297-5828.
+Alternatively, call AVEVA PI Support at +1 510-297-5828.
 
-When you contact OSIsoft Technical Support, be prepared to provide this information:
+When you contact AVEVA PI Support, be prepared to provide this information:
 
 - Product name, version, and build numbers
 - Details about your computer platform (CPU type, operating system, and version number)
