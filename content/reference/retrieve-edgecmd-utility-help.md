@@ -74,12 +74,12 @@ Complete the following steps to view configuration help instructions for a speci
     Endpoint                     [Required] URL of OMF destination
     UserName                     [Required group 1]  User name used for authentication to PI Web API OMF endpoint.
     Password                     [Required group 1]  Password used for authentication to PI Web API OMF endpoint.
-    ClientId                     [Required group 2]  Client ID used for authentication to OSIsoft Cloud Services.
-    ClientSecret                 [Required group 2]  Client Secret used for authentication to OSIsoft Cloud Services.
+    ClientId                     [Required group 2]  Client ID used for authentication to AVEVA Data Hub.
+    ClientSecret                 [Required group 2]  Client Secret used for authentication to AVEVA Data Hub.
     TokenEndpoint                [Optional group 2] URL of OMF destination's token service.
     ValidateEndpointCertificate  [Optional] If true, endpoint certificate will be validated (recommended). If false, any endpoint certificate will be accepted. OSIsoft strongly recommends using disabled endpoint certificate validation for testing purposes only.
 
-    Note: Only one Required group must be specified. Group 1 for PI Web API or Group 2 for OCS.
+    Note: Only one Required group must be specified. Group 1 for PI Web API or Group 2 for ADH.
 
 
     ---------------------------------------------------------------------------------------------------------

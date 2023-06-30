@@ -82,9 +82,9 @@ EdgeCmd command| Description | Examples |
 ---------------|-------------|----------|
 `edgecmd get HealthEndpoints [-file <filepath>]` | Get the health endpoints configuration. | `edgecmd get HealthEndpoints`
 `edgecmd set HealthEndpoints [-file <filepath>]` | Import the health endpoints configuration. | `edgecmd set HealthEndpoints -file C:\Users\TestUser\HealthEndpoints\Configuration.json`
-`edgecmd add HealthEndpoints [-id <string>] [-Endpoint <endpointUrl>] [-UserName <userName>] [-Password <password>] [-ClientId <clientId>] [-ClientSecret <clientSecret>] [-TokenEndpoint <tokenEndpoint>] [-ValidateEndpointCertificate <true/false>]`  | Add a health endpoint. | `edgecmd add HealthEndpoints -id OCS -Endpoint https://OCS_OMF_endpoint -ClientId TestUser -ClientSecret TestPassword`
-`edgecmd edit HealthEndpoints [-id <string>] [-Endpoint <endpointUrl>] [-UserName <userName>] [-Password <password>] [-ClientId <clientId>] [-ClientSecret <clientSecret>] [-TokenEndpoint <tokenEndpoint>] [-ValidateEndpointCertificate <true/false>]` | Change a health endpoint. | `edgecmd edit HealthEndpoints -id OCS -Endpoint https://OCS_OMF_endpoint -ClientId TestUser -ClientSecret TestPassword`
-`edgecmd remove HealthEndpoints [-id <string>] [-y]`| Remove a health endpoint. | `edgecmd remove HealthEndpoints -id OCS`
+`edgecmd add HealthEndpoints [-id <string>] [-Endpoint <endpointUrl>] [-UserName <userName>] [-Password <password>] [-ClientId <clientId>] [-ClientSecret <clientSecret>] [-TokenEndpoint <tokenEndpoint>] [-ValidateEndpointCertificate <true/false>]`  | Add a health endpoint. | `edgecmd add HealthEndpoints -id ADH -Endpoint https://ADH_OMF_endpoint -ClientId TestUser -ClientSecret TestPassword`
+`edgecmd edit HealthEndpoints [-id <string>] [-Endpoint <endpointUrl>] [-UserName <userName>] [-Password <password>] [-ClientId <clientId>] [-ClientSecret <clientSecret>] [-TokenEndpoint <tokenEndpoint>] [-ValidateEndpointCertificate <true/false>]` | Change a health endpoint. | `edgecmd edit HealthEndpoints -id ADH -Endpoint https://ADH_OMF_endpoint -ClientId TestUser -ClientSecret TestPassword`
+`edgecmd remove HealthEndpoints [-id <string>] [-y]`| Remove a health endpoint. | `edgecmd remove HealthEndpoints -id ADH`
 `edgecmd help HealthEndpoints` | Display help output for the health endpoints configuration.
 
 ## OMF egress data endpoints facet configuration
