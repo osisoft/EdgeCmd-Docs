@@ -156,9 +156,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "DuplicateUids"
-      ],
       "type": "Conceptual",
       "source_relative_path": "content/index.md",
       "output": {
@@ -332,7 +329,7 @@
       "output": {
         ".html": {
           "relative_path": "content/release-notes/release-notes.html",
-          "hash": "4ukEDU4jsQJYM+qN6uml8Js6+Hq8Rm/z9OrSCBvAtpY="
+          "hash": "aufxYbDeG1xF4QPtkBpGGEogNjRa9jpynYBoIsTlUBo="
         }
       },
       "is_incremental": false,
@@ -363,6 +360,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "DuplicateUids"
+      ],
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
